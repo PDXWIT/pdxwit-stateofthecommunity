@@ -1,2 +1,29 @@
 ---
 ---
+// Dashes needed to signal jekyll to compile to css
+$font-stack: Helvetica, open-sans, oswald;
+
+navigation {
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      float: right;
+  }
+  li {
+      float: right;
+  }
+
+  li a {
+      display: block;
+      color:  #63666A;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+    color: #9ECC50
+  }
+}
