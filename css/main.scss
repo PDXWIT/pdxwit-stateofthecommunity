@@ -1,8 +1,10 @@
 ---
 ---
 // Dashes needed to signal jekyll to compile to css
+// =====================
+// Font variables
+// =====================
 
-// Font variables begin
 $font-headlines: Helvetica, sans-serif;
 $font-questions: "Oswald", sans-serif;
 $font-sub-headline: "Oswald", sans-serif;
@@ -10,9 +12,11 @@ $font-regular-text: "EB Garamond", serif;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 $font-weight-xlight: 200;
-//Font variables end
 
-// Color variables begin
+// =====================
+// Color variables
+// =====================
+
 $color-pdxwit-lime: #9ECC50;
 $color-pdxwit-dark-grey: #63666A;
 $color-pdxwit-light-grey: #C8C9C7;
@@ -21,35 +25,29 @@ $color-pdxwit-black: #000;
 $color-background-blue1: #42526C;
 $color-background-blue2: #344152;
 $color-background-blue3: #3A66A7;
-//Color variables end
 
-// Body begin
-body {
-  background-color:  $color-background-blue1;
-  font-family: $font-sub-headline;
-  font-weight: $font-weight-light;
-  font-size: 12px;
-  color: $color-pdxwit-white;
-  margin: 0;
-  padding-right: 10%;
-  padding-left: 10%;
-}
 
-// Navigation begin
+// =====================
+// Navigation
+// =====================
+
 .section-navbar {
   background-color: $color-pdxwit-white;
   margin: 0;
-  padding: 1em;
+  padding-right: 25%;
+  padding-left: 25%;
+  overflow: hidden;
+
 }
 
 .nav {
-
   ul {
       list-style: none;
       margin: 0;
-      padding: 2%;
+      padding-top: 10%;
       float: right;
       text-transform: uppercase;
+      font-family: $font-sub-headline;
   }
 
   li {
@@ -66,10 +64,34 @@ body {
   li a:hover {
     color: $color-pdxwit-lime;
   }
-}
-// Navigation end
 
-// State of the Community begin
+  img {
+    height: 10em;
+  }
+}
+
+
+// =====================
+// Section - State of the Community
+// =====================
+
+body {
+  margin: 0;
+}
+
+.container-intro {
+  background-color:  $color-background-blue1;
+  font-family: $font-sub-headline;
+  font-weight: $font-weight-light;
+  font-size: 12px;
+  color: $color-pdxwit-white;
+  margin: 0;
+  padding: 5% 25%;
+}
+
+
+
+
 h1 {
   font-family: $font-headlines;
 }
@@ -95,9 +117,3 @@ h1 {
    text-decoration: none;
 
  }
-
-
-
-// State of the Community end
-
-// Body end
