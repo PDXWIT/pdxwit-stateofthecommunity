@@ -1,29 +1,77 @@
 ---
 ---
 // Dashes needed to signal jekyll to compile to css
-$font-stack: Helvetica, open-sans, oswald;
 
-navigation {
+// Font variables begin
+$font-headlines: Helvetica, sans-serif;
+$font-questions: "Oswald", sans-serif;
+$font-sub-headline: "Oswald", sans-serif;
+$font-regular-text: "EB Garamond", serif;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-xlight: 200;
+//Font variables end
+
+// Color variables begin
+$color-pdxwit-lime: #9ECC50;
+$color-pdxwit-dark-grey: #63666A;
+$color-pdxwit-light-grey: #C8C9C7;
+$color-pdxwit-white: #FFF;
+$color-pdxwit-black: #000;
+$color-background-blue1: #42526C;
+$color-background-blue2: #344152;
+$color-background-blue3: #3A66A7;
+//Color variables end
+
+// Navigation begin
+.section-navbar {
+  background-color: $color-pdxwit-white;
+  margin: 0;
+  padding: 1;
+  border-radius: 0px;
+}
+
+.nav {
+
   ul {
-      list-style-type: none;
+      list-style: none;
       margin: 0;
-      padding: 0;
-      overflow: hidden;
+      padding: 2%;
       float: right;
   }
   li {
       float: right;
+      display: inline-block;
   }
 
   li a {
-      display: block;
-      color:  #63666A;
+      color:  $color-pdxwit-dark-grey;
       text-align: center;
-      padding: 14px 16px;
+      padding: 16px;
+      font-size: 16px;
       text-decoration: none;
   }
 
   li a:hover {
-    color: #9ECC50
+    color: $color-pdxwit-lime;
   }
 }
+// Navigation end
+
+// Body begin
+body {
+  background-color:  $color-background-blue1;
+  font-family: $font-sub-headline;
+  font-weight: $font-weight-light;
+  font-size: 12px;
+  color: $color-pdxwit-white;
+}
+
+// State of the Community begin
+h1 {
+  font-family: $font-headlines;
+}
+
+// State of the Community end
+
+// Body end
