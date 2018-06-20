@@ -5,10 +5,11 @@
 // Font variables
 // =====================
 
-$font-headlines: Helvetica, sans-serif;
-$font-questions: "Oswald", sans-serif;
-$font-sub-headline: "Oswald", sans-serif;
-$font-regular-text: "EB Garamond", serif;
+$font-headlines: "Oswald", sans-serif; //use $font-weight-bold
+$font-questions: "Oswald", sans-serif; //use $font-weight-regular
+$font-sub-headline: "Oswald", sans-serif;  //use $font-weight-light
+$font-regular-text: Helvetica, "EB Garamond", serif;
+$font-weight-bold: 700;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 $font-weight-xlight: 200;
@@ -47,7 +48,9 @@ $color-background-blue3: #3A66A7;
       padding-top: 10%;
       float: right;
       text-transform: uppercase;
+      text-decoration: none;
       font-family: $font-sub-headline;
+//      font-weight: $font-weight-light;
   }
 
   li {
@@ -81,7 +84,7 @@ body {
 
 .container-intro {
   background-color:  $color-background-blue1;
-  font-family: $font-sub-headline;
+  font-family: $font-regular-text;
   font-weight: $font-weight-light;
   font-size: 12px;
   color: $color-pdxwit-white;
@@ -94,6 +97,7 @@ body {
 
 h1 {
   font-family: $font-headlines;
+  font-weight: $font-weight-bold;
 }
 
 @mixin btn-theme() {
@@ -115,5 +119,6 @@ h1 {
    font-weight: $font-weight-regular;
    letter-spacing: .1em;
    text-decoration: none;
-
+   margin-top: 5%;
+   margin-left: 35%;
  }
