@@ -92,12 +92,27 @@ body {
   padding: 5% 25%;
 }
 
+.container-culture {
+  background-color:  $color-background-blue2;
+  font-family: $font-regular-text;
+  font-weight: $font-weight-light;
+  font-size: 12px;
+  color: $color-pdxwit-white;
+  margin: 0;
+  padding: 5% 20%;
+}
 
 
-
-h1 {
+.font--headline {
   font-family: $font-headlines;
   font-weight: $font-weight-bold;
+  font-size: 40px;
+}
+
+.font--subheadline {
+  font-family: $font-sub-headline;
+  font-weight: $font-weight-light;
+  font-size: 20px;
 }
 
 @mixin btn-theme() {
