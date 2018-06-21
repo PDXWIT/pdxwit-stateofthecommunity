@@ -73,9 +73,6 @@ $color-background-blue3: #3A66A7;
 // Section - State of the Community
 // =====================
 
-body {
-  margin: 0;
-}
 
 .container-intro {
   background-color:  $color-background-blue1;
@@ -110,7 +107,7 @@ body {
   font-size: 20px;
 }
 
-@mixin btn-theme() {
+@mixin icon-theme() {
   background-color: $color-pdxwit-lime;
   border-color: $color-pdxwit-lime;
   &:hover {
@@ -119,8 +116,8 @@ body {
   }
 }
 
-.btn {
-  @include btn-theme();
+.icon {
+  @include icon-theme();
    display: inline-block;
    padding: .938em 1.875em;
    color: $color-pdxwit-black;
@@ -131,4 +128,8 @@ body {
    text-decoration: none;
    margin-top: 5%;
    margin-left: 35%;
+ }
+
+ .dropdown-menu {
+   background-color: $color-pdxwit-dark-grey;
  }
