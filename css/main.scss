@@ -129,8 +129,10 @@ $color-background-blue3: #3A66A7;
    margin-top: 5%;
    margin-left: 35%;
 
- }
+  .icon-dropdown {
+    background-color: $color-pdxwit-white;
+    font-family: $font-regular-text;
+    font-weight: $font-weight-regular;
+  }
 
-.icon-dropdown {
-   background-color: $color-pdxwit-white;
  }
