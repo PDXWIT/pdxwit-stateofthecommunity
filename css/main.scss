@@ -3,6 +3,8 @@
 // Dashes needed to signal jekyll to compile to css
 
 @import 'bootstrap';
+//@import "scss/fontawesome.scss";
+//@import "scss/fa-solid.scss";
 
 // =====================
 // Font variables
@@ -63,7 +65,7 @@ $color-background-blue3: #3A66A7;
 
 .logo {
   height: 10em;
-  margin-top:1%;
+  margin-top:5%;
 }
 
 
