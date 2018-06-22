@@ -221,7 +221,7 @@ $color-background-blue3: #3A66A7;
    color: $color-pdxwit-white;
    font-family: $font-headlines;
    font-weight: $font-weight-regular;
-   
+
  }
 
  .vertical-line {
@@ -230,3 +230,7 @@ $color-background-blue3: #3A66A7;
    padding: 0;
    width: 6px;
  }
+
+ .btn-learn-more {
+   background-color: $color-pdxwit-white;
+}
