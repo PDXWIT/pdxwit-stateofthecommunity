@@ -78,33 +78,93 @@ $color-background-blue3: #3A66A7;
   background-color:  $color-background-blue1;
   font-family: $font-regular-text;
   font-weight: $font-weight-light;
-  font-size: 12px;
   color: $color-pdxwit-white;
   margin: 0;
   padding: 5% 25%;
 }
 
-.container-culture {
+.container-section {
   background-color:  $color-background-blue2;
-  font-family: $font-regular-text;
-  font-weight: $font-weight-light;
-  font-size: 12px;
-  color: $color-pdxwit-white;
   margin: 0;
   padding: 5% 20%;
+}
+
+.container-quote{
+  background-color: $color-background-blue3;
+  margin: 0;
+  padding: 5% 20%;
+}
+
+.container-data {
+  margin-top: 5%;
+}
+
+.container-next-steps {
+  background-color: $color-pdxwit-lime;
 }
 
 
 .font--headline {
   font-family: $font-headlines;
   font-weight: $font-weight-bold;
+  color: $color-pdxwit-white;
   font-size: 40px;
 }
 
 .font--subheadline {
   font-family: $font-sub-headline;
   font-weight: $font-weight-light;
+  color: $color-pdxwit-white;
   font-size: 20px;
+}
+
+.font--regular {
+  font-family: $font-regular-text;
+  font-weight: $font-weight-light;
+  font-size: 12px;
+}
+
+.font--question {
+  font-family: $font-questions;
+  font-weight: $font-weight-regular;
+  color: $color-pdxwit-white;
+  font-size: 26px;
+  padding-top: 3em;
+  text-indent: 1em;
+}
+
+.font--quote {
+  font-family: $font-headlines;
+  font-weight: $font-weight-regular;
+  color: $color-pdxwit-white;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+.font--quote-question {
+  font-family: $font-headlines;
+  font-weight: $font-weight-regular;
+  color: $color-background-blue2;
+  font-size: 26px;
+  text-align: center;
+}
+
+.font--percent-numbers {
+  font-family: $font-headlines;
+  font-weight: $font-weight-bold;
+  color: $color-pdxwit-white;
+  font-size: 40px;
+}
+
+.font--percent-words {
+  font-family: $font-headlines;
+  font-weight: $font-weight-regular;
+  color: $color-pdxwit-white;
+  font-size: 20px;
+  margin-bottom: 35%;
 }
 
 @mixin icon-theme() {
@@ -135,4 +195,22 @@ $color-background-blue3: #3A66A7;
     font-weight: $font-weight-regular;
   }
 
+ }
+
+ .icon-people {
+   color: $color-pdxwit-white;
+   font-family: $font-headlines;
+   font-weight: $font-weight-regular;
+   font-size: 40px;
+   text-align: justify;
+   .color {
+     color: $color-pdxwit-lime;
+   }
+ }
+
+ .vertical-line {
+   height: 120px;
+   border-left: 2px solid $color-pdxwit-white;
+   padding: 0;
+   width: 6px;
  }
