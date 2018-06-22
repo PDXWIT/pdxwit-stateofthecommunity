@@ -115,7 +115,7 @@ $color-background-blue3: #3A66A7;
   font-family: $font-sub-headline;
   font-weight: $font-weight-light;
   color: $color-pdxwit-white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .font--regular {
@@ -167,6 +167,15 @@ $color-background-blue3: #3A66A7;
   margin-bottom: 35%;
 }
 
+.next-steps-list {
+  font-family: $font-sub-headline;
+  font-weight: $font-weight-light;
+  color: $color-background-blue2;
+  font-size: 26px;
+  text-align: left;
+  padding: 5% 20%;
+}
+
 @mixin icon-theme() {
   background-color: $color-pdxwit-lime;
   border-color: $color-pdxwit-lime;
@@ -206,6 +215,13 @@ $color-background-blue3: #3A66A7;
    .color {
      color: $color-pdxwit-lime;
    }
+ }
+
+ .icon-list {
+   color: $color-pdxwit-white;
+   font-family: $font-headlines;
+   font-weight: $font-weight-regular;
+   
  }
 
  .vertical-line {
