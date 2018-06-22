@@ -76,9 +76,6 @@ $color-background-blue3: #3A66A7;
 
 .container-intro {
   background-color:  $color-background-blue1;
-  font-family: $font-regular-text;
-  font-weight: $font-weight-light;
-  color: $color-pdxwit-white;
   margin: 0;
   padding: 5% 25%;
 }
@@ -97,17 +94,39 @@ $color-background-blue3: #3A66A7;
 
 .container-data {
   margin-top: 5%;
+  margin: 0;
+  padding: 5% 20%;
 }
 
 .container-next-steps {
   background-color: $color-pdxwit-lime;
+  margin: 0;
+  padding: 5% 20%;
 }
 
+.container-about {
+  background-color: $color-pdxwit-white;
+  margin: 0;
+  padding: 5% 20%;
+}
+
+.container-green {
+  background-color: $color-pdxwit-lime;
+  margin: 0;
+  padding: 5% 20%;
+}
 
 .font--headline {
   font-family: $font-headlines;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
+  font-size: 40px;
+}
+
+.font--headline2 {
+  font-family: $font-headlines;
+  font-weight: $font-weight-bold;
+  color: $color-pdxwit-dark-grey;
   font-size: 40px;
 }
 
@@ -118,10 +137,25 @@ $color-background-blue3: #3A66A7;
   font-size: 25px;
 }
 
+.font--subheadline2 {
+  font-family: $font-sub-headline;
+  font-weight: $font-weight-light;
+  color: $color-pdxwit-dark-grey;
+  font-size: 25px;
+}
+
 .font--regular {
   font-family: $font-regular-text;
   font-weight: $font-weight-light;
-  font-size: 12px;
+  color: $color-pdxwit-white;
+  font-size: 14px;
+}
+
+.font--regular2 {
+  font-family: $font-regular-text;
+  font-weight: $font-weight-light;
+  color: $color-pdxwit-dark-grey;
+  font-size: 14px;
 }
 
 .font--question {
@@ -173,7 +207,6 @@ $color-background-blue3: #3A66A7;
   color: $color-background-blue2;
   font-size: 26px;
   text-align: left;
-  padding: 5% 20%;
 }
 
 @mixin icon-theme() {
