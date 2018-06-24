@@ -212,24 +212,30 @@ $color-background-blue3: #3A66A7;
 @mixin icon-theme() {
   background-color: $color-pdxwit-lime;
   border-color: $color-pdxwit-lime;
+  text-transform: uppercase;
+  font-family: $font-headlines;
+  font-weight: $font-weight-regular;
+  letter-spacing: .1em;
+  text-decoration: none;
+
   &:hover {
     border: .094em solid $color-pdxwit-dark-grey;
     background-color: $color-pdxwit-dark-grey;
   }
 }
 
+@mixin centerer {
+  position: absolute;
+  left: 50%;
+}
+
 .icon {
   @include icon-theme();
    display: inline-block;
-   padding: .938em 1.875em;
    color: $color-pdxwit-black;
-   text-transform: uppercase;
-   font-family: $font-headlines;
-   font-weight: $font-weight-regular;
-   letter-spacing: .1em;
-   text-decoration: none;
    margin-top: 5%;
-   margin-left: 35%;
+   margin-left: 50%;
+
 
   .icon-dropdown {
     background-color: $color-pdxwit-white;
@@ -264,6 +270,19 @@ $color-background-blue3: #3A66A7;
    width: 6px;
  }
 
+.btn {
+  @include icon-theme;
+  @include centerer();
+}
+
  .btn-learn-more {
    background-color: $color-pdxwit-white;
+   display: inline-block;
+   color: $color-pdxwit-black;
+   text-transform: uppercase;
+   font-family: $font-headlines;
+   font-weight: $font-weight-regular;
+   letter-spacing: .1em;
+   text-decoration: none;
+   @include centerer();
 }
