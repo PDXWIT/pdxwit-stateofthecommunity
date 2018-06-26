@@ -28,9 +28,9 @@ $color-pdxwit-dark-grey: #63666A;
 $color-pdxwit-light-grey: #C8C9C7;
 $color-pdxwit-white: #FFF;
 $color-pdxwit-black: #000;
-$color-background-blue1: #46556A;
-$color-background-blue2: #2E3A49;
-$color-background-blue3: #4583A2;
+$color-background-blue1: #46556A; //grey blue
+$color-background-blue2: #2E3A49; //dark blue
+$color-background-blue3: #4583A2; //bright blue
 
 
 // =====================
@@ -285,4 +285,11 @@ $color-background-blue3: #4583A2;
    letter-spacing: .1em;
    text-decoration: none;
    @include centerer();
+}
+
+// =====================
+// Charts
+// =====================
+
+.benefits {
 }
