@@ -4,8 +4,7 @@
 // =====================
 var ctxCulture = document.getElementById("culture");
 
-Chart.defaults.global.defaultFontFamily = "Lato";
-Chart.defaults.global.defaultFontSize = 18;
+
 
 var cultureData = {
   labels: 'Culture',

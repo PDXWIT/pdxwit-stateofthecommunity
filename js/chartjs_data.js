@@ -37,12 +37,22 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
+      scales: {
+          yAxes: [{
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            },
+            ticks: {
+                beginAtZero:true
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false,
+              drawBorder: false,
+            }
+          }]
+      }
+  }
 });
