@@ -1,8 +1,8 @@
 // =====================
 // Benefits Chart
 // =====================
-var ctx = document.getElementById("benefits").getContext("2d");
-var myChart = new Chart(ctx, {
+var ctxBenefits = document.getElementById("benefits").getContext("2d");
+var myChart = new Chart(ctxBenefits, {
     type: 'horizontalBar',
     data: {
         labels: ["Paid maternity leave", "Paid paternity leave", "Nursing room", "Flexible hours", "Remote working", "Onsite childcare", /*"Paid sick leave", "Paid vacation", */ "Trans healthcare", "None of these"],
