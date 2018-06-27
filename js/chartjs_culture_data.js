@@ -7,7 +7,7 @@ var cultureData = {
   labels: 'Culture',
   datasets: [
     {
-      label: ['Diverse 34%'], //34
+      label: ['diverse 34%'], //34
       data: [{
         x: 85,
         y: 4,
@@ -15,7 +15,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Inclusive 54%'], //54
+    label: ['inclusive 54%'], //54
     data: [{
       x: 45,
       y: 45,
@@ -23,7 +23,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Toxic 9%'], //9
+    label: ['toxic 9%'], //9
     data: [{
       x: 50,
       y: 6,
@@ -31,7 +31,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Bro-Culture 18%'], //18
+    label: ['bro-culture 18%'], //18
     data: [{
       x: 25,
       y: 55,
@@ -39,7 +39,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Results-Oriented 63%'], //63
+    label: ['results-oriented 63%'], //63
     data: [{
       x: 78,
       y: 47,
@@ -47,7 +47,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Caring 51%'], //51
+    label: ['caring 51%'], //51
     data: [{
       x: 30,
       y: 10,
@@ -55,7 +55,7 @@ var cultureData = {
     }],
     backgroundColor: '#536028',
   }, {
-    label: ['Other 15%'], //15
+    label: ['other 15%'], //15
     data: [{
       x: 63,
       y: 24,
@@ -100,20 +100,19 @@ var bubbleChart = new Chart(ctxCulture, {
   },
 });
 
-// Define a plugin to provide data labels
+// Plugin to provide data labels
 Chart.plugins.register({
   afterDatasetsDraw: function(ctxCulture, easing) {
-    // To only draw at the end of animation, check for easing === 1
     var ctx = bubbleChart.chart.ctx;
     bubbleChart.data.datasets.forEach(function (dataset, i) {
       var meta = bubbleChart.getDatasetMeta(i);
       if (!meta.hidden) {
         meta.data.forEach(function(element, index) {
-          // Draw the text in black, with the specified font
+          // Draw the text with the specified style
           ctx.fillStyle = '#FFF';
-          var fontSize = 18;
+          var fontSize = 35;
           var fontStyle = 'normal';
-          var fontFamily = 'Helvetica Neue';
+          var fontFamily = 'Oswald';
           ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
           // Convert to string
 
