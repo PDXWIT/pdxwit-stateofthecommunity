@@ -51,7 +51,7 @@ $color-background-blue3: #4583A2; //bright blue
   font-family: $family;
 }
 
-@mixin regular ($color, $size: 14px, $weight: $font-weight-regular, $family: $font-regular-text) {
+@mixin regular ($color, $size: 14px, $weight: $font-weight-light, $family: $font-regular-text) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
@@ -65,25 +65,22 @@ $color-background-blue3: #4583A2; //bright blue
   font-weight: $weight;
 }
 
-@mixin icon-theme() {
-  background-color: $color-pdxwit-lime;
-  border-color: $color-pdxwit-lime;
+@mixin btn-theme() {
+  @include regular($color-pdxwit-black);
   text-transform: uppercase;
-  font-family: $font-headlines;
-  font-weight: $font-weight-regular;
   letter-spacing: .1em;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 50%;
 
-  &:hover {
-    border: .094em solid $color-pdxwit-dark-grey;
-    background-color: $color-pdxwit-dark-grey;
-  }
+ .icon-dropdown {
+   background-color: $color-pdxwit-white;
+   font-family: $font-regular-text;
+   font-weight: $font-weight-regular;
+ }
 }
 
-@mixin centerer {
-  position: absolute;
-  left: 50%;
-}
 
 
 // =====================
@@ -238,19 +235,14 @@ $color-background-blue3: #4583A2; //bright blue
 }
 
 .icon {
-  @include icon-theme();
+  @include btn-theme();
+  @include regular($color-pdxwit-black);
    display: inline-block;
-   color: $color-pdxwit-black;
-   margin-top: 5%;
-   margin-left: 50%;
 
 
   .icon-dropdown {
     background-color: $color-pdxwit-white;
-    font-family: $font-regular-text;
-    font-weight: $font-weight-regular;
   }
-
  }
 
  .icon-people {
@@ -278,21 +270,15 @@ $color-background-blue3: #4583A2; //bright blue
    width: 6px;
  }
 
-.btn {
-  @include icon-theme;
-  @include centerer();
+.btn--share {
+  @include btn-theme;
+  background-color: $color-pdxwit-lime;
+  border: 0px;
 }
 
  .btn-learn-more {
+   @include btn-theme;
    background-color: $color-pdxwit-white;
-   display: inline-block;
-   color: $color-pdxwit-black;
-   text-transform: uppercase;
-   font-family: $font-headlines;
-   font-weight: $font-weight-regular;
-   letter-spacing: .1em;
-   text-decoration: none;
-   @include centerer();
 }
 
 // =====================
