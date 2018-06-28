@@ -5,33 +5,20 @@ var ctxCompSalary = document.getElementById("comp-salary").getContext("2d");
 
 var compsalaryData = {
   labels: [
-    "Male"
+    "Male", "Female"
   ],
     datasets: [
       {
-        data: [75],
-        label: 'Yes'
+        data: [75,48],
+        label: 'Yes',
+        backgroundColor: '#4583A2'
 
       }, {
-        data: [25],
-        label: 'No'
-
+        data: [25,52],
+        label: 'No',
+        backgroundColor: '#FF4C4C'
       }
     ],
-  labels: [
-    "Female"
-  ],
-    datasets: [
-      {
-        data: [48],
-        label: 'Yes'
-
-      }, {
-        data: [52],
-        label: 'No'
-
-      }
-    ]
 };
 
 var compSalaryBar = new Chart(ctxCompSalary, {
