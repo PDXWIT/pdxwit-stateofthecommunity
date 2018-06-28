@@ -34,6 +34,59 @@ $color-background-blue3: #4583A2; //bright blue
 
 
 // =====================
+// Mixins
+// =====================
+
+@mixin headline ($color, $size: 40px, $weight: $font-weight-bold, $family: $font-headlines) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin subheadline ($color, $size: 25px, $weight: $font-weight-light, $family: $font-sub-headline) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin regular ($color, $size: 14px, $weight: $font-weight-regular, $family: $font-regular-text) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin question ($color, $family, $size: 26px, $weight: $font-weight-regular) {
+  color: $color;
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin icon-theme() {
+  background-color: $color-pdxwit-lime;
+  border-color: $color-pdxwit-lime;
+  text-transform: uppercase;
+  font-family: $font-headlines;
+  font-weight: $font-weight-regular;
+  letter-spacing: .1em;
+  text-decoration: none;
+
+  &:hover {
+    border: .094em solid $color-pdxwit-dark-grey;
+    background-color: $color-pdxwit-dark-grey;
+  }
+}
+
+@mixin centerer {
+  position: absolute;
+  left: 50%;
+}
+
+
+// =====================
 // Navigation
 // =====================
 
@@ -117,54 +170,38 @@ $color-background-blue3: #4583A2; //bright blue
 }
 
 .font--headline {
-  font-family: $font-headlines;
-  font-weight: $font-weight-bold;
-  color: $color-pdxwit-white;
-  font-size: 40px;
+  @include headline ($color-pdxwit-white);
 }
 
 .font--headline2 {
-  font-family: $font-headlines;
-  font-weight: $font-weight-bold;
-  color: $color-pdxwit-dark-grey;
-  font-size: 40px;
+  @include headline ($color-pdxwit-dark-grey);
 }
 
 .font--subheadline {
-  font-family: $font-sub-headline;
-  font-weight: $font-weight-light;
-  color: $color-pdxwit-white;
-  font-size: 25px;
+  @include subheadline ($color-pdxwit-white);
 }
 
 .font--subheadline2 {
-  font-family: $font-sub-headline;
-  font-weight: $font-weight-light;
-  color: $color-pdxwit-dark-grey;
-  font-size: 25px;
+  @include subheadline ($color-pdxwit-dark-grey);
 }
 
 .font--regular {
-  font-family: $font-regular-text;
-  font-weight: $font-weight-light;
-  color: $color-pdxwit-white;
-  font-size: 14px;
+  @include regular ($color-pdxwit-white);
 }
 
 .font--regular2 {
-  font-family: $font-regular-text;
-  font-weight: $font-weight-light;
-  color: $color-pdxwit-dark-grey;
-  font-size: 14px;
+  @include regular ($color-pdxwit-dark-grey);
 }
 
 .font--question {
-  font-family: $font-questions;
-  font-weight: $font-weight-regular;
-  color: $color-pdxwit-white;
-  font-size: 26px;
+  @include question ($color-pdxwit-white, $font-questions);
   padding-top: 3em;
   text-indent: 1em;
+}
+
+.font--quote-question {
+  @include question ($color-background-blue2, $font-headlines);
+  text-align: center;
 }
 
 .font--quote {
@@ -178,13 +215,7 @@ $color-background-blue3: #4583A2; //bright blue
 
 }
 
-.font--quote-question {
-  font-family: $font-headlines;
-  font-weight: $font-weight-regular;
-  color: $color-background-blue2;
-  font-size: 26px;
-  text-align: center;
-}
+
 
 .font--percent-numbers {
   font-family: $font-headlines;
@@ -202,31 +233,8 @@ $color-background-blue3: #4583A2; //bright blue
 }
 
 .next-steps-list {
-  font-family: $font-sub-headline;
-  font-weight: $font-weight-light;
-  color: $color-background-blue2;
-  font-size: 26px;
+  @include subheadline ($color-background-blue2);
   text-align: left;
-}
-
-@mixin icon-theme() {
-  background-color: $color-pdxwit-lime;
-  border-color: $color-pdxwit-lime;
-  text-transform: uppercase;
-  font-family: $font-headlines;
-  font-weight: $font-weight-regular;
-  letter-spacing: .1em;
-  text-decoration: none;
-
-  &:hover {
-    border: .094em solid $color-pdxwit-dark-grey;
-    background-color: $color-pdxwit-dark-grey;
-  }
-}
-
-@mixin centerer {
-  position: absolute;
-  left: 50%;
 }
 
 .icon {
