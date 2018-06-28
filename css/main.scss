@@ -10,7 +10,7 @@
 // Font variables
 // =====================
 
-$font-headlines: "Oswald", sans-serif; //use $font-weight-bold
+$font-h1s: "Oswald", sans-serif; //use $font-weight-bold
 $font-questions: "Oswald", sans-serif; //use $font-weight-regular
 $font-sub-headline: "Oswald", sans-serif;  //use $font-weight-light
 $font-regular-text: Helvetica, "EB Garamond", serif;
@@ -37,14 +37,14 @@ $color-background-blue3: #4583A2; //bright blue
 // Mixins
 // =====================
 
-@mixin headline ($color, $size: 40px, $weight: $font-weight-bold, $family: $font-headlines) {
+@mixin headline ($color: $color-pdxwit-white, $size: 40px, $weight: $font-weight-bold, $family: $font-h1s) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
 }
 
-@mixin subheadline ($color, $size: 25px, $weight: $font-weight-light, $family: $font-sub-headline) {
+@mixin subheadline ($color: $color-pdxwit-white, $size: 25px, $weight: $font-weight-light, $family: $font-sub-headline) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
@@ -190,20 +190,20 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 // =====================
 
 
-.font--headline {
-  @include headline ($color-pdxwit-white);
+.font-h1 {
+  @include headline();
 }
 
-.font--headline2 {
-  @include headline ($color-pdxwit-dark-grey);
+.font-h1--dark {
+  color: $color-pdxwit-dark-grey;
 }
 
-.font--subheadline {
-  @include subheadline ($color-pdxwit-white);
+.font-h2 {
+  @include subheadline();
 }
 
-.font--subheadline2 {
-  @include subheadline ($color-pdxwit-dark-grey);
+.font-h2--dark {
+  color: $color-pdxwit-dark-grey;
 }
 
 .font--regular {
@@ -221,12 +221,12 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 }
 
 .font--quote-question {
-  @include question ($color-background-blue2, $font-headlines);
+  @include question ($color-background-blue2, $font-h1s);
   text-align: center;
 }
 
 .font--quote {
-  font-family: $font-headlines;
+  font-family: $font-h1s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
   font-size: 35px;
@@ -237,14 +237,14 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 }
 
 .font--percent-numbers {
-  font-family: $font-headlines;
+  font-family: $font-h1s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
   font-size: 40px;
 }
 
 .font--percent-words {
-  font-family: $font-headlines;
+  font-family: $font-h1s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
   font-size: 20px;
@@ -273,7 +273,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 
  .icon-people {
    color: $color-pdxwit-white;
-   font-family: $font-headlines;
+   font-family: $font-h1s;
    font-weight: $font-weight-regular;
    font-size: 40px;
    text-align: justify;
@@ -284,7 +284,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 
  .icon-list {
    color: $color-pdxwit-white;
-   font-family: $font-headlines;
+   font-family: $font-h1s;
    font-weight: $font-weight-regular;
 
  }
