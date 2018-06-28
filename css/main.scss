@@ -104,7 +104,7 @@ $color-background-blue3: #4583A2; //bright blue
   .navbar-links {
       color:  $color-pdxwit-dark-grey;
       text-align: center;
-      padding: 16px;
+      padding-right: 1em;
       font-size: 16px;
   }
 
@@ -120,7 +120,7 @@ $color-background-blue3: #4583A2; //bright blue
 
 
 // =====================
-// Section - State of the Community
+// Containers
 // =====================
 
 
@@ -165,6 +165,11 @@ $color-background-blue3: #4583A2; //bright blue
   margin: 0;
   padding: 5% 20%;
 }
+
+// =====================
+// Font Styles
+// =====================
+
 
 .font--headline {
   @include headline ($color-pdxwit-white);
@@ -212,8 +217,6 @@ $color-background-blue3: #4583A2; //bright blue
 
 }
 
-
-
 .font--percent-numbers {
   font-family: $font-headlines;
   font-weight: $font-weight-bold;
@@ -233,6 +236,10 @@ $color-background-blue3: #4583A2; //bright blue
   @include subheadline ($color-background-blue2);
   text-align: left;
 }
+
+// =====================
+// Icons & Buttons
+// =====================
 
 .icon {
   @include btn-theme();
@@ -263,13 +270,6 @@ $color-background-blue3: #4583A2; //bright blue
 
  }
 
- .vertical-line {
-   height: 120px;
-   border-left: 2px solid $color-pdxwit-white;
-   padding: 0;
-   width: 6px;
- }
-
 .btn--share {
   @include btn-theme;
   background-color: $color-pdxwit-lime;
@@ -280,6 +280,18 @@ $color-background-blue3: #4583A2; //bright blue
    @include btn-theme;
    background-color: $color-pdxwit-white;
 }
+
+// =====================
+// Misc
+// =====================
+
+.vertical-line {
+  height: 120px;
+  border-left: 2px solid $color-pdxwit-white;
+  padding: 0;
+  width: 6px;
+}
+
 
 // =====================
 // Charts
