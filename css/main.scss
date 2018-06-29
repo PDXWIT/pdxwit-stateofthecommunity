@@ -149,43 +149,43 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 .container-intro {
   background-color:  $color-background-blue1;
   margin: 0;
-  padding: 5% 25%;
+  padding: 5% 15%;
 }
 
 .container-section {
   background-color:  $color-background-blue2;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .container-quote{
   background-color: $color-background-blue3;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .container-data {
   margin-top: 5%;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .container-next-steps {
   background-color: $color-pdxwit-lime;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .container-about {
   background-color: $color-pdxwit-white;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .container-green {
   background-color: $color-pdxwit-lime;
   margin: 0;
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 // =====================
@@ -327,6 +327,31 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   padding: 0;
   width: 6px;
 }
+
+.carousel {
+  padding: 10em;
+}
+.carousel-indicators--round {
+  li {
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    line-height: 30px;
+    list-style: circle;
+    background-color: $color-background-blue2;
+    &.active {
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      list-style: circle;
+      background-color: $color-pdxwit-white;
+    }
+  }
+}
+
 
 
 // =====================
