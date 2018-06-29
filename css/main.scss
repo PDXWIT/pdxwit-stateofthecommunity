@@ -10,9 +10,9 @@
 // Font variables
 // =====================
 
-$font-h1s: "Oswald", sans-serif; //use $font-weight-bold
-$font-h3s: "Oswald", sans-serif; //use $font-weight-regular
-$font-h2s: "Oswald", sans-serif;  //use $font-weight-light
+$font-h2s: "Oswald", sans-serif; //use $font-weight-bold
+$font-h4s: "Oswald", sans-serif; //use $font-weight-regular
+$font-h3s: "Oswald", sans-serif;  //use $font-weight-light
 $font-ps: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 700;
 $font-weight-regular: 400;
@@ -37,28 +37,28 @@ $color-background-blue3: #4583A2; //bright blue
 // Mixins
 // =====================
 
-@mixin headline ($color: $color-pdxwit-white, $size: 40px, $weight: $font-weight-bold, $family: $font-h1s) {
+@mixin headline ($color: $color-pdxwit-white, $size: 55px, $weight: $font-weight-bold, $family: $font-h2s) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
 }
 
-@mixin subheadline ($color: $color-pdxwit-white, $size: 25px, $weight: $font-weight-light, $family: $font-h2s) {
+@mixin subheadline ($color: $color-pdxwit-white, $size: 26px, $weight: $font-weight-light, $family: $font-h3s) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
 }
 
-@mixin regular ($color: $color-pdxwit-white, $size: 14px, $weight: $font-weight-light, $family: $font-ps) {
+@mixin regular ($color: $color-pdxwit-white, $size: 16px, $weight: $font-weight-light, $family: $font-ps) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
 }
 
-@mixin question ($color: $color-pdxwit-white, $family: $font-h3s, $size: 26px, $weight: $font-weight-regular) {
+@mixin question ($color: $color-pdxwit-white, $family: $font-h4s, $size: 35px, $weight: $font-weight-regular) {
   color: $color;
   font-family: $family;
   font-size: $size;
@@ -123,7 +123,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
       color:  $color-pdxwit-dark-grey;
       text-align: center;
       padding-right: 1em;
-      font-size: 16px;
+      font-size: 25px;
   }
 
   .navbar-links:hover {
@@ -189,20 +189,24 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 // Font Styles
 // =====================
 
-
 .font-h1 {
   @include headline();
-}
-
-.font-h1--dark {
-  color: $color-pdxwit-dark-grey;
+  font-size: 65px;
 }
 
 .font-h2 {
-  @include subheadline();
+  @include headline();
 }
 
 .font-h2--dark {
+  color: $color-pdxwit-dark-grey;
+}
+
+.font-h3 {
+  @include subheadline();
+}
+
+.font-h3--dark {
   color: $color-pdxwit-dark-grey;
 }
 
@@ -214,24 +218,22 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-dark-grey;
 }
 
-.font-h3 {
+.font-h4 {
   @include question();
   padding-top: 1em;
   padding-bottom: 1em;
   text-indent: 1em;
 }
 
-.font-h3--alt {
+.font-h4--alt {
   color: $color-background-blue2;
-  font-family: $font-h1s;
+  font-family: $font-h2s;
   text-align: center;
 }
 
-.font--quote {
-  font-family: $font-h1s;
+.font-h2--quote {
+  @include headline();
   font-weight: $font-weight-regular;
-  color: $color-pdxwit-white;
-  font-size: 35px;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -239,14 +241,14 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 }
 
 .font--percent-numbers {
-  font-family: $font-h1s;
+  font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
   font-size: 40px;
 }
 
 .font--percent-words {
-  font-family: $font-h1s;
+  font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
   font-size: 20px;
@@ -275,7 +277,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 
  .icon-people {
    color: $color-pdxwit-white;
-   font-family: $font-h1s;
+   font-family: $font-h2s;
    font-weight: $font-weight-regular;
    font-size: 40px;
    text-align: justify;
@@ -286,7 +288,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 
  .icon-list {
    color: $color-pdxwit-white;
-   font-family: $font-h1s;
+   font-family: $font-h2s;
    font-weight: $font-weight-regular;
 
  }
