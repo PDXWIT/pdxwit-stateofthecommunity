@@ -5,9 +5,9 @@ var ctxExperienced = document.getElementById("experienced").getContext("2d");
 
 var experienceData = {
   labels: [
-    "Told you were too agressive at work",
-    "Asked to order lunches or schedule events, event though that is not part of your assigned job duties",
-    "Told you were no tthe right fit for a role because of experience, but you suspect it was because of your gender",
+    "Told you were too aggressive at work",
+    "Asked to order lunches/schedule events that was beyond your job scope",
+    "Suspect you were passed on a role because of your gender",
     "Learned to be the den mother/counselor/admin because of your gender",
     "Excluded from important work events because of your gender",
     "In a meeting and felt gendered language was used that did not include you",
@@ -40,7 +40,7 @@ var experienceBar = new Chart(ctxExperienced, {
             },
             /*  Doesn't currently work
                 takes a string phrase and breaks it into separate phrases
-                no bigger than 'maxwidth', breaks are made at complete words.*/
+                no bigger than 'maxwidth', breaks are made at complete words.
             scaleLabel: function formatLabel(str, maxwidth){
                       var sections = [];
                       var words = str.split(" ");
@@ -84,7 +84,7 @@ var experienceBar = new Chart(ctxExperienced, {
                       });
 
                       return sections;
-                  }
+                  }*/
           }],
           xAxes: [{
             stacked: true,
