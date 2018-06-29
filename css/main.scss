@@ -202,12 +202,26 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-dark-grey;
 }
 
+.font-h2--black {
+  color: $color-pdxwit-black;
+}
+
 .font-h3 {
   @include subheadline();
 }
 
 .font-h3--dark {
   color: $color-pdxwit-dark-grey;
+}
+
+.font-h3--black {
+  color: $color-pdxwit-black;
+}
+
+.font-h3--bold {
+  color: $color-pdxwit-black;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
 }
 
 .font-p {
@@ -217,6 +231,8 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 .font-p--dark {
   color: $color-pdxwit-dark-grey;
 }
+
+
 
 .font-h4 {
   @include question();
@@ -255,9 +271,9 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   margin-bottom: 35%;
 }
 
-.next-steps-list {
-  @include subheadline ($color-background-blue2);
-  text-align: left;
+.font-h3--xlight {
+  @include subheadline();
+  font-weight: $font-weight-xlight;
 }
 
 // =====================
@@ -286,12 +302,6 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
    }
  }
 
- .icon-list {
-   color: $color-pdxwit-white;
-   font-family: $font-h2s;
-   font-weight: $font-weight-regular;
-
- }
 
 .btn--share {
   @include btn-theme;
