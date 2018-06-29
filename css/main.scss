@@ -11,9 +11,9 @@
 // =====================
 
 $font-h1s: "Oswald", sans-serif; //use $font-weight-bold
-$font-questions: "Oswald", sans-serif; //use $font-weight-regular
+$font-h3s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h2s: "Oswald", sans-serif;  //use $font-weight-light
-$font-regular-text: Helvetica, "EB Garamond", serif;
+$font-ps: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 700;
 $font-weight-regular: 400;
 $font-weight-light: 300;
@@ -51,14 +51,14 @@ $color-background-blue3: #4583A2; //bright blue
   font-family: $family;
 }
 
-@mixin regular ($color, $size: 14px, $weight: $font-weight-light, $family: $font-regular-text) {
+@mixin regular ($color: $color-pdxwit-white, $size: 14px, $weight: $font-weight-light, $family: $font-ps) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
 }
 
-@mixin question ($color, $family, $size: 26px, $weight: $font-weight-regular) {
+@mixin question ($color: $color-pdxwit-white, $family: $font-h3s, $size: 26px, $weight: $font-weight-regular) {
   color: $color;
   font-family: $family;
   font-size: $size;
@@ -76,7 +76,7 @@ $color-background-blue3: #4583A2; //bright blue
 
  .icon-dropdown {
    background-color: $color-pdxwit-white;
-   font-family: $font-regular-text;
+   font-family: $font-ps;
    font-weight: $font-weight-regular;
  }
 }
@@ -206,22 +206,24 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-dark-grey;
 }
 
-.font--regular {
-  @include regular ($color-pdxwit-white);
+.font-p {
+  @include regular();
 }
 
-.font--regular2 {
-  @include regular ($color-pdxwit-dark-grey);
+.font-p--dark {
+  color: $color-pdxwit-dark-grey;
 }
 
-.font--question {
-  @include question ($color-pdxwit-white, $font-questions);
-  padding-top: 3em;
+.font-h3 {
+  @include question();
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-indent: 1em;
 }
 
-.font--quote-question {
-  @include question ($color-background-blue2, $font-h1s);
+.font-h3--alt {
+  color: $color-background-blue2;
+  font-family: $font-h1s;
   text-align: center;
 }
 
