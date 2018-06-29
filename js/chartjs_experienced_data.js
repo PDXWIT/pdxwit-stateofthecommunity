@@ -41,8 +41,8 @@ var experienceBar = new Chart(ctxExperienced, {
             /*  Doesn't currently work
                 takes a string phrase and breaks it into separate phrases
                 no bigger than 'maxwidth', breaks are made at complete words.
-            scaleLabel: function formatLabel(str, maxwidth){
-                      var sections = [];
+            custom: function formatLabel(str, maxwidth){
+                      var sections = experienceData;
                       var words = str.split(" ");
                       var temp = "";
 

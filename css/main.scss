@@ -329,11 +329,11 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 }
 
 .carousel {
-  padding: 10em;
+  padding: 5em 10em 5em 10em;
 }
 .carousel-indicators--round {
   li {
-    margin: 0 2px;
+    margin: 0 10px;
     width: 30px;
     height: 30px;
     border: none;
@@ -342,7 +342,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
     list-style: circle;
     background-color: $color-background-blue2;
     &.active {
-      margin: 0 2px;
+      margin: 0 10px;
       width: 30px;
       height: 30px;
       border-radius: 100%;
