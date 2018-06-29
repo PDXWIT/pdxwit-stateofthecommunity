@@ -12,7 +12,7 @@
 
 $font-h1s: "Oswald", sans-serif; //use $font-weight-bold
 $font-questions: "Oswald", sans-serif; //use $font-weight-regular
-$font-sub-headline: "Oswald", sans-serif;  //use $font-weight-light
+$font-h2s: "Oswald", sans-serif;  //use $font-weight-light
 $font-regular-text: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 700;
 $font-weight-regular: 400;
@@ -44,7 +44,7 @@ $color-background-blue3: #4583A2; //bright blue
   font-family: $family;
 }
 
-@mixin subheadline ($color: $color-pdxwit-white, $size: 25px, $weight: $font-weight-light, $family: $font-sub-headline) {
+@mixin subheadline ($color: $color-pdxwit-white, $size: 25px, $weight: $font-weight-light, $family: $font-h2s) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
@@ -115,7 +115,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
       margin: 0;
       text-transform: uppercase;
       text-decoration: none;
-      font-family: $font-sub-headline;
+      font-family: $font-h2s;
       display: inline-flex;
   }
 
