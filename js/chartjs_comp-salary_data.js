@@ -11,12 +11,12 @@ var compsalaryData = {
       {
         data: [75,48],
         label: 'Yes',
-        backgroundColor: '#4583A2'
+        backgroundColor: '#2F7392'
 
       }, {
         data: [25,52],
         label: 'No',
-        backgroundColor: '#FF4C4C'
+        backgroundColor: '#DE3C4B'
       }
     ],
 };
