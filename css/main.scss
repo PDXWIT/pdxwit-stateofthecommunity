@@ -66,7 +66,6 @@ $color-dark-green: #536028;
   font-family: $family;
   font-size: $size;
   font-weight: $weight;
-  text-align: center;
 }
 
 @mixin btn-theme() {
@@ -162,7 +161,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 .container-quote{
   background-color: $color-background-blue3;
   margin: 0;
-  padding: 5% 15%;
+  padding: 10% 15%;
 }
 
 .container-data {
@@ -210,6 +209,15 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-black;
 }
 
+.font-h2--quote {
+  @include headline();
+  font-weight: $font-weight-regular;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
 .font-h3 {
   @include subheadline();
 }
@@ -236,27 +244,16 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-dark-grey;
 }
 
-
-
 .font-h4 {
   @include question();
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
+
 .font-h4--alt {
   color: $color-background-blue2;
   font-family: $font-h2s;
-  text-align: center;
-}
-
-.font-h2--quote {
-  @include headline();
-  font-weight: $font-weight-regular;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-
 }
 
 .font--percent-numbers {
