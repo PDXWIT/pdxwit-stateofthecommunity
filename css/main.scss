@@ -167,7 +167,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 .container-data {
   margin-top: 5%;
   margin: 0;
-  padding: 5% 15%;
+  padding: 5% 0%;
 }
 
 .container-next-steps {
@@ -260,15 +260,15 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
-  font-size: 40px;
+  font-size: 106px;
 }
 
 .font--percent-words {
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
-  font-size: 20px;
-  margin-bottom: 35%;
+  font-size: 35px;
+  margin-bottom: 15%;
 }
 
 .font-h3--xlight {
@@ -295,8 +295,8 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
    color: $color-pdxwit-white;
    font-family: $font-h2s;
    font-weight: $font-weight-regular;
-   font-size: 40px;
-   text-align: justify;
+   font-size: 120px;
+
    .color {
      color: $color-pdxwit-lime;
    }
@@ -319,14 +319,14 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 // =====================
 
 .vertical-line {
-  height: 120px;
+  height: 220px;
   border-left: 2px solid $color-pdxwit-white;
-  padding: 0;
-  width: 6px;
+  margin: 0;
+  width: 3px;
 }
 
 .carousel {
-  padding: 5em 10em 5em 10em;
+  padding: 5em 8em 5em 8em;
 }
 .carousel-indicators--round {
   li {
