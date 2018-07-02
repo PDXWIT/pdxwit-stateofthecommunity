@@ -66,6 +66,7 @@ $color-dark-green: #536028;
   font-family: $family;
   font-size: $size;
   font-weight: $weight;
+  text-align: center;
 }
 
 @mixin btn-theme() {
@@ -241,7 +242,6 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   @include question();
   padding-top: 1em;
   padding-bottom: 1em;
-  text-indent: 1em;
 }
 
 .font-h4--alt {
@@ -357,7 +357,3 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 // =====================
 // Charts
 // =====================
-
-.chart {
-  margin: 5%;
-}

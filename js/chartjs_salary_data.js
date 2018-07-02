@@ -27,6 +27,7 @@ var salaryDoughnut = new Chart(ctxSalary, {
     animationEasing : "easeOutBounce",
     animateRotate : true,
     responsive: true,
+    rotation: (+1.9 * Math.PI) - (25/180 * Math.PI),
     maintainAspectRatio: true
   }
 });
