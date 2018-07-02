@@ -1,6 +1,54 @@
 // =====================
 // Experienced Chart
 // =====================
+
+/*  takes a string phrase and breaks it into separate phrases
+    no bigger than 'maxwidth', breaks are made at complete words.*/
+function formatLabel(str, maxwidth){
+          var sections = [];
+          var words = str.split(" ");
+          var temp = "";
+
+          words.forEach(function(item, index){
+              if(temp.length > 0)
+              {
+                  var concat = temp + ' ' + item;
+
+                  if(concat.length > maxwidth){
+                      sections.push(temp);
+                      temp = "";
+                  }
+                  else{
+                      if(index == (words.length-1))
+                      {
+                          sections.push(concat);
+                          return;
+                      }
+                      else{
+                          temp = concat;
+                          return;
+                      }
+                  }
+              }
+
+              if(index == (words.length-1))
+              {
+                  sections.push(item);
+                  return;
+              }
+
+              if(item.length < maxwidth) {
+                  temp = item;
+              }
+              else {
+                  sections.push(item);
+              }
+
+          });
+
+          return sections;
+      }
+
 var ctxExperienced = document.getElementById("experienced").getContext("2d");
 
 var experienceData = {
@@ -27,10 +75,15 @@ var experienceData = {
   ],
 };
 
+experienceData.labels = experienceData.labels.map(function(label) {
+  return formatLabel(label, 30);
+});
+
 var experienceBar = new Chart(ctxExperienced, {
     type: 'horizontalBar',
     data: experienceData,
     options: {
+      responsive: true;
       scales: {
           yAxes: [{
             stacked: true,
@@ -38,53 +91,6 @@ var experienceBar = new Chart(ctxExperienced, {
               display: false,
               drawBorder: false,
             },
-            /*  Doesn't currently work
-                takes a string phrase and breaks it into separate phrases
-                no bigger than 'maxwidth', breaks are made at complete words.
-            custom: function formatLabel(str, maxwidth){
-                      var sections = experienceData;
-                      var words = str.split(" ");
-                      var temp = "";
-
-                      words.forEach(function(item, index){
-                          if(temp.length > 0)
-                          {
-                              var concat = temp + ' ' + item;
-
-                              if(concat.length > maxwidth){
-                                  sections.push(temp);
-                                  temp = "";
-                              }
-                              else{
-                                  if(index == (words.length-1))
-                                  {
-                                      sections.push(concat);
-                                      return;
-                                  }
-                                  else{
-                                      temp = concat;
-                                      return;
-                                  }
-                              }
-                          }
-
-                          if(index == (words.length-1))
-                          {
-                              sections.push(item);
-                              return;
-                          }
-
-                          if(item.length < maxwidth) {
-                              temp = item;
-                          }
-                          else {
-                              sections.push(item);
-                          }
-
-                      });
-
-                      return sections;
-                  }*/
           }],
           xAxes: [{
             stacked: true,
