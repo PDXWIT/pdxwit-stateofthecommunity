@@ -83,7 +83,6 @@ var experienceBar = new Chart(ctxExperienced, {
     type: 'horizontalBar',
     data: experienceData,
     options: {
-      responsive: true;
       scales: {
           yAxes: [{
             stacked: true,
