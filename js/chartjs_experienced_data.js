@@ -79,10 +79,14 @@ experienceData.labels = experienceData.labels.map(function(label) {
   return formatLabel(label, 30);
 });
 
+
 var experienceBar = new Chart(ctxExperienced, {
     type: 'horizontalBar',
     data: experienceData,
     options: {
+      responsive: true,
+      // onResize: function(experienceData, size) { experienceData.labels.display = (size.height >= 800);
+      // },
       scales: {
           yAxes: [{
             stacked: true,

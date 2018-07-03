@@ -71,6 +71,8 @@ var bubbleChart = new Chart(ctxCulture, {
   data: cultureData,
   options: {
     responsive: false,
+    maintainAspectRatio: true,
+
     layout: {
       padding: 70,
     },

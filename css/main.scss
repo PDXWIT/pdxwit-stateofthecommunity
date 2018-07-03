@@ -368,3 +368,8 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 // =====================
 // Charts
 // =====================
+
+.chart {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

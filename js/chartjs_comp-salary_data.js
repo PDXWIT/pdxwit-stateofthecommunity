@@ -25,26 +25,24 @@ var compSalaryBar = new Chart(ctxCompSalary, {
     type: 'bar',
     data: compsalaryData,
     options: {
+      maintainAspectRatio: true,
       scales: {
-          yAxes: [{
-            gridLines: {
-              display: false,
-              drawBorder: false,
-            },
-            ticks: {
-                beginAtZero:true
+        yAxes: [{
+          gridLines: {
+            display: false,
+            drawBorder: false,
+          },
+          ticks: {
+              beginAtZero:true
 
-            }
-          }],
-          xAxes: [{
-            ticks: {
-              display: false,
-            },
-            gridLines: {
-              display: false,
-              drawBorder: false,
-            }
-          }]
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display: false,
+            drawBorder: false,
+          }
+        }]
       }
   }
 });
