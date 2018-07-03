@@ -210,7 +210,6 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 }
 
 .font-h2--quote {
-  @include headline();
   font-weight: $font-weight-regular;
   text-align: center;
   padding-top: 1em;
@@ -233,6 +232,10 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 .font-h3--bold {
   color: $color-pdxwit-black;
   font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.font-p--labels {
   text-transform: uppercase;
 }
 
@@ -271,10 +274,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   margin-bottom: 15%;
 }
 
-.font-h3--xlight {
-  @include subheadline();
-  font-weight: $font-weight-xlight;
-}
+
 
 // =====================
 // Icons & Buttons

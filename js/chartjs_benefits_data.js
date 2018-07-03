@@ -38,6 +38,7 @@ var myChart = new Chart(ctxBenefits, {
         }]
     },
     options: {
+      responsive: true,
       scales: {
           yAxes: [{
             gridLines: {
@@ -55,5 +56,6 @@ var myChart = new Chart(ctxBenefits, {
             }
           }]
       }
+
   }
 });
