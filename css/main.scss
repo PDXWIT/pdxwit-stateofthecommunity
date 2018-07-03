@@ -235,10 +235,6 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   text-transform: uppercase;
 }
 
-.font-p--labels {
-  text-transform: uppercase;
-}
-
 .font-p {
   @include regular();
 }
@@ -247,12 +243,18 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   color: $color-pdxwit-dark-grey;
 }
 
+.font-p--labels {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+}
+
 .font-h4 {
   @include question();
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
-
 
 .font-h4--alt {
   color: $color-background-blue2;
@@ -300,6 +302,17 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
    }
  }
 
+.fa-circle {
+  padding: 0 1em 1em;
+}
+
+.circle--red {
+  color:$color-red;
+}
+
+.circle--yellow {
+  color: $color-yellow;
+}
 
 .btn--share {
   @include btn-theme;
