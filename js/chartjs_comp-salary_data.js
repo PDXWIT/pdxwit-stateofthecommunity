@@ -33,9 +33,13 @@ var compSalaryBar = new Chart(ctxCompSalary, {
             },
             ticks: {
                 beginAtZero:true
+
             }
           }],
           xAxes: [{
+            ticks: {
+              display: false,
+            },
             gridLines: {
               display: false,
               drawBorder: false,
