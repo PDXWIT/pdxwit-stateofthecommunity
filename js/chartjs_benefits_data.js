@@ -1,6 +1,7 @@
 // =====================
 // Benefits Chart
 // =====================
+
 var ctxBenefits = document.getElementById("benefits").getContext("2d");
 var myChart = new Chart(ctxBenefits, {
     type: 'horizontalBar',
