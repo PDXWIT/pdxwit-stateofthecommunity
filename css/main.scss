@@ -267,7 +267,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 15%;
 }
 
@@ -292,13 +292,11 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
  }
 
  .icon-people {
-   color: $color-pdxwit-white;
-   font-family: $font-h2s;
-   font-weight: $font-weight-regular;
-   font-size: 120px;
-
-   .color {
-     color: $color-pdxwit-lime;
+   object-fit: contain;
+   height: 120px;
+   padding-top: 3em;
+   .peopleImage {
+     height: 100%;
    }
  }
 
