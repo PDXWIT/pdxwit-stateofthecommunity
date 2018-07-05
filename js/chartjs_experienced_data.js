@@ -54,9 +54,9 @@ var ctxExperienced = document.getElementById("experienced").getContext("2d");
 var experienceData = {
   labels: [
     "Told you were too aggressive at work",
-    "Asked to order lunches/schedule events that was beyond your job scope",
+    "Asked to order lunches, schedule events that was beyond your job scope",
     "Suspect you were passed on a role because of your gender",
-    "Learned to be the den mother/counselor/admin because of your gender",
+    "Learned to be the den mother, counselor, admin because of your gender",
     "Excluded from important work events because of your gender",
     "In a meeting and felt gendered language was used that did not include you",
     "No - I have not experienced any of these"
@@ -75,6 +75,8 @@ var experienceData = {
   ],
 };
 
+
+// label wraps at maxwdith designated below
 experienceData.labels = experienceData.labels.map(function(label) {
   return formatLabel(label, 30);
 });
@@ -84,9 +86,10 @@ var experienceBar = new Chart(ctxExperienced, {
     type: 'horizontalBar',
     data: experienceData,
     options: {
-      responsive: true,
-      // onResize: function(experienceData, size) { experienceData.labels.display = (size.height >= 800);
-      // },
+      layout: {
+        padding: 5,
+      },
+      maintainAspectRatio: false,
       scales: {
           yAxes: [{
             stacked: true,
