@@ -40,36 +40,17 @@ $color-dark-green: #536028;
 // Mixins
 // =====================
 
-// @mixin headline ($size: 55px, $color: $color-pdxwit-white, $weight: $font-weight-bold, $family: $font-h2s) {
-//   font-size: $size;
-//   color: $color;
-//   font-weight: $weight;
-//   font-family: $family;
-// }
-
-@mixin subheadline ($color: $color-pdxwit-white, $size: 26px, $weight: $font-weight-light, $family: $font-h3s) {
-  color: $color;
-  font-size: $size;
-  font-weight: $weight;
-  font-family: $family;
-}
-
-@mixin regular ($color: $color-pdxwit-white, $size: 16px, $weight: $font-weight-light, $family: $font-ps) {
-  color: $color;
-  font-size: $size;
-  font-weight: $weight;
-  font-family: $family;
-}
-
-@mixin question ($color: $color-pdxwit-white, $family: $font-h4s, $size: 35px, $weight: $font-weight-regular) {
-  color: $color;
-  font-family: $family;
-  font-size: $size;
-  font-weight: $weight;
-}
-
 @mixin btn-theme() {
-  @include regular($color-pdxwit-black);
+  color: $color-pdxwit-black;
+  font-weight: $font-weight-light;
+  font-family: $font-ps;
+  font-size: 6px;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
   text-transform: uppercase;
   letter-spacing: .1em;
   text-decoration: none;
@@ -253,7 +234,16 @@ html,body
 }
 
 .font-h3 {
-  @include subheadline();
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-light;
+  font-family: $font-h3s;
+  font-size: 9px;
+  @include breakpoint(md) {
+    font-size: 18px;
+  }
+  @include breakpoint(lg) {
+    font-size: 26px;
+  }
 }
 
 .font-h3--dark {
@@ -271,7 +261,16 @@ html,body
 }
 
 .font-p {
-  @include regular();
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-light;
+  font-family: $font-ps;
+  font-size: 6px;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
 }
 
 .font-p--dark {
@@ -288,7 +287,16 @@ html,body
 }
 
 .font-h4 {
-  @include question();
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-regular;
+  font-family: $font-h4s;
+  font-size: 12px;
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+  @include breakpoint(lg) {
+    font-size: 35px;
+  }
   padding-top: 1em;
   padding-bottom: 2em;
 }
@@ -302,15 +310,27 @@ html,body
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
-  font-size: 106px;
+  font-size: 35px;
+  @include breakpoint(md) {
+    font-size: 70px;
+  }
+  @include breakpoint(lg) {
+    font-size: 106px;
+  }
 }
 
 .font--percent-words {
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
-  font-size: 25px;
   margin-bottom: 15%;
+  font-size: 8px;
+  @include breakpoint(md) {
+    font-size: 16px;
+  }
+  @include breakpoint(lg) {
+    font-size: 25px;
+  }
 }
 
 
@@ -321,9 +341,17 @@ html,body
 
 .icon {
   @include btn-theme();
-  @include regular($color-pdxwit-black);
-   display: inline-block;
-
+  display: inline-block;
+  color: $color-pdxwit-black;
+  font-weight: $font-weight-light;
+  font-family: $font-h3s;
+  font-size: 6px;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
 
   .icon-dropdown {
     background-color: $color-pdxwit-white;
@@ -332,10 +360,22 @@ html,body
 
  .icon-people {
    object-fit: contain;
-   height: 120px;
-   padding-top: 3em;
    .peopleImage {
      height: 100%;
+   }
+   padding-top: 1em;
+   @include breakpoint(md) {
+     padding-top: 2em;
+   }
+   @include breakpoint(lg) {
+     padding-top: 3em;
+   }
+   height: 40px;
+   @include breakpoint(md) {
+     height: 80px;
+   }
+   @include breakpoint(lg) {
+     height: 120px;
    }
  }
 
@@ -367,10 +407,16 @@ html,body
 // =====================
 
 .vertical-line {
-  height: 220px;
+  height: 0px;
   border-left: 2px solid $color-pdxwit-white;
   margin: 0;
   width: 3px;
+  @include breakpoint(md) {
+    height: 147px;
+  }
+  @include breakpoint(lg) {
+    height: 220px;
+  }
 }
 
 .carousel {
@@ -383,22 +429,37 @@ html,body
 
 .carousel-indicators--round {
   li {
-    margin: 0 10px;
-    width: 30px;
-    height: 30px;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
     border: none;
     border-radius: 100%;
     line-height: 30px;
     list-style: circle;
-
     background-color: $color-background-blue2;
-    &.active {
-      margin: 0 10px;
+    @include breakpoint(md) {
+      width: 20px;
+      height: 20px;
+    }
+    @include breakpoint(lg) {
       width: 30px;
       height: 30px;
+    }
+    &.active {
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
       border-radius: 100%;
       list-style: circle;
       background-color: $color-pdxwit-white;
+      @include breakpoint(md) {
+        width: 20px;
+        height: 20px;
+      }
+      @include breakpoint(lg) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
