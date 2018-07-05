@@ -281,6 +281,14 @@ html,body
   text-transform: uppercase;
 }
 
+.font-p--italic {
+  font-style: italic;
+}
+
+.email:hover {
+  color: $color-pdxwit-lime;
+}
+
 .alignCenter {
   display: flex;
   justify-content: center;
@@ -383,11 +391,11 @@ html,body
   padding: 0 1em 1em;
 }
 
-.circle--red {
+.color--red {
   color:$color-red;
 }
 
-.circle--yellow {
+.color--yellow {
   color: $color-yellow;
 }
 

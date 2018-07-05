@@ -17,6 +17,9 @@ layout: default
   <div class="col-md col-centered">
     <div class="font-h1">State of the Community</div>
       <div class="font-p">Each year, PDXWIT captures important data about the Portland tech industry, independent of company and group or association affiliation. The goal is to deeply understand what it is like for people in the community and to identify themes that need to be surfaced. This year, what we found was stark, but not surprising. We encourage you to use this information as data to propel change in your companies and we’ve provided you with an action checklist to support you in talking to your CEOs, bosses, colleagues and taking action yourself.
+      <br></br>
+      <p class="font-p font-p--italic">Important note: One of the questions in the survey asked respondents to specify their gender identity. This question was multi-select–which means respondents could select more than one gender identity descriptor. All data points within this survey include all individuals, regardless of gender identity, EXCEPT the data points denoted with an asterisk (*) in the title. In these situations, only the individuals who specified “man” or “woman” are reflected due to the fact that the sample size for other gender identities was too small. PDXWIT is committed to serving all people in our community and is constantly iterating to ensure this happens. If you have ideas for improvement about this or anything else related to this survey, please contact <a href="mailto:hello@pdxwit.org" class="email">hello@pdxwit.org</a>.
+      </p>
       </div>
       <div class="btn">
         <div id="socialShare" class="icon--Share share-group">
@@ -64,18 +67,12 @@ layout: default
     <div class="row font-h4 d-flex justify-content-center">Does your company have a transparent salary policy?
     </div>
     <div>
-      <div class="font-p font-p--labels alignCenter col-md-12"><i class="fas fa-circle circle--red"></i>87% No<i class="fas fa-circle circle--yellow"></i>13% Yes</div>
+      <div class="font-p font-p--labels alignCenter col-md-12"><i class="fas fa-circle color--red"></i>87% No<i class="fas fa-circle color--yellow"></i>13% Yes</div>
     </div>
       <canvas class="chart salary" id="salary"></canvas>
 
-    <div class="row font-h4 d-flex justify-content-center">Do you feel that salaries are comparable for all genders at your company?
-      <!-- <div class="row font-h3 alignCenter col-md-6">Male Responses</div>
-      <div class="font-h3 alignCenter col-md-6">Female Responses</div> -->
+    <div class="row font-h4 d-flex justify-content-center">Do you feel that salaries are comparable for all genders at your company? *
       <canvas class="chart comp-salary" id="comp-salary"></canvas>
-      <div class="col-md col-centered">
-        <div class="row font-p">Portland Women in Tech surveyed groups from multiple genders beyond male and female. For this data point, the subset of non female or male genders was too small to represent in this chart.
-        </div>
-      </div>
     </div>
 </div>
 
@@ -88,7 +85,7 @@ layout: default
   <div class="font-h2">The Realities of Women in Tech</div>
     <div class="font-h3">Despite diversity and inclusion efforts, women are being asked to perform office housekeeping tasks <i>in addition</i> to their regular jobs.
     </div>
-    <div class="row font-h4 d-flex justify-content-center">Which of the following have you experienced?
+    <div class="row font-h4 d-flex justify-content-center">Which of the following have you experienced? *
     </div>
       <canvas class="chart experienced" id="experienced"></canvas>
 </div>
@@ -173,15 +170,15 @@ layout: default
   </div>
 
   <div class="row container-data">
-    <div class="font--percent-numbers col-md-4">63%
+    <div class="font--percent-numbers col-sm-4">63%
       <div class="font--percent-words">did not report that they experienced harassment
       </div>
     </div>
-    <div class="font--percent-numbers col-md-4">42%
+    <div class="font--percent-numbers col-sm-4">42%
       <div class="font--percent-words">of those that reported, experienced retaliation
       </div>
     </div>
-    <div class="font--percent-numbers col-md-4">58%
+    <div class="font--percent-numbers col-sm-4">58%
       <div class="font--percent-words">did not feel their report was handled well
       </div>
     </div>

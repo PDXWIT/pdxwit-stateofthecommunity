@@ -5,7 +5,7 @@ var ctxCompSalary = document.getElementById("comp-salary").getContext("2d");
 
 var compsalaryData = {
   labels: [
-    "Male", "Female"
+    "Men", "Women"
   ],
     datasets: [
       {
