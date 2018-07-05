@@ -90,22 +90,25 @@ $color-dark-green: #536028;
 // breakpoint
 // =====================
 
-// @mixin breakpoint($point) {
-//    @if $point == desktop {
-//      @media (min-width: 70em) { @content ; }
+// @mixin breakpoint($class) {
+//   @if $class == xs {
+//     @media (max-width: 767px) { @content; }
 //   }
-//    @else if $point == laptop {
-//      @media (min-width: 64em) { @content ; }
-//   }
-//     @else if $point == tablet {
-//      @media (min-width: 50em) { @content ; }
-//   }
-//    @else if $point == phablet {
-//      @media (min-width: 37.5em)  { @content ; }
-//   }
-//   @else if $point == mobileonly {
-//      @media (max-width: 37.5em)  { @content ; }
 //
+//   @else if $class == sm {
+//     @media (min-width: 768px) { @content; }
+//   }
+//
+//   @else if $class == md {
+//     @media (min-width: 992px) { @content; }
+//   }
+//
+//   @else if $class == lg {
+//     @media (min-width: 1200px) { @content; }
+//   }
+//
+//   @else {
+//     @warn "Breakpoint mixin supports: xs, sm, md, lg";
 //   }
 // }
 
@@ -150,6 +153,14 @@ $color-dark-green: #536028;
 // Containers
 // =====================
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 .container-intro {
   background-color:  $color-background-blue1;
@@ -344,7 +355,7 @@ $color-dark-green: #536028;
 }
 
 .carousel {
-  padding: 5em 8em 5em 8em;
+  padding: 1em 1em 5em 1em;
 }
 
 // .slide {
