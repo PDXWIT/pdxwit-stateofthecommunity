@@ -40,12 +40,12 @@ $color-dark-green: #536028;
 // Mixins
 // =====================
 
-@mixin headline ($color: $color-pdxwit-white, $size: 55px, $weight: $font-weight-bold, $family: $font-h2s) {
-  color: $color;
-  font-size: $size;
-  font-weight: $weight;
-  font-family: $family;
-}
+// @mixin headline ($size: 55px, $color: $color-pdxwit-white, $weight: $font-weight-bold, $family: $font-h2s) {
+//   font-size: $size;
+//   color: $color;
+//   font-weight: $weight;
+//   font-family: $family;
+// }
 
 @mixin subheadline ($color: $color-pdxwit-white, $size: 26px, $weight: $font-weight-light, $family: $font-h3s) {
   color: $color;
@@ -90,27 +90,29 @@ $color-dark-green: #536028;
 // breakpoint
 // =====================
 
-// @mixin breakpoint($class) {
-//   @if $class == xs {
-//     @media (max-width: 767px) { @content; }
-//   }
-//
-//   @else if $class == sm {
-//     @media (min-width: 768px) { @content; }
-//   }
-//
-//   @else if $class == md {
-//     @media (min-width: 992px) { @content; }
-//   }
-//
-//   @else if $class == lg {
-//     @media (min-width: 1200px) { @content; }
-//   }
-//
-//   @else {
-//     @warn "Breakpoint mixin supports: xs, sm, md, lg";
-//   }
-// }
+@mixin breakpoint($class) {
+  @if $class == sm {
+    @media (min-width: 576px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: sm, md, lg";
+  }
+}
+
+
 
 // =====================
 // Navigation
@@ -208,13 +210,30 @@ html,body
 // Font Styles
 // =====================
 
+.font-h1,
+.font-h2 {
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-bold;
+  font-family: $font-h2s;
+}
 .font-h1 {
-  @include headline();
-  font-size: 65px;
+  font-size: 21px;
+  @include breakpoint(md) {
+    font-size: 43px;
+  }
+  @include breakpoint(lg) {
+    font-size: 65px;
+  }
 }
 
 .font-h2 {
-  @include headline();
+  font-size: 28px;
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+  @include breakpoint(lg) {
+    font-size: 55px;
+  }
 }
 
 .font-h2--dark {
