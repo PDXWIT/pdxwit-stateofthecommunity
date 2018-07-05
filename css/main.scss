@@ -323,7 +323,7 @@ html,body
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
-  margin-bottom: 15%;
+  //margin-bottom: 15%;
   font-size: 8px;
   @include breakpoint(md) {
     font-size: 16px;
@@ -408,14 +408,18 @@ html,body
 
 .vertical-line {
   height: 0px;
-  border-left: 2px solid $color-pdxwit-white;
   margin: 0;
-  width: 3px;
+  width: 0px;
   @include breakpoint(md) {
     height: 147px;
+    width: 2px;
+    border-left: 2px solid $color-pdxwit-white;
+
   }
   @include breakpoint(lg) {
     height: 220px;
+    width: 3px;
+    border-left: 2px solid $color-pdxwit-white;
   }
 }
 
