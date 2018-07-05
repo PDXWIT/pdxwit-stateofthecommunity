@@ -478,3 +478,17 @@ html,body
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+#canvas.culture {
+  width: 200px;
+  height: 133px;
+  @include breakpoint(md) {
+    width: 380px;
+    height: 253px;
+  }
+  @include breakpoint(lg) {
+    width: 514px;
+    height: 343px;
+  }
+
+}

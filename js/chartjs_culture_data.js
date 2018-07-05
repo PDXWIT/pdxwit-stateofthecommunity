@@ -11,7 +11,7 @@ var cultureData = {
       data: [{
         x: 85,
         y: 4,
-        r: 95
+        r: 47.5
     }],
     backgroundColor: '#536028',
   }, {
@@ -19,7 +19,7 @@ var cultureData = {
     data: [{
       x: 45,
       y: 45,
-      r: 115
+      r: 57.5
     }],
     backgroundColor: '#536028',
   }, {
@@ -27,7 +27,7 @@ var cultureData = {
     data: [{
       x: 50,
       y: 6,
-      r: 72
+      r: 36
     }],
     backgroundColor: '#536028',
   }, {
@@ -35,7 +35,7 @@ var cultureData = {
     data: [{
       x: 25,
       y: 55,
-      r: 79
+      r: 39.5
     }],
     backgroundColor: '#536028',
   }, {
@@ -43,7 +43,7 @@ var cultureData = {
     data: [{
       x: 78,
       y: 47,
-      r: 125
+      r: 62.5
     }],
     backgroundColor: '#536028',
   }, {
@@ -51,7 +51,7 @@ var cultureData = {
     data: [{
       x: 30,
       y: 10,
-      r: 112
+      r: 56
     }],
     backgroundColor: '#536028',
   }, {
@@ -59,7 +59,7 @@ var cultureData = {
     data: [{
       x: 63,
       y: 24,
-      r: 76
+      r: 38
     }],
     backgroundColor: '#536028',
   }
@@ -70,12 +70,12 @@ var bubbleChart = new Chart(ctxCulture, {
   type: 'bubble',
   data: cultureData,
   options: {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: true,
 
-    layout: {
-      padding: 70,
-    },
+    // layout: {
+    //   padding: ,
+    // },
     legend: {
       display: false,
     },
@@ -112,7 +112,7 @@ Chart.plugins.register({
         meta.data.forEach(function(element, index) {
           // Draw the text with the specified style
           ctx.fillStyle = '#FFF';
-          var fontSize = 35;
+          var fontSize = 12;
           var fontStyle = 'normal';
           var fontFamily = 'Oswald';
           ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
