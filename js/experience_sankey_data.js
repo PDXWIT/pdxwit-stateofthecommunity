@@ -1,11 +1,11 @@
 google.charts.load('current', {'packages':['sankey']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(SankeyChart);
 
-function drawChart() {
+function SankeyChart() {
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'From');
-  data.addColumn('string', 'To');
-  data.addColumn('number', 'Weight');
+  data.addColumn('string', 'Harassed');
+  data.addColumn('string', 'Action');
+  data.addColumn('number', 'Percent');
   data.addRows([
     [ 'I was harassed', 'I did not report it', 63 ],
     [ 'I was harassed', 'I reported it', 33 ],
@@ -17,12 +17,11 @@ function drawChart() {
   var colors = ['#2F7392', '#DE3C4B', '#E1ED67', '#9ECC50', '#536028', '#C8C9C7'];
   // Sets chart options.
   var options = {
-    width: 600,
     sankey: {
       node: {
+        nodePadding: 10,
         colors: { colors },
         label: {  fontName: 'Helvetica',
-                  fontSize: 14,
                   color: '#FFF',
                 },
       },

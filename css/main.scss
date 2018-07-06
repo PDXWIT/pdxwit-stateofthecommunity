@@ -499,3 +499,16 @@ html,body
     height: 343px;
   }
 }
+
+.sankeyChart {
+  width: 370px;
+  height: 150px;
+  @include breakpoint(md) {
+    width: 514px;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    width: 714px;
+    height: 500px;
+  }
+}
