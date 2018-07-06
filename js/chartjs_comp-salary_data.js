@@ -25,6 +25,13 @@ var compSalaryBar = new Chart(ctxCompSalary, {
     type: 'bar',
     data: compsalaryData,
     options: {
+      legend: {
+        display: true,
+        position: 'top',
+        labels: {
+          boxWidth: 8,
+        },
+      },
       maintainAspectRatio: true,
       scales: {
         yAxes: [{
