@@ -270,40 +270,6 @@ html,body
   text-transform: uppercase;
 }
 
-.font-p {
-  color: $color-pdxwit-white;
-  font-weight: $font-weight-light;
-  font-family: $font-ps;
-  font-size: 6px;
-  @include breakpoint(md) {
-    font-size: 12px;
-  }
-  @include breakpoint(lg) {
-    font-size: 16px;
-  }
-}
-
-.font-p--dark {
-  color: $color-pdxwit-dark-grey;
-}
-
-.font-p--labels {
-  text-transform: uppercase;
-}
-
-.font-p--italic {
-  font-style: italic;
-}
-
-.email:hover {
-  color: $color-pdxwit-lime;
-}
-
-.alignCenter {
-  display: flex;
-  justify-content: center;
-}
-
 .font-h4 {
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
@@ -350,6 +316,41 @@ html,body
     font-size: 25px;
   }
 }
+
+.font-p {
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-light;
+  font-family: $font-ps;
+  font-size: 6px;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
+}
+
+.font-p--dark {
+  color: $color-pdxwit-dark-grey;
+}
+
+.font-p--labels {
+  text-transform: uppercase;
+}
+
+.font-p--italic {
+  font-style: italic;
+}
+
+.email:hover {
+  color: $color-pdxwit-lime;
+}
+
+.alignCenter {
+  display: flex;
+  justify-content: center;
+}
+
 
 
 
