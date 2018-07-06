@@ -14,10 +14,10 @@ $font-h2s: "Oswald", sans-serif; //use $font-weight-bold
 $font-h4s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
 $font-ps: Helvetica, "EB Garamond", serif;
-$font-weight-bold: 600;
-$font-weight-regular: 300;
-$font-weight-light: 200;
-$font-weight-xlight: 100;
+$font-weight-bold: 500;
+$font-weight-regular: 200;
+$font-weight-light: 100;
+$font-weight-xlight: 50;
 
 // =====================
 // Color variables
@@ -42,6 +42,12 @@ $color-dark-green: #536028;
 // =====================
 
 @mixin btn-theme() {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
   color: $color-pdxwit-black;
   font-weight: $font-weight-light;
   font-family: $font-ps;
@@ -52,13 +58,6 @@ $color-dark-green: #536028;
   @include breakpoint(lg) {
     font-size: 16px;
   }
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 5%;
-  margin-left: 50%;
-
 
  .icon-dropdown {
    background-color: $color-pdxwit-white;
@@ -129,7 +128,7 @@ $color-dark-green: #536028;
 
 .logo {
   height: 10em;
-  margin-top:5%;
+  padding-top:5%;
 }
 
 
@@ -152,6 +151,10 @@ html,body
   padding: 5% 15%;
 }
 
+.container-btn {
+  padding-top: .8em;
+  padding-bottom: .8em;
+}
 .container-section {
   background-color:  $color-background-blue2;
   margin: 0;
@@ -197,6 +200,7 @@ html,body
   color: $color-pdxwit-white;
   font-weight: $font-weight-bold;
   font-family: $font-h2s;
+  padding-bottom: .8em;
 }
 .font-h1 {
   font-size: 21px;
@@ -406,7 +410,7 @@ html,body
   border: 0px;
 }
 
- .btn-learn-more {
+ .btn--learnmore {
    @include btn-theme;
    background-color: $color-pdxwit-white;
 }
