@@ -89,7 +89,14 @@ var experienceBar = new Chart(ctxExperienced, {
       layout: {
         padding: 5,
       },
-      maintainAspectRatio: false,
+      legend: {
+        display: true,
+        position: 'top',
+        labels: {
+          boxWidth: 8,
+        },
+      },
+      maintainAspectRatio: true,
       scales: {
           yAxes: [{
             stacked: true,

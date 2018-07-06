@@ -13,7 +13,7 @@
 $font-h2s: "LeagueGothic-Regular", sans-serif; //use $font-weight-bold
 $font-h4s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
-$font-ps: "EB Garamond", Helvetica, serif;
+$font-ps: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 500;
 $font-weight-regular: 200;
 $font-weight-light: 100;
@@ -22,6 +22,8 @@ $font-weight-xlight: 50;
 @font-face {
   font-family: LeagueGothic-Regular;
   src:("fonts/LeagueGothic-Regular.otf")
+  font-weight: normal;
+  font-style: normal;
 }
 
 // =====================
@@ -67,6 +69,7 @@ $color-dark-green: #536028;
    background-color: $color-pdxwit-white;
    font-family: $font-ps;
    font-weight: $font-weight-regular;
+   margin: auto;
  }
 }
 
@@ -318,7 +321,7 @@ html,body
 
 .font-p {
   color: $color-pdxwit-white;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-xlight;
   font-family: $font-ps;
   font-size: 6px;
   @include breakpoint(md) {
@@ -532,6 +535,6 @@ html,body
   }
   @include breakpoint(lg) {
     width: 714px;
-    height: 500px;
+    height: 400px;
   }
 }
