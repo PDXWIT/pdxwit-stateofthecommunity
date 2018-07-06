@@ -48,7 +48,6 @@ $color-dark-green: #536028;
 
 @mixin btn-theme() {
   text-transform: uppercase;
-  letter-spacing: .1em;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -512,6 +511,19 @@ html,body
 }
 
 .sankeyChart {
+  width: 370px;
+  height: 150px;
+  @include breakpoint(md) {
+    width: 514px;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    width: 714px;
+    height: 500px;
+  }
+}
+
+#canvas.experiencedChart {
   width: 370px;
   height: 150px;
   @include breakpoint(md) {

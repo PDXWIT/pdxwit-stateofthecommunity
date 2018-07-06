@@ -39,6 +39,13 @@ var myChart = new Chart(ctxBenefits, {
     },
     options: {
       responsive: true,
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+          boxWidth: 0,
+        },
+      },
       scales: {
           yAxes: [{
             gridLines: {
