@@ -373,7 +373,13 @@ html,body{
   color: $color-pdxwit-lime;
 }
 
-
+.box-border {
+  @include breakpoint(lg) {
+    border-right-style: solid;
+    border-width: .01em;
+    border-color: $color-pdxwit-white;
+  }
+}
 
 // =====================
 // Icons & Buttons
