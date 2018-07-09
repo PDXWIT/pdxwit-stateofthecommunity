@@ -109,8 +109,9 @@ $color-grey: #D0D0D0;
 
 .navbar {
   background-color: $color-pdxwit-white;
-  margin: 0;
   overflow: hidden;
+  padding-right: 15%;
+  margin: 0 auto;
 
   .navbar-list {
       list-style: none;
@@ -144,13 +145,18 @@ $color-grey: #D0D0D0;
 // Containers
 // =====================
 
-html,body
-{
+html,body{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+}
+
+.header-container {
+  padding-right: 15%;
+  padding-left: 15%;
+  margin: 0 auto;
 }
 
 .container-intro {
@@ -359,8 +365,12 @@ html,body
   justify-content: center;
 }
 
-.color-emphasis {
+.color-emphasis-red {
   color: $color-red;
+}
+
+.color-emphasis-lime {
+  color: $color-pdxwit-lime;
 }
 
 
@@ -392,6 +402,9 @@ html,body
    object-fit: contain;
    .peopleImage {
      height: 100%;
+   }
+   .peopleImage--lg {
+     height: 200%;
    }
    padding-top: 1em;
    @include breakpoint(md) {
