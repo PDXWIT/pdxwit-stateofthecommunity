@@ -21,7 +21,7 @@ $font-weight-xlight: 50;
 
 @font-face {
   font-family: LeagueGothic-Regular;
-  src:("fonts/LeagueGothic-Regular.otf")
+  src:("fonts/LeagueGothic-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,6 +42,7 @@ $color-background-darkblue: #232E36; //very dark blue
 $color-red: #DE3C4B;
 $color-yellow: #E1ED67;
 $color-dark-green: #536028;
+$color-grey: #D0D0D0;
 
 
 // =====================
@@ -162,10 +163,15 @@ html,body
   padding-top: .8em;
   padding-bottom: .8em;
 }
+
 .container-section {
   background-color:  $color-background-blue2;
   margin: 0;
   padding: 5% 15%;
+}
+
+.container-section--2{
+  background-color:  $color-background-darkblue;
 }
 
 .container-quote{
@@ -177,7 +183,7 @@ html,body
 .container-data {
   margin-top: 5%;
   margin: 0;
-  padding: 5% 0%;
+  padding: 5% 15%;
 }
 
 .container-next-steps {
@@ -292,7 +298,7 @@ html,body
   font-family: $font-h2s;
 }
 
-.font--percent-numbers {
+.font-percent-numbers {
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
@@ -305,7 +311,7 @@ html,body
   }
 }
 
-.font--percent-words {
+.font-percent-words {
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
@@ -353,6 +359,9 @@ html,body
   justify-content: center;
 }
 
+.color-emphasis {
+  color: $color-red;
+}
 
 
 
