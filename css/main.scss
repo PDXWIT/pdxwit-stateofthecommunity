@@ -274,9 +274,6 @@ html,body{
   color: $color-pdxwit-dark-grey;
 }
 
-.font-h3--black {
-  color: $color-pdxwit-black;
-}
 
 .font-h3--bold {
   color: $color-pdxwit-black;
@@ -304,6 +301,12 @@ html,body{
   font-family: $font-h2s;
 }
 
+.font-h4--black {
+  color: $color-pdxwit-black;
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
 .font-percent-numbers {
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
@@ -321,6 +324,7 @@ html,body{
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
+  padding-right: 0;
   //margin-bottom: 15%;
   font-size: 8px;
   @include breakpoint(md) {
@@ -329,6 +333,11 @@ html,body{
   @include breakpoint(lg) {
     font-size: 25px;
   }
+}
+
+.font-percent-words--alignR {
+  text-align: right;
+  padding-right: .5em;
 }
 
 .font-p {
@@ -379,6 +388,10 @@ html,body{
     border-width: .01em;
     border-color: $color-pdxwit-white;
   }
+}
+
+.section-break {
+  padding-top: 5em;
 }
 
 // =====================
@@ -432,6 +445,10 @@ html,body{
    @include breakpoint(lg) {
      height: 120px;
    }
+ }
+
+ .icon-list {
+
  }
 
 .fa-circle {
