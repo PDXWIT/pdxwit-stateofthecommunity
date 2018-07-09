@@ -404,7 +404,13 @@ html,body{
      height: 100%;
    }
    .peopleImage--lg {
-     height: 200%;
+     height: 53px;
+     @include breakpoint(md) {
+       height: 87px;
+     }
+     @include breakpoint(lg) {
+       height: 120px;
+     }
    }
    padding-top: 1em;
    @include breakpoint(md) {
