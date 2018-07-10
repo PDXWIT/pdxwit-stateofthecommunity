@@ -543,6 +543,9 @@ html,body{
   }
 }
 
+#img.benefitsImg {
+  width: 360px;
+}
 
 
 // =====================
@@ -581,14 +584,11 @@ html,body{
 }
 
 #canvas.experiencedChart {
-  width: 370px;
-  height: 150px;
-  @include breakpoint(md) {
-    width: 514px;
-    height: 300px;
-  }
-  @include breakpoint(lg) {
-    width: 714px;
-    height: 400px;
-  }
+  height: 15px;
+  // @include breakpoint(md) {
+  //   height: 25px;
+  // }
+  // @include breakpoint(lg) {
+  //   height: 50px;
+  // }
 }
