@@ -39,9 +39,9 @@ $color-background-blue1: #394D5D; //grey blue
 $color-background-blue2: #2B3944; //dark blue
 $color-background-blue3: #2F7392; //bright blue
 $color-background-darkblue: #232E36; //very dark blue
-$color-red: #DE3C4B;
+$color-pdxwit-red: #921B1E;
 $color-yellow: #E1ED67;
-$color-dark-green: #536028;
+$color-dark-green: #244512;
 $color-grey: #D0D0D0;
 
 
@@ -375,7 +375,7 @@ html,body{
 }
 
 .color-emphasis-red {
-  color: $color-red;
+  color: $color-pdxwit-red;
 }
 
 .color-emphasis-lime {
@@ -424,11 +424,14 @@ html,body{
    }
    .peopleImage--lg {
      height: 53px;
+     padding-right: .3em;
      @include breakpoint(md) {
        height: 87px;
+       padding-right: .8em;
      }
      @include breakpoint(lg) {
        height: 120px;
+       padding-right: 1em;
      }
    }
    padding-top: 1em;
@@ -456,7 +459,7 @@ html,body{
 }
 
 .color--red {
-  color:$color-red;
+  color:$color-pdxwit-red;
 }
 
 .color--yellow {

@@ -14,7 +14,7 @@ function SankeyChart() {
     [ 'I reported it', "Not Well", 58 ]
   ]);
 
-  var colors = ['#2F7392', '#DE3C4B', '#E1ED67', '#9ECC50', '#536028', '#C8C9C7'];
+  var colors = ['#2F7392', '#921B1E', '#E1ED67', '#9ECC50', '#244512', '#C8C9C7'];
   // Sets chart options.
   var options = {
     sankey: {

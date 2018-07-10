@@ -13,7 +13,7 @@ var cultureData = {
         y: 4,
         r: 47.5
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['inclusive 54%'], //54
     data: [{
@@ -21,7 +21,7 @@ var cultureData = {
       y: 45,
       r: 57.5
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['toxic 9%'], //9
     data: [{
@@ -29,7 +29,7 @@ var cultureData = {
       y: 6,
       r: 36
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['bro-culture 18%'], //18
     data: [{
@@ -37,7 +37,7 @@ var cultureData = {
       y: 55,
       r: 39.5
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['results-oriented 63%'], //63
     data: [{
@@ -45,7 +45,7 @@ var cultureData = {
       y: 47,
       r: 62.5
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['caring 51%'], //51
     data: [{
@@ -53,7 +53,7 @@ var cultureData = {
       y: 10,
       r: 56
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }, {
     label: ['other 15%'], //15
     data: [{
@@ -61,7 +61,7 @@ var cultureData = {
       y: 24,
       r: 38
     }],
-    backgroundColor: '#536028',
+    backgroundColor: '#244512',
   }
   ]
 };
