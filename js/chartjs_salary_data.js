@@ -23,6 +23,18 @@ var salaryDoughnut = new Chart(ctxSalary, {
   type: 'doughnut',
   data: salaryData,
   options: {
+    legend: {
+      display: true,
+      position: 'top',
+      labels: {
+        boxWidth: 8,
+      },
+    },
+    elements: {
+      arc: {
+        borderWidth: 0
+      },
+    },
     percentageInnerCutout : 50,
     animationEasing : "easeOutBounce",
     animateRotate : true,

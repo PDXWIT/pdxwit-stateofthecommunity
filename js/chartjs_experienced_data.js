@@ -65,11 +65,11 @@ var experienceData = {
     {
       label: 'Women',
       data: [33, 33, 24, 42, 16, 46, 25],
-      backgroundColor: '#921B1E'
+      backgroundColor: '#921B1E' //red
     }, {
       label: 'Men',
       data: [19, 6, 5, 2, 1, 5, 71],
-      backgroundColor: '#E1ED67'
+      backgroundColor: '#63666A' //dark grey
 
     }
   ],
