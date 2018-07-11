@@ -30,13 +30,13 @@ var experienceBar1 = new Chart(ctxExperienced1, {
         text: 'Told you were too aggressive at work'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
-        position: 'bottom',
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -92,12 +92,13 @@ var experienceBar2 = new Chart(ctxExperienced2, {
         text: 'Asked to order lunches, schedule events that was beyond your job scope'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -153,12 +154,13 @@ var experienceBar3 = new Chart(ctxExperienced3, {
         text: 'Suspect you were passed on a role because of your gender'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -214,12 +216,13 @@ var experienceBar4 = new Chart(ctxExperienced4, {
         text: 'Learned to be the den mother, counselor, admin because of your gender'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -275,12 +278,13 @@ var experienceBar5 = new Chart(ctxExperienced5, {
         text: 'Excluded from important work events because of your gender'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -336,12 +340,13 @@ var experienceBar6 = new Chart(ctxExperienced6, {
         text: 'In a meeting and felt gendered language was used that did not include you'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,
@@ -398,13 +403,14 @@ var experienceBar7 = new Chart(ctxExperienced7, {
         text: 'No - I have not experienced any of these'
       },
       layout: {
-        padding: 5,
+        padding: 1,
       },
       legend: {
         display: true,
         position: 'bottom',
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
+      responsive: false,
       scales: {
           yAxes: [{
             stacked: true,

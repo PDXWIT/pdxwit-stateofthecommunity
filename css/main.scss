@@ -583,12 +583,16 @@ html,body{
   }
 }
 
-#canvas.experiencedChart {
-  height: 15px;
-  // @include breakpoint(md) {
-  //   height: 25px;
-  // }
-  // @include breakpoint(lg) {
-  //   height: 50px;
-  // }
-}
+// #canvas.experiencedChart {
+//   height: 15px;
+//   width: 45px;
+//   position:absolute;
+//   @include breakpoint(md) {
+//     height: 25px;
+//     width: 265px;
+//   }
+//   @include breakpoint(lg) {
+//     height: 30px;
+//     width: 300px;
+//   }
+// }
