@@ -81,7 +81,7 @@ $color-grey: #D0D0D0;
 
 @mixin breakpoint($class) {
   @if $class == sm {
-    @media (min-width: 576px) { @content; }
+    @media (max-width: 576px) { @content; }
   }
 
   @else if $class == md {
@@ -543,8 +543,22 @@ html,body{
   }
 }
 
-#img.benefitsImg {
-  width: 360px;
+img.benefitsImg-landscape {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+img.benefitsImg-mobile {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  @media (min-width: 577px) {
+    display: none;
+  }
 }
 
 
