@@ -311,6 +311,13 @@ html,body{
   padding-top: .5em;
 }
 
+.font-h4--bold {
+  font-weight: $font-weight-bold;
+}
+.font-uppercase {
+  text-transform: uppercase;
+}
+
 .font-percent-numbers {
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
@@ -381,10 +388,12 @@ html,body{
 
 .color-emphasis-red {
   color: $color-pdxwit-red;
+  font-weight: $font-weight-regular;
 }
 
 .color-emphasis-lime {
   color: $color-pdxwit-lime;
+  font-weight: $font-weight-regular;
 }
 
 .box-border {
