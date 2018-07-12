@@ -265,9 +265,9 @@ html,body{
   color: $color-pdxwit-white;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
-  font-size: 9px;
+  font-size: 12px;
   @include breakpoint(md) {
-    font-size: 18px;
+    font-size: 21px;
   }
   @include breakpoint(lg) {
     font-size: 26px;
@@ -291,7 +291,7 @@ html,body{
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
-  font-size: 12px;
+  font-size: 14px;
   @include breakpoint(md) {
     font-size: 24px;
   }
@@ -315,7 +315,7 @@ html,body{
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
-  font-size: 35px;
+  font-size: 40px;
   @include breakpoint(md) {
     font-size: 70px;
   }
@@ -330,12 +330,12 @@ html,body{
   color: $color-pdxwit-white;
   padding-right: 0;
   //margin-bottom: 15%;
-  font-size: 8px;
+  font-size: 12px;
   @include breakpoint(md) {
-    font-size: 16px;
+    font-size: 21px;
   }
   @include breakpoint(lg) {
-    font-size: 25px;
+    font-size: 26px;
   }
 }
 
@@ -349,12 +349,12 @@ html,body{
   color: $color-pdxwit-white;
   font-weight: $font-weight-xlight;
   font-family: $font-ps;
-  font-size: 6px;
+  font-size: 10px;
   @include breakpoint(md) {
-    font-size: 12px;
+    font-size: 14px;
   }
   @include breakpoint(lg) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -409,12 +409,12 @@ html,body{
   color: $color-pdxwit-black;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
-  font-size: 6px;
+  font-size: 10px;
   @include breakpoint(md) {
-    font-size: 12px;
+    font-size: 14px;
   }
   @include breakpoint(lg) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .icon-dropdown {
