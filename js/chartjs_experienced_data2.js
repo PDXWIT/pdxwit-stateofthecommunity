@@ -35,7 +35,7 @@ var experienceBar1 = new Chart(ctxExperienced1, {
       legend: {
         display: false,
       },
-      maintainAspectRatio: false,
+      maintainAspectRatio: true,
       responsive: false,
       scales: {
           yAxes: [{

@@ -12,3 +12,6 @@ Chart.defaults.global.defaultFontFamily = "'Helvetica Neue', 'Helvetica', 'Arial
 //     Chart.defaults.global.defaultFontSize = 16;
 //   }
 // }
+
+/*  takes a string phrase and breaks it into separate phrases
+    no bigger than 'maxwidth', breaks are made at complete words.*/

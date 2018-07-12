@@ -625,3 +625,19 @@ img.benefitsImg-mobile {
 //     width: 300px;
 //   }
 // }
+
+.experiencedChart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 60px;
+  @include breakpoint(md) {
+    width: 545px;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    width: 790px;
+    height: 500px;
+  }
+}
