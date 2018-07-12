@@ -258,6 +258,7 @@ html,body{
 }
 
 .font-h3 {
+  padding-bottom: 1em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
@@ -282,6 +283,8 @@ html,body{
 // }
 
 .font-h4 {
+  padding-top: 1em;
+  padding-bottom: 2em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
@@ -292,8 +295,6 @@ html,body{
   @include breakpoint(lg) {
     font-size: 35px;
   }
-  padding-top: 1em;
-  padding-bottom: 2em;
 }
 
 .font-h4--alt {
@@ -341,6 +342,7 @@ html,body{
 }
 
 .font-p {
+  padding-bottom: 1em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-xlight;
   font-family: $font-ps;
@@ -547,6 +549,7 @@ img.benefitsImg-landscape {
   width: auto;
   max-width: 100%;
   height: auto;
+  padding: 1em;
   @media (max-width: 576px) {
     display: none;
   }
@@ -556,6 +559,7 @@ img.benefitsImg-mobile {
   width: auto;
   max-width: 100%;
   height: auto;
+  padding: 1em;
   @media (min-width: 577px) {
     display: none;
   }
@@ -566,10 +570,9 @@ img.benefitsImg-mobile {
 // Charts
 // =====================
 
-.chart {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+// .chart {
+//   padding: 1em;
+// }
 
 #canvas.culture {
   width: 200px;
