@@ -600,14 +600,14 @@ img.benefitsImg-mobile {
 }
 
 .sankeyChart {
-  width: 370px;
+  width: 172px;
   height: 150px;
   @include breakpoint(md) {
-    width: 514px;
+    width: 545px;
     height: 300px;
   }
   @include breakpoint(lg) {
-    width: 714px;
+    width: 790px;
     height: 500px;
   }
 }
