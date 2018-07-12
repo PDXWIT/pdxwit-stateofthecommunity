@@ -58,12 +58,12 @@ $color-grey: #D0D0D0;
   color: $color-pdxwit-black;
   font-weight: $font-weight-light;
   font-family: $font-ps;
-  font-size: 6px;
+  font-size: 9px;
   @include breakpoint(md) {
-    font-size: 12px;
+    font-size: 15px;
   }
   @include breakpoint(lg) {
-    font-size: 16px;
+    font-size: 19px;
   }
 
  .icon-dropdown {
@@ -140,6 +140,9 @@ $color-grey: #D0D0D0;
   padding-top:5%;
 }
 
+.pa-logo {
+  height:10em;
+}
 
 // =====================
 // Containers
@@ -153,7 +156,7 @@ html,body{
     overflow-x: hidden;
 }
 
-.header-container {
+.header-container, .footer-container {
   padding-right: 15%;
   padding-left: 15%;
   margin: 0 auto;
@@ -232,7 +235,7 @@ html,body{
 }
 
 .font-h2 {
-  font-size: 28px;
+  font-size: 18px;
   @include breakpoint(md) {
     font-size: 36px;
   }
