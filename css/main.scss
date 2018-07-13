@@ -633,18 +633,23 @@ img.benefitsImg-mobile {
 //   }
 // }
 
+.experiencedStacked {
+  padding-top: 1.5em;
+  margin: 0;
+}
+
 .experiencedChart {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 200px;
-  height: 60px;
+  padding: 0;
+  margin: 0;
+  width: 90% !important;
+  height: 90px !important;
   @include breakpoint(md) {
-    width: 545px;
-    height: 300px;
+    height: 220px !important;
   }
   @include breakpoint(lg) {
-    width: 790px;
-    height: 500px;
+    height: 320px !important;
   }
 }

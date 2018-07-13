@@ -26,7 +26,7 @@ var experienceBar1 = new Chart(ctxExperienced1, {
     data: experienceData1,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'Told you were too aggressive at work'
       },
       layout: {
@@ -35,7 +35,7 @@ var experienceBar1 = new Chart(ctxExperienced1, {
       legend: {
         display: false,
       },
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       responsive: false,
       scales: {
           yAxes: [{
@@ -48,8 +48,8 @@ var experienceBar1 = new Chart(ctxExperienced1, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -88,7 +88,7 @@ var experienceBar2 = new Chart(ctxExperienced2, {
     data: experienceData2,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'Asked to order lunches, schedule events that was beyond your job scope'
       },
       layout: {
@@ -110,8 +110,8 @@ var experienceBar2 = new Chart(ctxExperienced2, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -150,7 +150,7 @@ var experienceBar3 = new Chart(ctxExperienced3, {
     data: experienceData3,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'Suspect you were passed on a role because of your gender'
       },
       layout: {
@@ -172,8 +172,8 @@ var experienceBar3 = new Chart(ctxExperienced3, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -212,7 +212,7 @@ var experienceBar4 = new Chart(ctxExperienced4, {
     data: experienceData4,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'Learned to be the den mother, counselor, admin because of your gender'
       },
       layout: {
@@ -234,8 +234,8 @@ var experienceBar4 = new Chart(ctxExperienced4, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -274,7 +274,7 @@ var experienceBar5 = new Chart(ctxExperienced5, {
     data: experienceData5,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'Excluded from important work events because of your gender'
       },
       layout: {
@@ -296,8 +296,8 @@ var experienceBar5 = new Chart(ctxExperienced5, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -336,7 +336,7 @@ var experienceBar6 = new Chart(ctxExperienced6, {
     data: experienceData6,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'In a meeting and felt gendered language was used that did not include you'
       },
       layout: {
@@ -358,8 +358,8 @@ var experienceBar6 = new Chart(ctxExperienced6, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
@@ -369,7 +369,6 @@ var experienceBar6 = new Chart(ctxExperienced6, {
       }
   }
 });
-
 
 // =====================
 // Experienced Chart 7
@@ -399,14 +398,14 @@ var experienceBar7 = new Chart(ctxExperienced7, {
     data: experienceData7,
     options: {
       title: {
-        display: true,
+        display: false,
         text: 'No - I have not experienced any of these'
       },
       layout: {
         padding: 1,
       },
       legend: {
-        display: true,
+        display: false,
         position: 'bottom',
       },
       maintainAspectRatio: false,
@@ -422,8 +421,8 @@ var experienceBar7 = new Chart(ctxExperienced7, {
           xAxes: [{
             stacked: true,
             ticks: {
-              display: false,
-              max: 80,
+              display: true,
+              max: 100,
             },
             gridLines: {
               display: false,
