@@ -323,6 +323,7 @@ html,body{
   color: $color-pdxwit-black;
   padding-bottom: 1em;
   padding-top: .5em;
+  text-align: left;
 }
 
 .font-h4--bold {
@@ -366,7 +367,7 @@ html,body{
   }
 }
 
-.font-percent-words--alignL {
+.font-words--alignL {
   text-align: left;
   padding-right: .5em;
 }
@@ -425,7 +426,7 @@ html,body{
 }
 
 .section-break {
-  padding-top: 5em;
+  padding-top: 2em;
 }
 
 // =====================
@@ -472,7 +473,7 @@ html,body{
      height: 100%;
    }
    .peopleImage--lg {
-     height: 53px;
+     height: 40px;
      padding-right: .3em;
      @include breakpoint(md) {
        height: 87px;
