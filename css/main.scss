@@ -184,6 +184,8 @@ html,body{
   background-color:  $color-background-blue2;
   margin: 0;
   padding: 5% 15%;
+  display:block;
+  justify-content: center;
 }
 
 .container-section--2{
@@ -199,7 +201,9 @@ html,body{
 .container-data {
   margin-top: 5%;
   margin: 0;
-  padding: 5% 15%;
+  padding: 0;
+  display:block;
+
 }
 
 .container-next-steps {
@@ -268,6 +272,7 @@ html,body{
 }
 
 .font-h3 {
+  display:block;
   padding-bottom: 1em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-light;
@@ -329,6 +334,8 @@ html,body{
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
+  display: flex;
+  justify-content: center;
   font-size: 40px;
   @include breakpoint(md) {
     font-size: 70px;
@@ -343,6 +350,8 @@ html,body{
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
   padding-right: 0;
+  padding-left: 1em;
+  display: block;
   //margin-bottom: 15%;
   font-size: 12px;
   @include breakpoint(md) {
@@ -350,6 +359,8 @@ html,body{
   }
   @include breakpoint(lg) {
     font-size: 26px;
+    padding-left: 0;
+
   }
 }
 
@@ -439,7 +450,22 @@ html,body{
  }
 
  .icon-people {
+   display:block;
    object-fit: contain;
+   padding-top: 1em;
+   @include breakpoint(md) {
+     padding-top: 2em;
+   }
+   @include breakpoint(lg) {
+     padding-top: 3em;
+   }
+   height: 40px;
+   @include breakpoint(md) {
+     height: 80px;
+   }
+   @include breakpoint(lg) {
+     height: 120px;
+   }
    .peopleImage {
      height: 100%;
    }
@@ -454,20 +480,6 @@ html,body{
        height: 120px;
        padding-right: 1em;
      }
-   }
-   padding-top: 1em;
-   @include breakpoint(md) {
-     padding-top: 2em;
-   }
-   @include breakpoint(lg) {
-     padding-top: 3em;
-   }
-   height: 40px;
-   @include breakpoint(md) {
-     height: 80px;
-   }
-   @include breakpoint(lg) {
-     height: 120px;
    }
  }
 
@@ -501,23 +513,23 @@ html,body{
 // =====================
 // Misc
 // =====================
-
-.vertical-line {
-  height: 0px;
-  margin: 0;
-  width: 0px;
-  @include breakpoint(md) {
-    height: 147px;
-    width: 2px;
-    border-left: 2px solid $color-pdxwit-white;
-
-  }
-  @include breakpoint(lg) {
-    height: 220px;
-    width: 3px;
-    border-left: 2px solid $color-pdxwit-white;
-  }
-}
+//
+// .vertical-line {
+//   height: 0px;
+//   margin: 0;
+//   width: 0px;
+//   @include breakpoint(md) {
+//     height: 147px;
+//     width: 2px;
+//     border-left: 2px solid $color-pdxwit-white;
+//
+//   }
+//   @include breakpoint(lg) {
+//     height: 220px;
+//     width: 3px;
+//     border-left: 2px solid $color-pdxwit-white;
+//   }
+// }
 
 .carousel {
   padding: 1em 1em 5em 1em;
