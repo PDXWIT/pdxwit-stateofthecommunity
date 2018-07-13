@@ -298,8 +298,10 @@ html,body{
 // }
 
 .font-h4 {
-  padding-top: 1em;
-  padding-bottom: 2em;
+  display:block;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
@@ -364,8 +366,8 @@ html,body{
   }
 }
 
-.font-percent-words--alignR {
-  text-align: right;
+.font-percent-words--alignL {
+  text-align: left;
   padding-right: .5em;
 }
 
@@ -481,10 +483,6 @@ html,body{
        padding-right: 1em;
      }
    }
- }
-
- .icon-list {
-
  }
 
 .fa-circle {
