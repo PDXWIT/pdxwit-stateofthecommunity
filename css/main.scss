@@ -184,6 +184,8 @@ html,body{
 .container-btn {
   padding-top: .8em;
   padding-bottom: .8em;
+  display:block;
+  justify-content: center;
 }
 
 .container-section {
@@ -457,6 +459,11 @@ html,body{
     background-color: $color-pdxwit-white;
   }
  }
+
+.dropdown-menu {
+  position: absolute;
+  left: 50% !important;
+}
 
  .icon-people {
    display:block;
