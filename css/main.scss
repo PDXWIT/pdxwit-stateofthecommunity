@@ -133,7 +133,13 @@ $color-grey: #D0D0D0;
       color:  $color-pdxwit-dark-grey;
       text-align: center;
       padding-right: 1em;
-      font-size: 25px;
+      font-size: 15px;
+      @include breakpoint(md) {
+        font-size: 20px;
+      }
+      @include breakpoint(lg) {
+        font-size: 25px;
+      }
   }
 
   .navbar-links:hover {
