@@ -82,25 +82,29 @@ $color-grey: #D0D0D0;
 @mixin breakpoint($class) {
   @if $class == sm {
     @media (max-width: 576px) { @content;
-    margin:auto; }
+    margin:auto;
+    }
   }
 
   @else if $class == md {
     @media (min-width: 768px) { @content;
     max-width: 760px;
-    margin: auto;}
+    margin: auto;
+    }
   }
 
   @else if $class == lg {
     @media (min-width: 992px) { @content;
     max-width: 760px;
-    margin:auto; }
+    margin:auto;
+    }
   }
 
   @else if $class == xl {
     @media (min-width: 1200px) { @content;
     max-width: 760px;
-    margin:auto;}
+    margin:auto;
+    }
   }
 
   @else {
@@ -203,13 +207,15 @@ html,body{
 .container-quote{
   background-color: $color-background-blue3;
   margin: 0;
-  padding: 10% 15%;
+  padding: 5% 15%;
+  display:block;
+  justify-content: center;
 }
 
 .container-data {
   margin-top: 5%;
   margin: 0;
-  padding: 0;
+  padding-bottom: 1em;
   display:block;
 
 }
@@ -345,14 +351,19 @@ html,body{
   font-family: $font-h2s;
   font-weight: $font-weight-bold;
   color: $color-pdxwit-white;
-  display: flex;
+  display: block;
   justify-content: center;
+  margin: 0;
+  text-align: center;
   font-size: 40px;
   @include breakpoint(md) {
     font-size: 70px;
+    margin: 0 !important;
   }
   @include breakpoint(lg) {
     font-size: 106px;
+    margin: 0 !important;
+    max-width: 238px;
   }
 }
 
@@ -361,8 +372,9 @@ html,body{
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
   padding-right: 0;
-  padding-left: 1em;
+  // padding-left: 1em;
   display: block;
+  text-align: center;
   //margin-bottom: 15%;
   font-size: 12px;
   @include breakpoint(md) {
@@ -371,7 +383,6 @@ html,body{
   @include breakpoint(lg) {
     font-size: 26px;
     padding-left: 0;
-
   }
 }
 
@@ -408,11 +419,6 @@ html,body{
 
 .email:hover {
   color: $color-pdxwit-lime;
-}
-
-.alignCenter {
-  display: flex;
-  justify-content: center;
 }
 
 .color-emphasis-red {
@@ -520,6 +526,10 @@ html,body{
  .btn--learnmore {
    @include btn-theme;
    background-color: $color-pdxwit-white;
+}
+
+.centerContent {
+  justify-content: center;
 }
 
 // =====================
@@ -660,12 +670,12 @@ img.benefitsImg-mobile {
 .experiencedStacked {
   padding-top: 1.5em;
   margin: 0;
+  display:block;
+  justify-content: center;
 }
 
 .experiencedChart {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   width: 90% !important;
