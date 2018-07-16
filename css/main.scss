@@ -49,30 +49,6 @@ $color-grey: #D0D0D0;
 // Mixins
 // =====================
 
-@mixin btn-theme() {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  color: $color-pdxwit-black;
-  font-weight: $font-weight-light;
-  font-family: $font-ps;
-  font-size: 9px;
-  @include breakpoint(md) {
-    font-size: 15px;
-  }
-  @include breakpoint(lg) {
-    font-size: 19px;
-  }
-
- .icon-dropdown {
-   background-color: $color-pdxwit-white;
-   font-family: $font-ps;
-   font-weight: $font-weight-regular;
-   margin: auto;
- }
-}
 
 
 // =====================
@@ -303,13 +279,6 @@ html,body{
 .font-h3--dark {
   color: $color-pdxwit-dark-grey;
 }
-//
-//
-// .font-h3--bold {
-//   color: $color-pdxwit-black;
-//   font-weight: $font-weight-bold;
-//   text-transform: uppercase;
-// }
 
 .font-h4 {
   display:block;
@@ -371,18 +340,18 @@ html,body{
   font-family: $font-h2s;
   font-weight: $font-weight-regular;
   color: $color-pdxwit-white;
-  padding-right: 0;
-  // padding-left: 1em;
+  padding: 0;
   display: block;
   text-align: center;
-  //margin-bottom: 15%;
+  margin: 0 !important;
   font-size: 12px;
   @include breakpoint(md) {
     font-size: 21px;
+    margin: 0 !important;
   }
   @include breakpoint(lg) {
     font-size: 26px;
-    padding-left: 0;
+    margin: 0 !important;
   }
 }
 
@@ -408,10 +377,6 @@ html,body{
 .font-p--dark {
   color: $color-pdxwit-dark-grey;
 }
-//
-// .font-p--labels {
-//   text-transform: uppercase;
-// }
 
 .font-p--italic {
   font-style: italic;
@@ -424,19 +389,13 @@ html,body{
 .color-emphasis-red {
   color: $color-pdxwit-red;
   font-weight: $font-weight-regular;
+  padding-left: .1em;
+  padding-right: .1em;
 }
 
 .color-emphasis-lime {
   color: $color-pdxwit-lime;
   font-weight: $font-weight-regular;
-}
-
-.box-border {
-  @include breakpoint(lg) {
-    border-right-style: solid;
-    border-width: .01em;
-    border-color: $color-pdxwit-white;
-  }
 }
 
 .section-break {
@@ -446,6 +405,31 @@ html,body{
 // =====================
 // Icons & Buttons
 // =====================
+
+@mixin btn-theme() {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: $color-pdxwit-black;
+  font-weight: $font-weight-light;
+  font-family: $font-ps;
+  font-size: 9px;
+  @include breakpoint(md) {
+    font-size: 15px;
+  }
+  @include breakpoint(lg) {
+    font-size: 19px;
+  }
+
+ .icon-dropdown {
+   background-color: $color-pdxwit-white;
+   font-family: $font-ps;
+   font-weight: $font-weight-regular;
+   margin: auto;
+ }
+}
 
 .icon {
   @include btn-theme();
@@ -505,17 +489,9 @@ html,body{
    }
  }
 
-.fa-circle {
-  padding: 0 1em 1em;
-}
-
-.color--red {
-  color:$color-pdxwit-red;
-}
-
-.color--yellow {
-  color: $color-yellow;
-}
+// .fa-circle {
+//   padding: 0 1em 1em;
+// }
 
 .btn--share {
   @include btn-theme;
@@ -528,38 +504,13 @@ html,body{
    background-color: $color-pdxwit-white;
 }
 
-.centerContent {
-  justify-content: center;
-}
-
 // =====================
-// Misc
+// Carousel
 // =====================
-//
-// .vertical-line {
-//   height: 0px;
-//   margin: 0;
-//   width: 0px;
-//   @include breakpoint(md) {
-//     height: 147px;
-//     width: 2px;
-//     border-left: 2px solid $color-pdxwit-white;
-//
-//   }
-//   @include breakpoint(lg) {
-//     height: 220px;
-//     width: 3px;
-//     border-left: 2px solid $color-pdxwit-white;
-//   }
-// }
 
 .carousel {
   padding: 1em 1em 5em 1em;
 }
-
-// .slide {
-//   transition: height 400ms easeOutBounce;
-// }
 
 .carousel-indicators--round {
   li {
@@ -596,6 +547,16 @@ html,body{
       }
     }
   }
+}
+
+// =====================
+// Misc
+// =====================
+
+.centerContent {
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0;
 }
 
 img.benefitsImg-landscape {
@@ -653,21 +614,8 @@ img.benefitsImg-mobile {
   }
 }
 
-// #canvas.experiencedChart {
-//   height: 15px;
-//   width: 45px;
-//   position:absolute;
-//   @include breakpoint(md) {
-//     height: 25px;
-//     width: 265px;
-//   }
-//   @include breakpoint(lg) {
-//     height: 30px;
-//     width: 300px;
-//   }
-// }
 
-.experiencedStacked {
+.experienceRows {
   padding-top: 1.5em;
   margin: 0;
   display:block;
