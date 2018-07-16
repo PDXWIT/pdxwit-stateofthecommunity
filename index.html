@@ -14,42 +14,152 @@ layout: default
 </div>
 
 <div class="container-intro">
-  <div class="col-sm col-centered">
-    <div class="font-h1">State of the Community</div>
+  <div class="container">
+    <div class="row col-12">
+      <div class="font-h1">State of the Community</div>
 
-      <div class="font-p">Each year, PDXWIT captures important data about the Portland tech industry, independent of company and group or association affiliation. Our goal is to deeply understand what it is like for people in the community and to identify themes that need to be addressed This year, what we found was stark, but not surprising. We encourage you to use this data to propel change in your companies, and we’ve provided you with an action checklist at the end of the data visualization to support you in talking to your CEOs, bosses, colleagues and taking action yourself.
-      </div>
-      <div class="container-btn">
-        <div class="row text-center">
-          <div class="btn col-sm">
-            <div id="socialShare" class="icon--Share share-group">
-              <a data-toggle="dropdown">
-                <button class="btn btn--share">Share</button>
-              </a>
-            <div>
-              <ul class="dropdown-menu">
-                <li class="icon-dropdown">
-      						<a  data-original-title="Email" rel="tooltip" href="mailto:?" class="icon--Email btn-mail" data-placement="left">
-      							<i class="fa fa-envelope"></i> Email
-      						</a>
-      					</li>
-                <li class="icon-dropdown">
-                  <a data-original-title="Twitter" rel="tooltip"  href="#" class="icon--Twitter btn-twitter" data-placement="left">
-      							<i class="fab fa-twitter"></i> Twitter
-      						</a>
-      					</li>
-      					<li class="icon-dropdown">
-              		<a data-original-title="Facebook" rel="tooltip"  href="#" class="icon--Facebook btn-facebook" data-placement="left">
-      							<i class="fab fa-facebook"></i> Facebook
-      						</a>
-      					</li>
-                <li class="icon-dropdown">
-                  <a data-original-title="Permalink" rel="tooltip"  href="#" class="icon--Permalink btn-permalink" data-placement="left">
-                    <i class="fas fa-link"></i> Permalink
-                  </a>
-                </li>
-              </ul>
+        <div class="font-p">Each year, PDXWIT captures important data about the Portland tech industry, independent of company and group or association affiliation. Our goal is to deeply understand what it is like for people in the community and to identify themes that need to be addressed This year, what we found was stark, but not surprising. We encourage you to use this data to propel change in your companies, and we’ve provided you with an action checklist at the end of the data visualization to support you in talking to your CEOs, bosses, colleagues and taking action yourself.
+        </div>
+        <div class="container-btn">
+          <div class="row text-center">
+            <div class="btn col-sm">
+              <div id="socialShare" class="icon--Share share-group">
+                <a data-toggle="dropdown">
+                  <button class="btn btn--share">Share</button>
+                </a>
+              <div>
+                <ul class="dropdown-menu">
+                  <li class="icon-dropdown">
+        						<a  data-original-title="Email" rel="tooltip" href="mailto:?" class="icon--Email btn-mail" data-placement="left">
+        							<i class="fa fa-envelope"></i> Email
+        						</a>
+        					</li>
+                  <li class="icon-dropdown">
+                    <a data-original-title="Twitter" rel="tooltip"  href="#" class="icon--Twitter btn-twitter" data-placement="left">
+        							<i class="fab fa-twitter"></i> Twitter
+        						</a>
+        					</li>
+        					<li class="icon-dropdown">
+                		<a data-original-title="Facebook" rel="tooltip"  href="#" class="icon--Facebook btn-facebook" data-placement="left">
+        							<i class="fab fa-facebook"></i> Facebook
+        						</a>
+        					</li>
+                  <li class="icon-dropdown">
+                    <a data-original-title="Permalink" rel="tooltip"  href="#" class="icon--Permalink btn-permalink" data-placement="left">
+                      <i class="fas fa-link"></i> Permalink
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </div>
             </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-section">
+  <div class="container">
+    <div class="row">
+      <div class="font-h2">The Culture</div>
+        <div class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
+        </div>
+        <div class="row font-h4">Which of these benefits, if any, does your company provide?
+          <canvas class="chart benefits" id="benefits"></canvas>
+        </div>
+        <div class="row font-h4 d-flex justify-content-center">How would you describe your company culture?
+          <img class="img-fluid benefitsImg-landscape col-sm-12 col-md-12"  src="images/bubble-chart-landscape.png" alt="Benefits">
+          <img class="benefitsImg-mobile col-sm-12 col-md-12" src="images/bubble-chart-mobile.png" alt="Benefits">
+          <!-- <canvas class="row chart culture col-sm-12 col-md-12" id="culture"></canvas> -->
+        </div>
+        <div class="row font-h4 d-flex justify-content-center">Does your company have a transparent salary policy?
+          <canvas class="chart salary" id="salary"></canvas>
+
+        </div>
+
+
+        <div class="row font-h4 d-flex justify-content-center">Do you feel that salaries are comparable for all genders at your company? *
+          <canvas class="chart comp-salary" id="comp-salary"></canvas>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-quote">
+  <div class="container">
+    <div class="row">
+      <q class="font-h2 font-h2--quote">It feels like I need to prove myself 100% just to get my foot in the door whereas men seem to be rated on their potential to learn the missing skills they don't have.
+      </q>
+    </div>
+  </div>
+</div>
+
+<div class="container-section">
+  <div class="container">
+    <div class="row">
+      <div class="font-h2">The Realities of Women in Tech</div>
+        <div class="font-h3">Despite diversity and inclusion efforts, women are being asked to perform office housekeeping tasks <i>in addition</i> to their regular jobs.
+        </div>
+        <div class="row font-h4 d-flex justify-content-center">Which of the following have you experienced? *
+        </div>
+        <div>
+          <div class="row font-p experienceRows col-sm-12">Told you were too aggressive at work
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart1"  id="experienced1"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">Asked to order lunches, schedule events that was beyond your job scope
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart2" id="experienced2"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">Suspect you were passed on a role because of your gender
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart3" id="experienced3"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">Learned to be the den mother, counselor, admin because of your gender
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart4" id="experienced4"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">Excluded from important work events because of your gender
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart5" id="experienced5"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">In a meeting and felt gendered language was used that did not include you
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart6" id="experienced6"></canvas>
+          </div>
+          <div class="row font-p experienceRows col-sm-12">No - I have not experienced any of these
+            <canvas class="chart col-sm-12 experiencedChart experiencedChart7" id="experienced7"></canvas>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-quote">
+  <div class="container">
+    <div class="row">
+      <div class="row font-h4 d-flex justify-content-center">What is the one thing you'd like to stop?
+      </div>
+      <div class="carousel slide" id="carouselQuotes" data-ride="carousel">
+        <!-- Round dots for carousel !-->
+        <ol class="carousel-indicators carousel-indicators--round">
+          <li data-target="#carouselQuotes" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselQuotes" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselQuotes" data-slide-to="2" class="active"></li>
+          <li data-target="#carouselQuotes" data-slide-to="3" class="active"></li>
+          <li data-target="#carouselQuotes" data-slide-to="4" class="active"></li>
+        </ol>
+        <!-- Carousel content !-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <q class="font-h2 font-h2--quote">Being told I'm "too emotional" when I have a damn opinion and am assertive about it.</q>
+          </div>
+          <div class="carousel-item">
+            <q class="font-h2 font-h2--quote">Sexism when I wear a dress. As if wearing a dress makes me less smart or less of a badass. I'm tired of wearing jeans and a t-shirt to be respected by my peers or employees.</q>
+          </div>
+          <div class="carousel-item">
+            <q class="font-h2 font-h2--quote">The traditional tech "perks" (like Ping pong, Foosball, IPA Beer tasting) are activities that are traditionally geared towards men.  I'm not interested in these activities, and I would like to see a broader list of choices.  What about arts & crafts, book clubs, etc?</q>
+          </div>
+          <div class="carousel-item">
+            <q class="font-h2 font-h2--quote">Listening to colleagues talk about how they are obviously diverse and inclusive while I sit there as the only black woman in the room.</q>
+          </div>
+          <div class="carousel-item">
+            <q class="font-h2 font-h2--quote">Being propositioned and invited to hotel rooms by tech execs</q>
           </div>
         </div>
       </div>
@@ -58,273 +168,209 @@ layout: default
 </div>
 
 <div class="container-section">
-  <div class="font-h2">The Culture</div>
-    <div class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
-    </div>
-    <div class="row font-h4">Which of these benefits, if any, does your company provide?
-      <canvas class="chart benefits" id="benefits"></canvas>
-    </div>
-    <div class="row font-h4 d-flex justify-content-center">How would you describe your company culture?
-      <img class="img-fluid benefitsImg-landscape col-sm-12 col-md-12"  src="images/bubble-chart-landscape.png" alt="Benefits">
-      <img class="benefitsImg-mobile col-sm-12 col-md-12" src="images/bubble-chart-mobile.png" alt="Benefits">
-      <!-- <canvas class="row chart culture col-sm-12 col-md-12" id="culture"></canvas> -->
-    </div>
-    <div class="row font-h4 d-flex justify-content-center">Does your company have a transparent salary policy?
-      <canvas class="chart salary" id="salary"></canvas>
-
-    </div>
-
-
-    <div class="row font-h4 d-flex justify-content-center">Do you feel that salaries are comparable for all genders at your company? *
-      <canvas class="chart comp-salary" id="comp-salary"></canvas>
-    </div>
-</div>
-
-<div class="container-quote">
-  <q class="font-h2 font-h2--quote">It feels like I need to prove myself 100% just to get my foot in the door whereas men seem to be rated on their potential to learn the missing skills they don't have.
-  </q>
-</div>
-
-<div class="container-section">
-  <div class="font-h2">The Realities of Women in Tech</div>
-    <div class="font-h3">Despite diversity and inclusion efforts, women are being asked to perform office housekeeping tasks <i>in addition</i> to their regular jobs.
-    </div>
-    <div class="row font-h4 d-flex justify-content-center">Which of the following have you experienced? *
-    </div>
-    <div>
-      <div class="row font-p experiencedStacked col-sm-12">Told you were too aggressive at work
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart1"  id="experienced1"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">Asked to order lunches, schedule events that was beyond your job scope
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart2" id="experienced2"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">Suspect you were passed on a role because of your gender
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart3" id="experienced3"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">Learned to be the den mother, counselor, admin because of your gender
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart4" id="experienced4"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">Excluded from important work events because of your gender
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart5" id="experienced5"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">In a meeting and felt gendered language was used that did not include you
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart6" id="experienced6"></canvas>
-      </div>
-      <div class="row font-p experiencedStacked col-sm-12">No - I have not experienced any of these
-        <canvas class="chart col-sm-12 experiencedChart experiencedChart7" id="experienced7"></canvas>
-      </div>
-    </div>
-</div>
-
-<div class="container-quote">
-  <div class="row font-h4 d-flex justify-content-center">What is the one thing you'd like to stop?
-  </div>
-  <div class="carousel slide" id="carouselQuotes" data-ride="carousel">
-    <!-- Round dots for carousel !-->
-    <ol class="carousel-indicators carousel-indicators--round">
-      <li data-target="#carouselQuotes" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselQuotes" data-slide-to="1" class="active"></li>
-      <li data-target="#carouselQuotes" data-slide-to="2" class="active"></li>
-      <li data-target="#carouselQuotes" data-slide-to="3" class="active"></li>
-      <li data-target="#carouselQuotes" data-slide-to="4" class="active"></li>
-    </ol>
-    <!-- Carousel content !-->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <q class="font-h2 font-h2--quote">Being told I'm "too emotional" when I have a damn opinion and am assertive about it.</q>
-      </div>
-      <div class="carousel-item">
-        <q class="font-h2 font-h2--quote">Sexism when I wear a dress. As if wearing a dress makes me less smart or less of a badass. I'm tired of wearing jeans and a t-shirt to be respected by my peers or employees.</q>
-      </div>
-      <div class="carousel-item">
-        <q class="font-h2 font-h2--quote">The traditional tech "perks" (like Ping pong, Foosball, IPA Beer tasting) are activities that are traditionally geared towards men.  I'm not interested in these activities, and I would like to see a broader list of choices.  What about arts & crafts, book clubs, etc?</q>
-      </div>
-      <div class="carousel-item">
-        <q class="font-h2 font-h2--quote">Listening to colleagues talk about how they are obviously diverse and inclusive while I sit there as the only black woman in the room.</q>
-      </div>
-      <div class="carousel-item">
-        <q class="font-h2 font-h2--quote">Being propositioned and invited to hotel rooms by tech execs</q>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-section">
-  <div class="font-h2">The Realities of Harassment</div>
-    <div class="font-h3">
-    </div>
-  <div class="row container-data">
-    <div class="font-percent-numbers col-sm-6">17%
-      <div class="font-percent-words">experienced harassment in their workplace, just in the last 12 months
-      </div>
-    </div>
-    <div class="row col-sm-6 centerContent">
-      <div class="icon-people">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-        <img class="peopleImage" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+  <div class="container">
+    <div class="row">
+      <div class="font-h2">The Realities of Harassment</div>
+        <div class="font-h3">
+        </div>
+      <div class="row container-data">
+        <div class="font-percent-numbers col-sm-6">17%
+          <div class="font-percent-words">experienced harassment in their workplace, just in the last 12 months
+          </div>
+        </div>
+        <div class="row col-sm-6 centerContent">
+          <div class="icon-people">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+            <img class="peopleImage" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+            <br></br>
+            <div class="row font-percent-words justify-content-center">That's 1 in 6 people
+            </div>
+          </div>
+        </div>
         <br></br>
-        <div class="row font-percent-words justify-content-center">That's 1 in 6 people
+        <br></br>
+
+      </div>
+      <div class="row font-h3 col-sm centerContent">If your first reaction is that only 17% of people having experienced harassment isn’t that big of a deal, think again. This figure is from the last 12 months only and when the majority of people are not experiencing harassment, it means that those who are feel more and more isolated and marginalized.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-section">
+  <div class="container">
+    <div class="row">
+      <div class="row font-h4 d-flex justify-content-center">What form(s) of harassment have you experienced at work in the past 12 months?
+        <div>
+          <img class="row col-sm centerContent" src="images/harassment_forms_cloud.png" alt="forms of harassment">
         </div>
       </div>
-    </div>
-    <br></br>
-    <br></br>
-
-  </div>
-  <div class="row font-h3 col-sm centerContent">If your first reaction is that only 17% of people having experienced harassment isn’t that big of a deal, think again. This figure is from the last 12 months only and when the majority of people are not experiencing harassment, it means that those who are feel more and more isolated and marginalized.
-  </div>
-</div>
-<div class="container-section">
-  <div class="row font-h4 d-flex justify-content-center">What form(s) of harassment have you experienced at work in the past 12 months?
-    <div>
-      <img class="row col-sm centerContent" src="images/harassment_forms_cloud.png" alt="forms of harassment">
+      <div class="row col-sm-12 font-h4 d-flex justify-content-center">What was your experience?
+      </div>
+        <div class="row col-sm-12 font-p font-p--italic d-flex justify-content-center">How did your employee handle your report?</div>
+      <div class="row chart sankeyChart embed-responsive-item d-flex justify-content-center" id="experience_sankey"></div>
     </div>
   </div>
-  <div class="row col-sm-12 font-h4 d-flex justify-content-center">What was your experience?
-  </div>
-    <div class="row col-sm-12 font-p font-p--italic d-flex justify-content-center">How did your employee handle your report?</div>
-  <div class="row chart sankeyChart embed-responsive-item d-flex justify-content-center" id="experience_sankey"></div>
-
 </div>
 
 
 <div class="container-section container-section--2">
-  <div class="row col-sm font-h4 d-flex justify-content-center">The Breakdown in Numbers
-  </div>
-  <div class ="row col-sm">
-    <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">63%</strong>
-      <div class="font-percent-words">did <strong class="color-emphasis-red">not report</strong> that they experienced harassment
+  <div class="container">
+    <div class="row">
+      <div class="row col-sm font-h4 d-flex justify-content-center">The Breakdown in Numbers
       </div>
-    </div>
-    <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">42%</strong>
-      <div class="font-percent-words">of those that reported, experienced <strong class="color-emphasis-red">relatiation</strong>
-      </div>
-    </div>
-    <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">58%</strong>
-      <div class="font-percent-words">felt their report was <strong class="color-emphasis-red">not handled well</strong>
+      <div class ="row col-sm">
+        <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">63%</strong>
+          <div class="font-percent-words">did <strong class="color-emphasis-red">not report</strong> that they experienced harassment
+          </div>
+        </div>
+        <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">42%</strong>
+          <div class="font-percent-words">of those that reported, experienced <strong class="color-emphasis-red">relatiation</strong>
+          </div>
+        </div>
+        <div class="font-percent-numbers col-sm-4"><strong class="color-emphasis-red">58%</strong>
+          <div class="font-percent-words">felt their report was <strong class="color-emphasis-red">not handled well</strong>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container-section">
-  <div class="row col-sm">
-    <div class="row col-sm font-h4 d-flex justify-content-center">Realities of Reporting Harassment
+  <div class="container">
+    <div class="row col-sm">
+      <div class="row col-sm font-h4 d-flex justify-content-center">Realities of Reporting Harassment
+      </div>
+      <div class="row col-sm-12 font-percent-words d-flex justify-content-center">Of those that <strong class="color-emphasis-red">did not</strong> experience harassment in the past 12 months
+      </div>
     </div>
-    <div class="row col-sm-12 font-percent-words d-flex justify-content-center">Of those that <strong class="color-emphasis-red">did not</strong> experience harassment in the past 12 months
+    <div class="row col-sm">
+      <div class="col-sm-12 icon-people d-flex justify-content-center">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      </div>
     </div>
-  </div>
-  <div class="row col-sm">
-    <div class="col-sm-12 icon-people d-flex justify-content-center">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-LIME.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREEN.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+    <br></br>
+    <div class="row col-sm">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4 font-percent-words font-words--alignLL "><strong class="color-emphasis-lime">5 out of 10<br></strong> believe they would feel <strong>very comfortable</strong> reporting harassment</br>
+      </div>
+      <div class="col-sm-4 font-percent-words font-words--alignLL "><strong class="color-emphasis-lime">8 out of 10<br></strong> believe they would feel atleast <strong>somewhat comfortable</strong> reporting harassment</br>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
-  </div>
-  <br></br>
-  <div class="row col-sm">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-2 font-percent-words font-words--alignLL box-border"><strong class="color-emphasis-lime">5 out of 10<br></strong> believe they would feel <strong>very comfortable</strong> reporting harassment</br>
-    </div>
-    <div class="col-sm-2 font-percent-words font-words--alignLL box-border"><strong class="color-emphasis-lime">8 out of 10<br></strong> believe they would feel atleast <strong>somewhat comfortable</strong> reporting harassment</br>
-    </div>
-    <div class="col-sm-3"></div>
-  </div>
 
-  <div class="row col-sm section-break">
-    <div class="row col-sm-12 font-percent-words d-flex justify-content-center">But of those that <strong class="color-emphasis-red">did</strong> experience harassment in the past 12 months
+    <div class="row col-sm section-break">
+      <div class="row col-sm-12 font-percent-words d-flex justify-content-center">But of those that <strong class="color-emphasis-red">did</strong> experience harassment in the past 12 months
+      </div>
     </div>
-  </div>
-  <div class="row col-sm">
-    <div class="col-sm-12 icon-people d-flex justify-content-center">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
-    <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+    <div class="row col-sm">
+      <div class="col-sm-12 icon-people d-flex justify-content-center">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      <img class="peopleImage peopleImage--lg" src="images/PDXWIT-Generic-ICON-GREY.png" alt="Person White">
+      </div>
     </div>
-  </div>
-  <br></br>
-  <div class="row col-sm">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-2 font-percent-words font-words--alignLL box-border"><strong class="color-emphasis-lime">Only 3 out of 10<br></strong> reported their harassment experience</br></div>
-    <div class="col-sm-6"></div>
+    <br></br>
+    <div class="row col-sm">
+      <div class="col-sm-4 font-percent-words font-words--alignLL "><strong class="color-emphasis-lime">Only 3 out of 10<br></strong> reported their harassment experience</br></div>
+      <div class="col-sm-7"></div>
+    </div>
   </div>
 </div>
 
 <div class="container-next-steps">
-  <div class="col-md">
-    <div class="font-h2 font-h2--black">The Next Step</div>
-      <div class="font-h4 font-h4--black">Don't let this data scare you, let it ignite you. Here's how you can act.
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="font-h2 font-h2--black">The Next Step</div>
+          <div class="font-h4 font-h4--black">Don't let this data scare you, let it ignite you. Here's how you can act.
+          </div>
+          <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Share</strong> this data broadly and widely</ul>
+          <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Act</strong> by downloading our <a href="#">Harassment Action Checklist</a>, taking steps most appropriate for your role in the organization</ul>
+          <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Join</strong> our Slack group <a href="https://pdxwomenintech.slack.com/messages/#askafriend">#AskaFriend</a> and <a href="https://pdxwomenintech.slack.com/messages/#diversity_inclusion">#Diversity_Inclusion</a> to provide or seek support</ul>
+          <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Demand</strong> your company take action to stop harassment in the workplace</ul>
+          <div>
+          <button type="button" class="btn btn--learnmore">Learn More</button>
+          </div>
+        </div>
       </div>
-      <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Share</strong> this data broadly and widely</ul>
-      <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Act</strong> by downloading our <a href="#">Harassment Action Checklist</a>, taking steps most appropriate for your role in the organization</ul>
-      <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Join</strong> our Slack group <a href="https://pdxwomenintech.slack.com/messages/#askafriend">#AskaFriend</a> and <a href="https://pdxwomenintech.slack.com/messages/#diversity_inclusion">#Diversity_Inclusion</a> to provide or seek support</ul>
-      <ul class="icon-list font-h4 font-h4--black"><i class="far fa-question-circle"></i> <strong class="font-h4--bold font-uppercase">Demand</strong> your company take action to stop harassment in the workplace</ul>
-      <div>
-      <button type="button" class="btn btn--learnmore">Learn More</button>
-      </div>
-    </div>
   </div>
 </div>
 
 <div class="container-intro">
-  <div class="col-md col-centered">
-    <div class="font-h2">Methodology</div>
-      <div class="font-p">The State of the Community survey was a collaboration between Portland Women in Technology, SurveyMonkey and Planet Argon. The survey was launched at TechFest NW in early April 2018 and remained open for over three weeks. It was distributed organically through community members via internal slack groups, mailing lists and social media. 804 responded to the survey.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md col-centered">
+        <div class="font-h2">Methodology</div>
+          <div class="font-p">The State of the Community survey was a collaboration between Portland Women in Technology, SurveyMonkey and Planet Argon. The survey was launched at TechFest NW in early April 2018 and remained open for over three weeks. It was distributed organically through community members via internal slack groups, mailing lists and social media. 804 responded to the survey.</p>
+          </div>
+          <div class="font-p">Profile of the respondents:</div>
+          <div class="font-p">
+            <ul class="respondent-data">
+              <li class="list-respondent-data">Gender: Male 17%, Female 81%, Neither Gender 2%</li>
+              <li class="list-respondent-data">68% members of PDXWIT</li>
+              <li class="list-respondent-data">87% working full time</li>
+              <li class="list-respondent-data">53% have worked in tech 6+ years</li>
+              <li class="list-respondent-data">82% White/Caucasian</li>
+              <li class="list-respondent-data">92% hold a college degree</li>
+              <li class="list-respondent-data">96% in prime working age 25-64</li>
+            </ul>
+          </div>
+          <br></br>
+          <p class="font-p font-p--italic">* Important note: One of the questions in the survey asked respondents to specify their gender identity. This question was multi-select–which means respondents could select more than one gender identity descriptor. All data points within this survey include all individuals, regardless of gender identity, EXCEPT the data points denoted with an asterisk (*) in the title. In these situations, only the individuals who specified “man” or “woman” are reflected due to the fact that the sample size for other gender identities was too small. PDXWIT is committed to serving all people in our community and is constantly iterating our processes to ensure this happens. If you have ideas for improvement, or other feedback related to this survey, please contact <a href="mailto:hello@pdxwit.org" class="email">hello@pdxwit.org</a>.
+          </p>
       </div>
-      <div class="font-p">Profile of the respondents:</div>
-      <div class="font-p">
-        <ul class="respondent-data">
-          <li class="list-respondent-data">Gender: Male 17%, Female 81%, Neither Gender 2%</li>
-          <li class="list-respondent-data">68% members of PDXWIT</li>
-          <li class="list-respondent-data">87% working full time</li>
-          <li class="list-respondent-data">53% have worked in tech 6+ years</li>
-          <li class="list-respondent-data">82% White/Caucasian</li>
-          <li class="list-respondent-data">92% hold a college degree</li>
-          <li class="list-respondent-data">96% in prime working age 25-64</li>
-        </ul>
-      </div>
-      <br></br>
-      <p class="font-p font-p--italic">* Important note: One of the questions in the survey asked respondents to specify their gender identity. This question was multi-select–which means respondents could select more than one gender identity descriptor. All data points within this survey include all individuals, regardless of gender identity, EXCEPT the data points denoted with an asterisk (*) in the title. In these situations, only the individuals who specified “man” or “woman” are reflected due to the fact that the sample size for other gender identities was too small. PDXWIT is committed to serving all people in our community and is constantly iterating our processes to ensure this happens. If you have ideas for improvement, or other feedback related to this survey, please contact <a href="mailto:hello@pdxwit.org" class="email">hello@pdxwit.org</a>.
-      </p>
+    </div>
   </div>
 </div>
 
 <div class="container-about">
-  <div class="col-md col-centered">
-    <div class="header--site_logo">
-        <div class="row col-md">
-            <a href="pdxwit.org"><img class="logo" alt="PDXWIT" src="images/PDXWIT-LOGO_MAIN-HIGH.jpg"></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md col-centered">
+        <div class="header--site_logo">
+            <div class="row col-md">
+                <a href="pdxwit.org"><img class="logo" alt="PDXWIT" src="images/PDXWIT-LOGO_MAIN-HIGH.jpg"></a>
+            </div>
         </div>
+        <div class="font-h2 font-h2--dark">About Portland Women in Tech</div>
+          <div class="font-h3 font-h3--dark">PDXWIT’s thought leadership and advocacy is unparalleled.
+          </div>
+          <p></p>
+          <div class="font-p font-p--dark">Portland Women in Technology (PDXWIT), founded in 2012, is a 501c3 non-profit with the purpose of encouraging women to join tech and supporting and empowering them so they stay in tech. What started out as a small group of 15 women meeting socially at a local bar has turned into a highly-engaged and active community of over 5000 people–inclusive of allies–which represents nearly 30% of Portland’s tech workforce. We are working hard to be as inclusive as possible of all individuals. We welcome and affirm non-binary and trans people as a matter of principle. The organization has partnered with over 80 tech companies, over 40 of whom are providing ongoing support of the organization as sponsors.
+          </div>
+      </div>
     </div>
-    <div class="font-h2 font-h2--dark">About Portland Women in Tech</div>
-      <div class="font-h3 font-h3--dark">PDXWIT’s thought leadership and advocacy is unparalleled.
-      </div>
-      <p></p>
-      <div class="font-p font-p--dark">Portland Women in Technology (PDXWIT), founded in 2012, is a 501c3 non-profit with the purpose of encouraging women to join tech and supporting and empowering them so they stay in tech. What started out as a small group of 15 women meeting socially at a local bar has turned into a highly-engaged and active community of over 5000 people–inclusive of allies–which represents nearly 30% of Portland’s tech workforce. We are working hard to be as inclusive as possible of all individuals. We welcome and affirm non-binary and trans people as a matter of principle. The organization has partnered with over 80 tech companies, over 40 of whom are providing ongoing support of the organization as sponsors.
-      </div>
   </div>
 </div>
 
 <div class="container-green">
-  <div>
-  <button type="button" class="btn btn--learnmore">Learn More About Us</button>
-</div>
+  <div class="container">
+    <div class="row">
+      <div>
+      <button type="button" class="btn btn--learnmore">Learn More About Us</button>
+      </div>
+    </div>
+  </div>
 </div>

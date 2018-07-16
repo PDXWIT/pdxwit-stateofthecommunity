@@ -58,28 +58,28 @@ $color-grey: #D0D0D0;
 @mixin breakpoint($class) {
   @if $class == sm {
     @media (max-width: 576px) { @content;
-    margin:auto;
+    // margin:auto;
     }
   }
 
   @else if $class == md {
     @media (min-width: 768px) { @content;
-    max-width: 760px;
-    margin: auto;
+    // max-width: 960px;
+    // margin: auto;
     }
   }
 
   @else if $class == lg {
     @media (min-width: 992px) { @content;
-    max-width: 760px;
-    margin:auto;
+    // max-width: 960px;
+    // margin:auto;
     }
   }
 
   @else if $class == xl {
     @media (min-width: 1200px) { @content;
-    max-width: 760px;
-    margin:auto;
+    // max-width: 960px;
+    // margin:auto;
     }
   }
 
@@ -98,7 +98,7 @@ $color-grey: #D0D0D0;
   background-color: $color-pdxwit-white;
   overflow: hidden;
   padding-right: 15%;
-  margin: 0 auto;
+  margin: 0;
 
   .navbar-list {
       list-style: none;
@@ -146,9 +146,13 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
+.container {
+  margin:0px;
+  padding: 0px;
+  width: 100%;
+}
 .header-container, .footer-container {
   padding-right: 15%;
   padding-left: 15%;
@@ -174,6 +178,7 @@ html,body{
   padding: 5% 15%;
   display:block;
   justify-content: center;
+  clear:both;
 }
 
 .container-section--2{
@@ -186,6 +191,8 @@ html,body{
   padding: 5% 15%;
   display:block;
   justify-content: center;
+  clear:both;
+
 }
 
 .container-data {
@@ -489,10 +496,6 @@ html,body{
    }
  }
 
-// .fa-circle {
-//   padding: 0 1em 1em;
-// }
-
 .btn--share {
   @include btn-theme;
   background-color: $color-pdxwit-lime;
@@ -512,6 +515,18 @@ html,body{
   padding: 1em 1em 5em 1em;
 }
 
+//prevents carousel from jumping up and down
+.carousel-inner {
+  height: 250px;
+  @include breakpoint(md) {
+    height: 400px;
+  }
+  @include breakpoint(lg) {
+    height: 600px;
+  }
+}
+
+//circles at bottom
 .carousel-indicators--round {
   li {
     margin: 0 5px;
