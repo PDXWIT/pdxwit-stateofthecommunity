@@ -265,7 +265,6 @@ html,body{
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-
 }
 
 .font-h3 {
@@ -526,6 +525,24 @@ html,body{
   }
 }
 
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
 //circles at bottom
 .carousel-indicators--round {
   li {
@@ -649,6 +666,6 @@ img.benefitsImg-mobile {
     height: 150px !important;
   }
   @include breakpoint(lg) {
-    height: 200px !important;
+    height: 220px !important;
   }
 }
