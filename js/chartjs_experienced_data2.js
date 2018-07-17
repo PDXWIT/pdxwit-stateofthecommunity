@@ -1,3 +1,7 @@
+// There are 7 charts all with their own settings
+// Settings are the same throughout
+// Make sure you update across all charts
+
 // =====================
 // Experienced Chart 1
 // =====================
@@ -39,6 +43,8 @@ var experienceBar1 = new Chart(ctxExperienced1, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -101,6 +107,8 @@ var experienceBar2 = new Chart(ctxExperienced2, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -163,6 +171,8 @@ var experienceBar3 = new Chart(ctxExperienced3, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -225,6 +235,8 @@ var experienceBar4 = new Chart(ctxExperienced4, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -287,6 +299,8 @@ var experienceBar5 = new Chart(ctxExperienced5, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -349,6 +363,8 @@ var experienceBar6 = new Chart(ctxExperienced6, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,
@@ -412,6 +428,8 @@ var experienceBar7 = new Chart(ctxExperienced7, {
       responsive: false,
       scales: {
           yAxes: [{
+            barPercentage: 0.8,
+            categoryPercentage: 0.3,
             stacked: true,
             gridLines: {
               display: false,

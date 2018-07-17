@@ -601,7 +601,9 @@ img.benefitsImg-mobile {
 
 .chart {
   margin: 0;
+  padding: 0;
 }
+
 
 #canvas.culture {
   width: 200px;
@@ -641,12 +643,12 @@ img.benefitsImg-mobile {
   justify-content: center;
   padding: 0;
   margin: 0;
-  width: 90% !important;
+  width: 100% !important;
   height: 90px !important;
   @include breakpoint(md) {
-    height: 220px !important;
+    height: 150px !important;
   }
   @include breakpoint(lg) {
-    height: 320px !important;
+    height: 200px !important;
   }
 }

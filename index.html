@@ -1,20 +1,26 @@
 ---
 layout: default
 ---
-<div class="navbar navbar-expand-md navbar-light">
-  <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarToggler">
-    <ul class="navbar-list ml-auto navbar-right">
-      <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/" >About PDXWIT</a></li>
-      <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/contact-us/" >Contact Us</a></li>
-    </ul>
+<div class="header-container">
+  <div class="container-fluid">
+    <div class="row col-12">
+      <div class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler ml-auto hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarToggler">
+          <ul class="navbar-list ml-auto navbar-right">
+            <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/" >About PDXWIT</a></li>
+            <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/contact-us/" >Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="container-intro">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row col-12">
       <div class="font-h1">State of the Community</div>
 
@@ -60,43 +66,43 @@ layout: default
 </div>
 
 <div class="container-section">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="font-h2">The Culture</div>
         <div class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
         </div>
-        <div class="row font-h4">Which of these benefits, if any, does your company provide?
-          <canvas class="chart benefits" id="benefits"></canvas>
+        <div class="row font-h4 d-flex justify-content-center">Which of these benefits, if any, does your company provide?
+          <canvas class="chart benefits col-12" id="benefits"></canvas>
         </div>
         <div class="row font-h4 d-flex justify-content-center">How would you describe your company culture?
-          <img class="img-fluid benefitsImg-landscape col-sm-12 col-md-12"  src="images/bubble-chart-landscape.png" alt="Benefits">
-          <img class="benefitsImg-mobile col-sm-12 col-md-12" src="images/bubble-chart-mobile.png" alt="Benefits">
+          <img class="img-fluid benefitsImg-landscape col-12"  src="images/bubble-chart-landscape.png" alt="Benefits">
+          <img class="benefitsImg-mobile col-12" src="images/bubble-chart-mobile.png" alt="Benefits">
           <!-- <canvas class="row chart culture col-sm-12 col-md-12" id="culture"></canvas> -->
         </div>
         <div class="row font-h4 d-flex justify-content-center">Does your company have a transparent salary policy?
-          <canvas class="chart salary" id="salary"></canvas>
+          <canvas class="chart salary col-12" id="salary"></canvas>
 
         </div>
 
 
         <div class="row font-h4 d-flex justify-content-center">Do you feel that salaries are comparable for all genders at your company? *
-          <canvas class="chart comp-salary" id="comp-salary"></canvas>
+          <canvas class="chart comp-salary col-12" id="comp-salary"></canvas>
         </div>
     </div>
   </div>
 </div>
 
 <div class="container-quote">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <q class="font-h2 font-h2--quote">It feels like I need to prove myself 100% just to get my foot in the door whereas men seem to be rated on their potential to learn the missing skills they don't have.
+      <q class="font-h2 font-h2--quote col-12">It feels like I need to prove myself 100% just to get my foot in the door whereas men seem to be rated on their potential to learn the missing skills they don't have.
       </q>
     </div>
   </div>
 </div>
 
 <div class="container-section">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="font-h2">The Realities of Women in Tech</div>
         <div class="font-h3">Despite diversity and inclusion efforts, women are being asked to perform office housekeeping tasks <i>in addition</i> to their regular jobs.
