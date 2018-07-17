@@ -338,7 +338,6 @@ html,body{
   @include breakpoint(lg) {
     font-size: 106px;
     margin: 0 !important;
-    max-width: 238px;
   }
 }
 
@@ -664,8 +663,10 @@ img.benefitsImg-mobile {
   height: 90px !important;
   @include breakpoint(md) {
     height: 150px !important;
+    // max-width: 960px;
   }
   @include breakpoint(lg) {
-    height: 220px !important;
+    height: 380px !important;
+    // max-width: 960px;
   }
 }
