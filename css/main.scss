@@ -360,9 +360,10 @@ html,body{
   }
 }
 
-.font-words--alignL {
+.font-words-alignL {
   text-align: left;
   padding-right: .5em;
+  display:block;
 }
 
 .font-p {
@@ -463,6 +464,7 @@ html,body{
  .icon-people {
    display:block;
    object-fit: contain;
+   text-align: center;
    padding-top: 1em;
    @include breakpoint(md) {
      padding-top: 2em;
@@ -649,7 +651,7 @@ img.benefitsImg-mobile {
 
 
 .experienceRows {
-  padding-top: 1.5em;
+  padding: 0;
   margin: 0;
   display:block;
   justify-content: center;
@@ -666,7 +668,7 @@ img.benefitsImg-mobile {
     // max-width: 960px;
   }
   @include breakpoint(lg) {
-    height: 380px !important;
+    height: 280px !important;
     // max-width: 960px;
   }
 }
