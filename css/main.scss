@@ -415,7 +415,7 @@ html,body{
 @mixin btn-theme() {
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
+  display: block;
   justify-content: center;
   margin: auto;
   color: $color-pdxwit-black;
