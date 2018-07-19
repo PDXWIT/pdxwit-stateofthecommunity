@@ -11,7 +11,7 @@
 // =====================
 
 $font-h2s: "Oswald", sans-serif; //use $font-weight-bold
-$font-h4s: Helvetica, "EB Garamond", serif; //use $font-weight-regular
+$font-h4s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
 $font-ps: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 500;
@@ -235,12 +235,12 @@ html,body{
 }
 .font-h1 {
   font-family: LeagueGothic-Regular;
-  font-size: 21px;
+  font-size: 41px;
   @include breakpoint(md) {
-    font-size: 43px;
+    font-size: 63px;
   }
   @include breakpoint(lg) {
-    font-size: 65px;
+    font-size: 85px;
   }
 }
 
@@ -297,6 +297,7 @@ h4 {
   justify-content: center;
   text-align: center;
   padding: 1em;
+  letter-spacing: .05em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
@@ -614,7 +615,11 @@ img.imgBubble-mobile {
   width: auto;
   max-width: 100%;
   height: auto;
+  margin: 0;
   padding: 1em;
+  display: block;
+  justify-content: center;
+  flex: none;
   // @media (min-width: 960px) {
   //   display: none;
   // }
