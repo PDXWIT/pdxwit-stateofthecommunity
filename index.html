@@ -75,7 +75,11 @@ layout: default
           <canvas class="chart benefits col-12" id="benefits"></canvas>
 
           <h4 class="font-h4 justify-content-center">How would you describe your company culture?</h4>
-        <img class="img-fluid col-md" src="images/bubble-chart-landscape.png" alt="Benefits">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <img class="img-fluid col-md" src="images/bubble-chart-landscape.png" alt="Benefits">
+            </div>
+          </div>
 
           <h4 class="font-h4">Does your company have a transparent salary policy?</h4>
           <canvas class="chart salary col-12" id="salary"></canvas>
@@ -218,10 +222,18 @@ layout: default
       <div class="row justify-content-center">
         <div class="col-12">
           <h4 class="font-h4">What form(s) of harassment have you experienced at work in the past 12 months?</h4>
-          <img class="img-fluid col-md" src="images/harassment_forms_cloud.png" alt="forms of harassment">
-          <h4 class="font-h4">What was your experience?</h4>
-          <p class="font-p font-p--italic">How did your employee handle your report?</p>
-          <div class="chart sankeyChart embed-responsive-item" id="experience_sankey">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <img class="img-fluid col-md" src="images/harassment_forms_cloud.png" alt="forms of harassment">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4 class="font-h4">What was your experience?</h4>
+              <p class="font-p font-p--italic text-center">How did your employee handle your report?</p>
+              <div class="chart sankeyChart embed-responsive-item" id="experience_sankey">
+              </div>
+            </div>
           </div>
         </div>
       </div>
