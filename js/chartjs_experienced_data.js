@@ -66,7 +66,7 @@
 //     {
 //       label: 'Women',
 //       data: [33, 33, 24, 42, 16, 46, 25],
-//       backgroundColor: '#921B1E' //red
+//       backgroundColor: '#E03A47' //red
 //     }, {
 //       label: 'Men',
 //       data: [19, 6, 5, 2, 1, 5, 71],

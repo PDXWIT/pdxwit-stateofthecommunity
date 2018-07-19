@@ -15,7 +15,7 @@ var experienceData1 = {
     {
       label: 'Women',
       data: [33],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [19],
@@ -79,7 +79,7 @@ var experienceData2 = {
     {
       label: 'Women',
       data: [33],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [6],
@@ -143,7 +143,7 @@ var experienceData3 = {
     {
       label: 'Women',
       data: [24],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [5],
@@ -207,7 +207,7 @@ var experienceData4 = {
     {
       label: 'Women',
       data: [42],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [2],
@@ -271,7 +271,7 @@ var experienceData5 = {
     {
       label: 'Women',
       data: [16],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [1],
@@ -335,7 +335,7 @@ var experienceData6 = {
     {
       label: 'Women',
       data: [46],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [5],
@@ -399,7 +399,7 @@ var experienceData7 = {
     {
       label: 'Women',
       data: [25],
-      backgroundColor: '#921B1E' //red
+      backgroundColor: '#E03A47' //red
     }, {
       label: 'Men',
       data: [71],

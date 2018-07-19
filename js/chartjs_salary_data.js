@@ -14,7 +14,7 @@ var salaryData = {
       data: [13, 87],
       backgroundColor: [
         '#2F7392', //yellow
-        '#921B1E', //red
+        '#E03A47', //red
       ]
     }]
 };

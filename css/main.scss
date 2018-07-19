@@ -10,11 +10,12 @@
 // Font variables
 // =====================
 
-$font-h2s: "LeagueGothic-Regular", sans-serif; //use $font-weight-bold
-$font-h4s: "Oswald", sans-serif; //use $font-weight-regular
+$font-h2s: "Oswald", sans-serif; //use $font-weight-bold
+$font-h4s: Helvetica, "EB Garamond", serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
 $font-ps: Helvetica, "EB Garamond", serif;
 $font-weight-bold: 500;
+$font-weight-semibold: 400;
 $font-weight-regular: 200;
 $font-weight-light: 100;
 $font-weight-xlight: 50;
@@ -39,7 +40,7 @@ $color-background-blue1: #394D5D; //grey blue
 $color-background-blue2: #2B3944; //dark blue
 $color-background-blue3: #2F7392; //bright blue
 $color-background-darkblue: #232E36; //very dark blue
-$color-pdxwit-red: #921B1E;
+$color-pdxwit-red: #E03A47;
 $color-yellow: #E1ED67;
 $color-dark-green: #244512;
 $color-grey: #D0D0D0;
@@ -233,6 +234,7 @@ html,body{
   padding-bottom: .8em;
 }
 .font-h1 {
+  font-family: LeagueGothic-Regular;
   font-size: 21px;
   @include breakpoint(md) {
     font-size: 43px;
@@ -261,7 +263,7 @@ html,body{
 }
 
 .font-h2--quote {
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-semibold;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -284,6 +286,10 @@ html,body{
 
 .font-h3--dark {
   color: $color-pdxwit-dark-grey;
+}
+
+h4 {
+  margin: 0;
 }
 
 .font-h4 {
@@ -368,6 +374,7 @@ html,body{
 
 .font-p {
   padding-bottom: 1em;
+  line-height: 1.5em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-xlight;
   font-family: $font-ps;
@@ -419,8 +426,8 @@ html,body{
   justify-content: center;
   margin: auto;
   color: $color-pdxwit-black;
-  font-weight: $font-weight-light;
-  font-family: $font-ps;
+  font-weight: $font-weight-semibold;
+  font-family: $font-h3s;
   font-size: 9px;
   @include breakpoint(md) {
     font-size: 15px;
@@ -592,24 +599,25 @@ html,body{
   padding: 0;
 }
 
-img.benefitsImg-landscape {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  padding: 1em;
-  @media (max-width: 991px) {
-    display: none;
-  }
-}
+// img.imgBubble-landscape {
+//   width: auto;
+//   max-width: 100%;
+//   height: auto;
+//   padding: 1em;
+//   @media (max-width: 959px){
+//     display: none;
+//   }
+//
+// }
 
-img.benefitsImg-mobile {
+img.imgBubble-mobile {
   width: auto;
   max-width: 100%;
   height: auto;
   padding: 1em;
-  @media (min-width: 992px) {
-    display: none;
-  }
+  // @media (min-width: 960px) {
+  //   display: none;
+  // }
 }
 
 
@@ -651,7 +659,7 @@ img.benefitsImg-mobile {
 
 
 .experienceRows {
-  padding: 0;
+  padding-top: 2em;
   margin: 0;
   display:block;
   justify-content: center;

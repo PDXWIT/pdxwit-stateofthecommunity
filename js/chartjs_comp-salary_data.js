@@ -16,7 +16,7 @@ var compsalaryData = {
       }, {
         data: [25,52],
         label: 'No',
-        backgroundColor: '#921B1E' //red
+        backgroundColor: '#E03A47' //red
       }
     ],
 };
