@@ -67,22 +67,22 @@ layout: default
 <div class="container-section">
   <div class="container-fluid">
     <div class="row">
-      <h2 class="font-h2">The Culture</h2>
-        <h3 class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
-        </h3>
-        <h4 class="col-12 font-h4 justify-content-center">Which of these benefits, if any, does your company provide?</h4>
-        <canvas class="chart benefits col-12" id="benefits"></canvas>
+      <div class="col-12">
+        <h2 class="font-h2">The Culture</h2>
+          <h3 class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
+          </h3>
+          <h4 class="font-h4 justify-content-center">Which of these benefits, if any, does your company provide?</h4>
+          <canvas class="chart benefits col-12" id="benefits"></canvas>
 
-        <h4 class="col-12 font-h4 justify-content-center">How would you describe your company culture?</h4>
-      <!-- <img class="imgBubble-landscape img-fluid col-md" src="images/bubble-chart-landscape.png" alt="Benefits"> -->
-      <img class="col-6 imgBubble-mobile img-fluid" src="images/bubble-chart-mobile.png" alt="Benefits">
+          <h4 class="font-h4 justify-content-center">How would you describe your company culture?</h4>
+        <img class="imgBubble-landscape img-fluid col-md" src="images/bubble-chart-landscape.png" alt="Benefits">
 
-        <h4 class="col-12 font-h4 justify-content-center">Does your company have a transparent salary policy?</h4>
-        <canvas class="chart salary col-12" id="salary"></canvas>
+          <h4 class="font-h4">Does your company have a transparent salary policy?</h4>
+          <canvas class="chart salary col-12" id="salary"></canvas>
 
-        <h4 class="col-12 font-h4 justify-content-center">Do you feel that salaries are comparable for all genders at your company? *</h4>
-        <canvas class="chart comp-salary col-12" id="comp-salary"></canvas>
-
+          <h4 class="font-h4 justify-content-center">Do you feel that salaries are comparable for all genders at your company? *</h4>
+          <canvas class="chart comp-salary col-12" id="comp-salary"></canvas>
+        </div>
     </div>
   </div>
 </div>
@@ -147,34 +147,36 @@ layout: default
 </div>
 
 <div class="container-quote">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row justify-content-center">
-      <h4 class="font-h4 col-12">What is the one thing you'd like to stop?</h4>
-      <div class="carousel slide carousel-fade col-12 d-flex justify-content-center" id="carouselQuotes" data-ride="carousel">
-        <!-- Round dots for carousel !-->
-        <ol class="carousel-indicators carousel-indicators--round">
-          <li data-target="#carouselQuotes" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselQuotes" data-slide-to="1" class="active"></li>
-          <li data-target="#carouselQuotes" data-slide-to="2" class="active"></li>
-          <li data-target="#carouselQuotes" data-slide-to="3" class="active"></li>
-          <li data-target="#carouselQuotes" data-slide-to="4" class="active"></li>
-        </ol>
-        <!-- Carousel content !-->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <q class="font-h2 font-h2--quote">Being told I'm "too emotional" when I have a damn opinion and am assertive about it.</q>
-          </div>
-          <div class="carousel-item">
-            <q class="font-h2 font-h2--quote">Sexism when I wear a dress. As if wearing a dress makes me less smart or less of a badass. I'm tired of wearing jeans and a t-shirt to be respected by my peers or employees.</q>
-          </div>
-          <div class="carousel-item">
-            <q class="font-h2 font-h2--quote">The traditional tech "perks" (like Ping pong, Foosball, IPA Beer tasting) are activities that are traditionally geared towards men.  I'm not interested in these activities, and I would like to see a broader list of choices.  What about arts & crafts, book clubs, etc?</q>
-          </div>
-          <div class="carousel-item">
-            <q class="font-h2 font-h2--quote">Listening to colleagues talk about how they are obviously diverse and inclusive while I sit there as the only black woman in the room.</q>
-          </div>
-          <div class="carousel-item">
-            <q class="font-h2 font-h2--quote">Being propositioned and invited to hotel rooms by tech execs</q>
+      <div class="col-12">
+        <h4 class="font-h4">What is the one thing you'd like to stop?</h4>
+        <div class="carousel slide carousel-fade" id="carouselQuotes" data-ride="carousel">
+          <!-- Round dots for carousel !-->
+          <ol class="carousel-indicators carousel-indicators--round">
+            <li data-target="#carouselQuotes" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselQuotes" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselQuotes" data-slide-to="2" class="active"></li>
+            <li data-target="#carouselQuotes" data-slide-to="3" class="active"></li>
+            <li data-target="#carouselQuotes" data-slide-to="4" class="active"></li>
+          </ol>
+          <!-- Carousel content !-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <q class="font-h2 font-h2--quote">Being told I'm "too emotional" when I have a damn opinion and am assertive about it.</q>
+            </div>
+            <div class="carousel-item">
+              <q class="font-h2 font-h2--quote">Sexism when I wear a dress. As if wearing a dress makes me less smart or less of a badass. I'm tired of wearing jeans and a t-shirt to be respected by my peers or employees.</q>
+            </div>
+            <div class="carousel-item">
+              <q class="font-h2 font-h2--quote">The traditional tech "perks" (like Ping pong, Foosball, IPA Beer tasting) are activities that are traditionally geared towards men.  I'm not interested in these activities, and I would like to see a broader list of choices.  What about arts & crafts, book clubs, etc?</q>
+            </div>
+            <div class="carousel-item">
+              <q class="font-h2 font-h2--quote">Listening to colleagues talk about how they are obviously diverse and inclusive while I sit there as the only black woman in the room.</q>
+            </div>
+            <div class="carousel-item">
+              <q class="font-h2 font-h2--quote">Being propositioned and invited to hotel rooms by tech execs</q>
+            </div>
           </div>
         </div>
       </div>
@@ -185,34 +187,30 @@ layout: default
 <div class="container-section">
   <div class="container-fluid">
     <div class="row">
+      <div class="col-12">
       <h2 class="font-h2">The Realities of Harassment</h2>
-      <div class="container-data">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 font-percent-numbers">17%
-              <div class="font-percent-words">experienced harassment in their workplace, just in the last 12 months
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 justify-content-center">
-              <div class="icon-people ">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
-                <img class="peopleImage" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
-                <br></br>
-                <div class="row font-percent-words">That's 1 in 6 people
-                </div>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 font-percent-numbers">17%
+        <div class="font-percent-words">experienced harassment in their workplace, just in the last 12 months
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 justify-content-center">
+        <div class="icon-people ">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-WHITE.png" alt="Person White">
+          <img class="peopleImage" src="images/PDXWIT-Generic-ICON-RED.png" alt="Person White">
+          <br></br>
+          <div class="row font-percent-words">That's 1 in 6 people
           </div>
         </div>
       </div>
-      <br></br>
-      <br></br>
     </div>
-    <div class="row">
+    <div class="row margin-top-xl">
       <p class="row font-h3 col-12 centerContent">If your first reaction is that only 17% of people having experienced harassment isn’t that big of a deal, think again. This figure is from the last 12 months only and when the majority of people are not experiencing harassment, it means that those who are feel more and more isolated and marginalized.
       </p>
     </div>
