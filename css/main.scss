@@ -676,6 +676,9 @@ h4 {
   }
   min-height: 100px;
   margin: 0;
+  .font-h3 {
+    padding-bottom: 0;
+  }
 }
 
 .bar {
@@ -683,6 +686,7 @@ h4 {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  padding-bottom: 2em;
 }
 
 .bar section {
