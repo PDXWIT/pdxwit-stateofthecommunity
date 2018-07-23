@@ -13,7 +13,7 @@
 $font-h2s: "Oswald", sans-serif; //use $font-weight-bold
 $font-h4s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
-$font-ps: Helvetica, "EB Garamond", serif;
+$font-ps: "Times New Roman", Times, "EB Garamond", serif;
 $font-weight-bold: 500;
 $font-weight-semibold: 400;
 $font-weight-regular: 200;
@@ -111,7 +111,7 @@ $color-grey: #D0D0D0;
   }
 
   .navbar-links {
-      color:  $color-pdxwit-dark-grey;
+      color:  $color-pdxwit-black;
       text-align: center;
       padding-right: 1em;
       font-size: 15px;
@@ -119,7 +119,7 @@ $color-grey: #D0D0D0;
         font-size: 20px;
       }
       @include breakpoint(lg) {
-        font-size: 25px;
+        font-size: 20px;
       }
   }
 
@@ -257,7 +257,7 @@ html,body{
 }
 
 .font-h2--dark {
-  color: $color-pdxwit-dark-grey;
+  color: $color-pdxwit-black;
 }
 
 .font-h2--black {
@@ -287,7 +287,7 @@ html,body{
 }
 
 .font-h3--dark {
-  color: $color-pdxwit-dark-grey;
+  color: $color-pdxwit-black;
 }
 
 h4 {
@@ -391,7 +391,7 @@ h4 {
 }
 
 .font-p--dark {
-  color: $color-pdxwit-dark-grey;
+  color: $color-pdxwit-black;
 }
 
 .font-p--italic {
