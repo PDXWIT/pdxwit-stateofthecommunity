@@ -665,6 +665,42 @@ h4 {
 // }
 
 
+.bar-container {
+  width: 700px;
+  min-height: 100px;
+  padding: 15px;
+  margin: 0;
+}
+
+.bar {
+  height: 30px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.bar section {
+  background-color: $color-pdxwit-dark-grey;
+  height: 30px;
+  text-align: center;
+  color: $color-pdxwit-white;
+}
+
+.bar section:last-of-type {
+  flex:auto;
+}
+
+#women {
+  background-color: $color-pdxwit-red;
+  overflow-x: visible;
+}
+
+#men {
+  background-color: $color-background-blue3;
+  overflow-x: visible;
+}
+
+
 // Spacing Utilities
 // ----------------- //
 
