@@ -627,6 +627,7 @@ h4 {
   }
 }
 
+// Sankey Chart
 .sankeyChart {
   // width: 172px;
   // height: 150px;
@@ -641,30 +642,8 @@ h4 {
 }
 
 
-.experienceRows {
-  padding-top: 2em;
-  margin: 0;
-  display:block;
-  justify-content: center;
-}
 
-// .experiencedChart {
-//   justify-content: center;
-//   padding: 0;
-//   margin: 0;
-//   width: 100% !important;
-//   height: 90px !important;
-//   @include breakpoint(md) {
-//     height: 150px !important;
-//     // max-width: 960px;
-//   }
-//   @include breakpoint(lg) {
-//     height: 150px !important;
-//     // max-width: 960px;
-//   }
-// }
-
-
+// Experience Charts
 .bar-container {
   width: 194px;
   position: relative;
@@ -718,8 +697,9 @@ h4 {
 }
 
 
+// =====================
 // Spacing Utilities
-// ----------------- //
+// =====================
 
 $xxs-padding:   5px;
 $xs-padding:    10px;

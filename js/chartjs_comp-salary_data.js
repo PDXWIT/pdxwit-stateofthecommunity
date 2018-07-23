@@ -35,6 +35,7 @@ var compSalaryBar = new Chart(ctxCompSalary, {
       maintainAspectRatio: true,
       scales: {
         yAxes: [{
+          stacked: true,
           gridLines: {
             display: false,
             drawBorder: false,
@@ -45,6 +46,7 @@ var compSalaryBar = new Chart(ctxCompSalary, {
           }
         }],
         xAxes: [{
+          stacked: true,
           gridLines: {
             display: false,
             drawBorder: false,
