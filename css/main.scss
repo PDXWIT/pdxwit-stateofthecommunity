@@ -666,9 +666,15 @@ h4 {
 
 
 .bar-container {
-  width: 700px;
+  width: 194px;
+  position: relative;
+  @include breakpoint(md){
+    width:537px;
+  }
+  @include breakpoint(lg){
+    width: 702px;
+  }
   min-height: 100px;
-  padding: 15px;
   margin: 0;
 }
 
@@ -690,15 +696,21 @@ h4 {
   flex:auto;
 }
 
-#women {
-  background-color: $color-pdxwit-red;
-  overflow-x: visible;
+#women, #men {
+  font-size: 9px;
+  @include breakpoint(md) {
+    font-size: 15px;
+    white-space: nowrap;
+  }
 }
 
+#women {
+  background-color: $color-pdxwit-red;
+
+}
 #men {
   background-color: $color-background-blue3;
-  overflow-x: visible;
-  white-space: nowrap;
+  position:sticky;
 }
 
 
