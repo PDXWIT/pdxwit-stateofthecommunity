@@ -642,8 +642,6 @@ h4 {
   }
 }
 
-
-
 // Experience & Benefits Charts
 .bar-container {
   width: 194px;
@@ -673,7 +671,6 @@ h4 {
   background-color: $color-pdxwit-dark-grey;
   height: 30px;
   text-align: center;
-  color: $color-pdxwit-white;
 }
 
 .bar section:last-of-type {
@@ -689,17 +686,20 @@ h4 {
 }
 
 #women {
-  background-color: $color-pdxwit-red;
+  background-color: $color-pdxwit-lime;
+  color: $color-pdxwit-black;
 
 }
 #men {
   background-color: $color-background-blue3;
   position:sticky;
+  color: $color-pdxwit-white;
 }
 
 #results {
   background-color: $color-background-blue3;
   position: sticky;
+  color: $color-pdxwit-white;
 }
 
 

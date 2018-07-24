@@ -159,10 +159,18 @@ layout: default
           </div>
 
           <h4 class="font-h4">Does your company have a transparent salary policy?</h4>
-          <canvas class="chart salary col-12" id="salary"></canvas>
+          <div class="row justify-content-center">
+            <canvas class="chart salary col-12" id="salary"></canvas>
+          </div>
           <p class="font-percent-words">Lack of salary transparency propagates pay inequities</p>
           <h4 class="font-h4 justify-content-center">Do you feel that salaries are comparable for all genders at your company? *</h4>
-          <canvas class="chart comp-salary col-12" id="comp-salary"></canvas>
+          <div class="row justify-content-center">
+              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryM"></canvas>
+              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryW"></canvas>
+            <!-- <div class="col-sm-12 col-lg-6 padding-top-xl">
+              <canvas class="chart comp-salary" id="comp-salary"></canvas>
+            </div> -->
+          </div>
         </div>
     </div>
   </div>
