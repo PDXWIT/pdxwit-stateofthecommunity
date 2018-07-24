@@ -16,9 +16,9 @@ var compsalaryDataM = {
         data: [75, 25],
         label: ['Yes', 'No'],
         backgroundColor: [
-          '#2F7392',
-          '#E03A47'
-        ] //blue red
+          '#63666A', //dark grey
+          '#2F7392', //blue
+        ]
 
       }
     ],
@@ -42,7 +42,8 @@ var compSalaryPieM = new Chart(ctxCompSalaryM, {
       },
       elements: {
         arc: {
-          borderWidth: 0
+          borderWidth: 3,
+          borderColor: '#2B3944',
         },
       },
       maintainAspectRatio: true,
@@ -64,9 +65,9 @@ var compsalaryDataW = {
         data: [48, 52],
         label: ['Yes', 'No'],
         backgroundColor: [
-          '#2F7392',
-          '#E03A47'
-        ] //blue red
+          '#63666A', //dark grey
+          '#2F7392', //blue
+        ]
 
       }
     ],
@@ -90,7 +91,8 @@ var compSalaryPieW = new Chart(ctxCompSalaryW, {
       },
       elements: {
         arc: {
-          borderWidth: 0
+          borderWidth: 3,
+          borderColor: '#2B3944',
         },
       },
       maintainAspectRatio: true,
