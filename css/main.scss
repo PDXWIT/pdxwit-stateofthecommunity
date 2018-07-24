@@ -644,7 +644,7 @@ h4 {
 
 
 
-// Experience Charts
+// Experience & Benefits Charts
 .bar-container {
   width: 194px;
   position: relative;
@@ -680,7 +680,7 @@ h4 {
   flex:auto;
 }
 
-#women, #men {
+#women, #men, #results {
   font-size: 9px;
   @include breakpoint(md) {
     font-size: 15px;
@@ -695,6 +695,11 @@ h4 {
 #men {
   background-color: $color-background-blue3;
   position:sticky;
+}
+
+#results {
+  background-color: $color-background-blue3;
+  position: sticky;
 }
 
 
