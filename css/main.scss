@@ -277,6 +277,7 @@ html,body{
   color: $color-pdxwit-white;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
+  letter-spacing: .04em;
   font-size: 12px;
   @include breakpoint(md) {
     font-size: 21px;
@@ -298,8 +299,8 @@ h4 {
   display:block;
   justify-content: center;
   text-align: center;
-  padding: 2em;
-  letter-spacing: .05em;
+  padding: 2em 0;
+  letter-spacing: .02em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
@@ -444,6 +445,7 @@ h4 {
    font-family: $font-ps;
    font-weight: $font-weight-regular;
    margin: auto;
+   color: $color-pdxwit-black
  }
 }
 
@@ -464,11 +466,12 @@ h4 {
   .icon-dropdown {
     background-color: $color-pdxwit-white;
   }
- }
+}
 
 .dropdown-menu {
   position: absolute;
-  left: 50% !important;
+  left: 45% !important;
+  padding-left: 1em;
 }
 
  .icon-people {
@@ -527,6 +530,7 @@ h4 {
 
 //prevents carousel from jumping up and down
 .carousel-inner {
+  margin: 0 auto;
   height: 325px;
   @include breakpoint(md) {
     height: 475px;
@@ -553,6 +557,32 @@ h4 {
         z-index: 2;
     }
 }
+
+// .carousel-item {
+//   &.active {
+//     .col-align {
+//       float: none;
+//       display: inline-block;
+//
+//       &--top {
+//         vertical-align: top;
+//       }
+//       &--center {
+//         vertical-align: middle;
+//       }
+//       &--bottom {
+//         vertical-align: bottom;
+//       }
+//     }
+//     .v-center {
+//       position: relative;
+//       top: 50%;
+//       -webkit-transform: translateY(-50%);
+//       -ms-transform: translateY(-50%);
+//       transform: translateY(-50%);
+//     }
+//   }
+// }
 
 //circles at bottom
 .carousel-indicators--round {
@@ -601,8 +631,6 @@ h4 {
   margin: 0 !important;
   padding: 0;
 }
-
-
 
 // =====================
 // Charts
@@ -680,6 +708,7 @@ h4 {
 
 #women, #men, #results {
   font-size: 9px;
+  font-family: $font-ps;
   @include breakpoint(md) {
     font-size: 15px;
     white-space: nowrap;
