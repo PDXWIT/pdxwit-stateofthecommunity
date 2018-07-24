@@ -644,7 +644,9 @@ h4 {
 
 // Experience & Benefits Charts
 .bar-container {
+  margin: 0 auto;
   width: 194px;
+  overflow: hidden;
   position: relative;
   @include breakpoint(md){
     width:537px;
@@ -653,7 +655,6 @@ h4 {
     width: 702px;
   }
   min-height: 100px;
-  margin: 0;
   .font-h3 {
     padding-bottom: 0;
   }
