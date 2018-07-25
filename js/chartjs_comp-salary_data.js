@@ -50,6 +50,7 @@ var compSalaryPieM = new Chart(ctxCompSalaryM, {
       animationEasing : "easeOutBounce",
       animateRotate : true,
       responsive: true,
+      rotation: (+2.14 * Math.PI) - (25/180 * Math.PI),
   }
 });
 
@@ -99,6 +100,7 @@ var compSalaryPieW = new Chart(ctxCompSalaryW, {
       animationEasing : "easeOutBounce",
       animateRotate : true,
       responsive: true,
+      rotation: (+2.68 * Math.PI) - (25/180 * Math.PI),
   }
 });
 
