@@ -279,7 +279,8 @@ html,body{
   color: $color-pdxwit-white;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
-  letter-spacing: .04em;
+  letter-spacing: .02em;
+  line-height: 1.5;
   font-size: 12px;
   @include breakpoint(md) {
     font-size: 21px;
