@@ -238,7 +238,7 @@ html,body{
   padding-bottom: .8em;
 }
 .font-h1 {
-  font-family: LeagueGothic-Regular;
+  font-family: $font-h2s;
   font-size: 41px;
   @include breakpoint(md) {
     font-size: 63px;
