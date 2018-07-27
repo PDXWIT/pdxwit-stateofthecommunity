@@ -807,12 +807,14 @@ h4 {
 }
 #men {
   background-color: $color-background-blue3;
-  position:sticky;
+  position: -webkit-sticky;
+  position: sticky;
   color: $color-pdxwit-white;
 }
 
 #results {
   background-color: $color-background-blue3;
+  position: -webkit-sticky;
   position: sticky;
   color: $color-pdxwit-white;
 }
