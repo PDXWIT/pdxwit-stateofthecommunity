@@ -778,7 +778,9 @@ h4 {
 .bar section {
   background-color: $color-pdxwit-dark-grey;
   height: 30px;
-  text-align: center;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 30px;
 }
 
 .bar section:last-of-type {
@@ -786,6 +788,9 @@ h4 {
 }
 
 #women, #men, #results {
+  text-align:center;
+  vertical-align: middle;
+  white-space: nowrap;
   font-size: 9px;
   font-family: $font-ps;
   @include breakpoint(md) {
