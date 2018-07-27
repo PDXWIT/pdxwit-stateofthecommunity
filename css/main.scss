@@ -401,6 +401,17 @@ h4 {
   max-width: 960px;
 }
 
+.font-p--large {
+  font-size: 16px;
+  padding-bottom: 0;
+  @include breakpoint(md) {
+    font-size: 21px;
+  }
+  @include breakpoint(lg) {
+    font-size: 26px;
+  }
+}
+
 .font-p--dark {
   color: $color-dark-grey-black;
 }
