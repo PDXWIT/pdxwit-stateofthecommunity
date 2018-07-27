@@ -536,6 +536,38 @@ h4 {
    }
  }
 
+.icon-list__item {
+  position: relative;
+  @include breakpoint(lg) {
+    line-height: 4em;
+  }
+}
+
+.icon-list__text {
+  padding: 0 0 0 30px;
+  @include breakpoint(md) {
+    padding: 0 0 0 40px;
+
+  }
+  @include breakpoint(lg) {
+    padding: 0 0 0 60px;
+  }
+}
+
+.icon-list__icon {
+  position:absolute;
+  top:0;
+  left:0;
+  font-size: 22px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @include breakpoint(lg) {
+    font-size: 50px;
+  }
+}
+
+
 .btn--share {
   @include btn-theme;
   background-color: $color-pdxwit-lime;
