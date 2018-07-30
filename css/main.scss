@@ -788,7 +788,6 @@ h4 {
 }
 
 #women, #men, #results {
-  text-align:center;
   vertical-align: middle;
   white-space: nowrap;
   overflow: visible;
@@ -803,13 +802,16 @@ h4 {
 #women {
   background-color: $color-pdxwit-lime;
   color: $color-pdxwit-black;
-
+  text-align:left;
+  padding-left: .3em;
 }
 #men {
   background-color: $color-background-blue3;
   position: -webkit-sticky;
   position: sticky;
   color: $color-pdxwit-white;
+  text-align:left;
+  padding-left: .3em;
 }
 
 #results {
@@ -817,6 +819,8 @@ h4 {
   position: -webkit-sticky;
   position: sticky;
   color: $color-pdxwit-white;
+  text-align:center;
+
 }
 
 
