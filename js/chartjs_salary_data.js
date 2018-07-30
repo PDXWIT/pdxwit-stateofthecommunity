@@ -6,8 +6,8 @@ var ctxSalary = document.getElementById("salary").getContext("2d");
 
 var salaryData = {
   labels: [
-    "Yes",
-    "No"
+    "Yes: 13%",
+    "No: 87%"
   ],
   datasets: [
     {

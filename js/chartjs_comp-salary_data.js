@@ -8,8 +8,8 @@ var ctxCompSalaryM = document.getElementById("comp-salaryM").getContext("2d");
 
 var compsalaryDataM = {
   labels: [
-    "Yes",
-    "No"
+    "Yes: 75%",
+    "No: 25%"
   ],
     datasets: [
       {
@@ -58,8 +58,8 @@ var ctxCompSalaryW = document.getElementById("comp-salaryW").getContext("2d");
 
 var compsalaryDataW = {
   labels: [
-    "Yes",
-    "No"
+    "Yes: 48%",
+    "No: 52%"
   ],
     datasets: [
       {
