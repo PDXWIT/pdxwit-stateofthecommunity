@@ -783,6 +783,10 @@ h4 {
   line-height: 30px;
 }
 
+.barMulti section {
+  background-color:inherit;
+}
+
 .bar section:last-of-type {
   flex:auto;
 }
@@ -810,7 +814,7 @@ h4 {
   position: -webkit-sticky;
   position: sticky;
   color: $color-pdxwit-white;
-  text-align:left;
+  text-align:right;
   padding-left: .3em;
 }
 
@@ -821,6 +825,15 @@ h4 {
   color: $color-pdxwit-white;
   text-align:center;
 
+}
+
+#none {
+  background-color: $color-pdxwit-dark-grey;
+  position: -webkit-sticky;
+  position: sticky;
+  color: $color-pdxwit-white;
+  text-align:left;
+  padding-left: .3em;
 }
 
 

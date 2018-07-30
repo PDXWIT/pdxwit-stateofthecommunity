@@ -77,6 +77,28 @@ layout: default
         <h2 class="font-h2">The Culture</h2>
           <h3 class="font-h3">Company culture continues to be a key factor in joining and staying with an organization. Many companies are talking about building diverse and inclusive cultures but whether or not talk is becoming action remains to be seen. Here’s what our survey respondents thought.
           </h3>
+
+          <h4 class="font-h4 justify-content-center">How would you describe your company culture?</h4>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <img class="img-fluid col-md" src="images/bubble-chart.png" alt="Benefits Bubble Chart">
+            </div>
+          </div>
+
+          <h4 class="font-h4">Does your company have a transparent salary policy?</h4>
+          <div class="row justify-content-center">
+            <p class="font-p">Lack of salary transparency propagates pay inequities</p>
+            <canvas class="chart salary col-12" id="salary"></canvas>
+          </div>
+          <h4 class="font-h4 justify-content-center">Do you feel that salaries are comparable for all genders at your company?*</h4>
+          <div class="row justify-content-center">
+              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryM"></canvas>
+              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryW"></canvas>
+            <!-- <div class="col-sm-12 col-lg-6 padding-top-xl">
+              <canvas class="chart comp-salary" id="comp-salary"></canvas>
+            </div> -->
+          </div>
+
           <h4 class="font-h4 justify-content-center">Which of these benefits, if any, does your company provide?</h4>
           <div class="container-fluid">
             <div class="row justify-content-center">
@@ -155,26 +177,6 @@ layout: default
               <!-- <canvas class="chart benefits col-6" id="benefits"></canvas> -->
             </div>
           </div>
-          <h4 class="font-h4 justify-content-center">How would you describe your company culture?</h4>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <img class="img-fluid col-md" src="images/bubble-chart.png" alt="Benefits Bubble Chart">
-            </div>
-          </div>
-
-          <h4 class="font-h4">Does your company have a transparent salary policy?</h4>
-          <div class="row justify-content-center">
-            <p class="font-p">Lack of salary transparency propagates pay inequities</p>
-            <canvas class="chart salary col-12" id="salary"></canvas>
-          </div>
-          <h4 class="font-h4 justify-content-center">Do you feel that salaries are comparable for all genders at your company?*</h4>
-          <div class="row justify-content-center">
-              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryM"></canvas>
-              <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryW"></canvas>
-            <!-- <div class="col-sm-12 col-lg-6 padding-top-xl">
-              <canvas class="chart comp-salary" id="comp-salary"></canvas>
-            </div> -->
-          </div>
         </div>
     </div>
   </div>
@@ -202,87 +204,121 @@ layout: default
         <div class="col-12">
           <div class="bar-container">
             <h3 class="font-p font-p--large">Told you were too agressive at work</h3>
-            <div class="bar" id="fullBar">
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 33%"></section><div class="font-p padding-left-xs"> 33% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 19%"></section><div class="font-p padding-left-xs"> 19% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!-- <div class="bar" id="fullBar">
               <section id="women" style="width: 33%">33% Women</section>
               <section id="men" style="width: 19%">19% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">33% Women</div>
-              <div class="col-4 font-p">19% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">Asked to order lunches, schedule events that was beyond your job scope</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 33%"></section><div class="font-p padding-left-xs"> 33% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 6%"></section><div class="font-p padding-left-xs"> 6% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 33%">33% Women</section>
               <section id="men" style="width: 6%">6% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">33% Women</div>
-              <div class="col-4 font-p">6% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">Suspect you were passed on a role because of your gender</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 24%"></section><div class="font-p padding-left-xs"> 24% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 5%"></section><div class="font-p padding-left-xs"> 5% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 24%">24% Women</section>
               <section id="men" style="width: 5%">5% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">24% Women</div>
-              <div class="col-4 font-p">5% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">Learned to be the den mother, counselor, admin because of your gender</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 42%"></section><div class="font-p padding-left-xs"> 42% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 2%"></section><div class="font-p padding-left-xs"> 2% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 42%">42% Women</section>
               <section id="men" style="width: 2%">2% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">42% Women</div>
-              <div class="col-4 font-p">2% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">Excluded from important work events because of your gender</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 16%"></section><div class="font-p padding-left-xs"> 16% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 1%"></section><div class="font-p padding-left-xs"> 1% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 16%">16% Women</section>
               <section id="men" style="width: 1%">1% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">16% Women</div>
-              <div class="col-4 font-p">1% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">In a meeting and felt gendered language was used that did not include you</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 46%"></section><div class="font-p padding-left-xs"> 46% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 5%"></section><div class="font-p padding-left-xs"> 5% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 46%">46% Women</section>
               <section id="men" style="width: 5%">5% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">46% Women</div>
-              <div class="col-4 font-p">5% Men</div>
-            </div>
+            </div> -->
           </div>
           <div class="bar-container">
             <h3 class="font-p font-p--large">No - I have not experienced any of these</h3>
+            <div class="bar barMulti" id="fullBar">
+              <section id="women" style="width: 25%"></section><div class="font-p padding-left-xs"> 25% Women</div>
+              <section id="fullBar"></section>
+            </div>
+            <div class="bar barMulti" id="fullBar">
+              <section id="men" style="width: 71%"></section><div class="font-p padding-left-xs"> 71% Men</div>
+              <section id="fullBar"></section>
+            </div>
+            <!--
             <div class="bar">
               <section id="women" style="width: 25%">25% Women</section>
               <section id="men" style="width: 71%">71% Men</section>
               <section id="fullBar"></section>
-            </div>
-            <div class="row">
-              <div class="col-4 font-p">25% Women</div>
-              <div class="col-4 font-p">71% Men</div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
