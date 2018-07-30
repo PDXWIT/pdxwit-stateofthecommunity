@@ -628,6 +628,14 @@ h4 {
     }
 }
 
+.carousel-control-next, .carousel-control-prev {
+  display: block;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  padding: .5em 0 .5em 0;
+}
+
 // .carousel-item {
 //   &.active {
 //     .col-align {
