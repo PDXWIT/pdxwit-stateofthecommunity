@@ -626,10 +626,13 @@ h4 {
   margin: 0 auto;
   height: 325px;
   @include breakpoint(md) {
-    height: 475px;
+    height: 450px;
   }
   @include breakpoint(lg) {
-    height: 850px;
+    height: 800px;
+  }
+  @include breakpoint(xl) {
+    height: 600px;
   }
 }
 
