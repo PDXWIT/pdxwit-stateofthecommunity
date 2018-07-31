@@ -799,7 +799,7 @@ h4 {
   margin: 0 auto;
   width: 194px;
   overflow: hidden;
-  padding: 1em 0;
+  padding: .5em 0;
   position: relative;
   @include breakpoint(md){
     width:537px;
@@ -807,7 +807,6 @@ h4 {
   @include breakpoint(lg){
     width: 702px;
   }
-  min-height: 100px;
   .font-h3 {
     padding-bottom: 0;
   }
