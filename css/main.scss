@@ -103,38 +103,38 @@ $color-dark-grey-black: #191919; //dark grey black for font on white background
 // Navigation
 // =====================
 
-.navbar {
-  background-color: $color-pdxwit-white;
-  overflow: hidden;
-  padding-right: 15%;
-  margin: 0;
-
-  .navbar-list {
-      list-style: none;
-      margin: 0;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: $font-h2s;
-      display: inline-flex;
-  }
-
-  .navbar-links {
-      color:  $color-dark-grey-black;
-      text-align: center;
-      padding-right: 1em;
-      font-size: 15px;
-      @include breakpoint(md) {
-        font-size: 20px;
-      }
-      @include breakpoint(lg) {
-        font-size: 20px;
-      }
-  }
-
-  .navbar-links:hover {
-    color: $color-pdxwit-lime;
-  }
-}
+// .navbar {
+//   background-color: $color-pdxwit-white;
+//   overflow: hidden;
+//   padding-right: 15%;
+//   margin: 0;
+//
+//   .navbar-list {
+//       list-style: none;
+//       margin: 0;
+//       text-transform: uppercase;
+//       text-decoration: none;
+//       font-family: $font-h2s;
+//       display: inline-flex;
+//   }
+//
+//   .navbar-links {
+//       color:  $color-dark-grey-black;
+//       text-align: center;
+//       padding-right: 1em;
+//       font-size: 15px;
+//       @include breakpoint(md) {
+//         font-size: 20px;
+//       }
+//       @include breakpoint(lg) {
+//         font-size: 20px;
+//       }
+//   }
+//
+//   .navbar-links:hover {
+//     color: $color-pdxwit-lime;
+//   }
+// }
 
 
 .logo {
@@ -272,12 +272,6 @@ html,body{
   color: $color-pdxwit-black;
 }
 
-.font-h2--quote {
-  font-weight: $font-weight-semibold;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
 
 .font-h3 {
   display:block;
@@ -337,6 +331,28 @@ h4 {
 .font-h4--bold {
   font-weight: $font-weight-bold;
 }
+
+.font-h5 {
+  color: $color-pdxwit-white;
+  font-weight: $font-weight-bold;
+  font-family: $font-h2s;
+  padding-bottom: .8em;
+  font-size: 18px;
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+  @include breakpoint(lg) {
+    font-size: 55px;
+  }
+}
+
+.font-h5--quote {
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .font-uppercase {
   text-transform: uppercase;
 }
@@ -728,14 +744,15 @@ h4 {
   padding: 0;
 }
 
-.line-style {
-  height: 12px;
-  width: 50%;
-  border-top: 1px solid;
-  color: $color-pdxwit-dark-grey;
-  margin: 0;
-  align-self: center;
-}
+// .line-style {
+//   height: 12px;
+//   width: 50%;
+//   border-top: 1px solid;
+//   color: $color-pdxwit-dark-grey;
+//   margin: 0;
+//   align-self: center;
+// }
+
 // =====================
 // Charts
 // =====================
