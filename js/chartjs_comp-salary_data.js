@@ -38,6 +38,7 @@ var compSalaryPieM = new Chart(ctxCompSalaryM, {
         position: 'top',
         labels: {
           boxWidth: 8,
+          fontSize: 16,
         },
       },
       elements: {
@@ -88,6 +89,7 @@ var compSalaryPieW = new Chart(ctxCompSalaryW, {
         position: 'top',
         labels: {
           boxWidth: 8,
+          fontSize: 16,
         },
       },
       elements: {

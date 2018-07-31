@@ -28,6 +28,7 @@ var salaryDoughnut = new Chart(ctxSalary, {
       position: 'top',
       labels: {
         boxWidth: 8,
+        fontSize: 16,
       },
     },
     elements: {

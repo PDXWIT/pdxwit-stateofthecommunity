@@ -44,6 +44,7 @@ var myChart = new Chart(ctxBenefits, {
         position: 'bottom',
         labels: {
           boxWidth: 0,
+          fontSize: 16,
         },
       },
       scales: {
