@@ -2,9 +2,6 @@
 ---
 // Dashes needed to signal jekyll to compile to css
 
-// @import 'bootstrap';
-//@import "scss/fontawesome.scss";
-//@import "scss/fa-solid.scss";
 
 // =====================
 // Font variables
@@ -31,8 +28,12 @@ $font-weight-xlight: 50;
 //use for body copy
 @font-face {
   font-family: "ProximaNova";
-  src:("fonts/ProximaNova-Regular.otf");
-}
+  src: url('fonts/proximanova-regular-webfont.eot');
+  src: url('fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/proximanova-regular-webfont.woff2') format('woff2'),
+       url('fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
 
 // =====================
 // Color variables
@@ -67,28 +68,21 @@ $color-dark-grey-black: #191919; //dark grey black for font on white background
 @mixin breakpoint($class) {
   @if $class == sm {
     @media (max-width: 576px) { @content;
-    // margin:auto;
     }
   }
 
   @else if $class == md {
     @media (min-width: 768px) { @content;
-    // max-width: 960px;
-    // margin: auto;
     }
   }
 
   @else if $class == lg {
     @media (min-width: 992px) { @content;
-    // max-width: 960px;
-    // margin:auto;
     }
   }
 
   @else if $class == xl {
     @media (min-width: 1200px) { @content;
-    // max-width: 960px;
-    // margin:auto;
     }
   }
 
@@ -654,10 +648,6 @@ h4 {
     }
 }
 
-// .carousel-control-next, .carousel-control-prev {
-//   display: block;
-// }
-
 .carousel-control-next {
   right: -4em;
   @include breakpoint(md) {
@@ -672,32 +662,6 @@ h4 {
   }
 }
 
-
-// .carousel-item {
-//   &.active {
-//     .col-align {
-//       float: none;
-//       display: inline-block;
-//
-//       &--top {
-//         vertical-align: top;
-//       }
-//       &--center {
-//         vertical-align: middle;
-//       }
-//       &--bottom {
-//         vertical-align: bottom;
-//       }
-//     }
-//     .v-center {
-//       position: relative;
-//       top: 50%;
-//       -webkit-transform: translateY(-50%);
-//       -ms-transform: translateY(-50%);
-//       transform: translateY(-50%);
-//     }
-//   }
-// }
 
 //circles at bottom
 .carousel-indicators--round {
@@ -747,15 +711,6 @@ h4 {
   padding: 0;
 }
 
-// .line-style {
-//   height: 12px;
-//   width: 50%;
-//   border-top: 1px solid;
-//   color: $color-pdxwit-dark-grey;
-//   margin: 0;
-//   align-self: center;
-// }
-
 // =====================
 // Charts
 // =====================
@@ -777,20 +732,6 @@ h4 {
   @include breakpoint(lg) {
     width: 514px;
     height: 343px;
-  }
-}
-
-// Sankey Chart
-.sankeyChart {
-  // width: 172px;
-  // height: 150px;
-  // @include breakpoint(md) {
-  //   width: 545px;
-  //   height: 300px;
-  // }
-  @include breakpoint(lg) {
-    width: 790px;
-    height: 600px;
   }
 }
 
@@ -872,14 +813,6 @@ h4 {
 
 }
 
-#none {
-  background-color: $color-pdxwit-dark-grey;
-  position: -webkit-sticky;
-  position: sticky;
-  color: $color-pdxwit-white;
-  text-align:left;
-  padding-left: .3em;
-}
 
 
 // =====================
