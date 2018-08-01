@@ -244,7 +244,6 @@ html,body{
 .font-h2 {
   color: $color-pdxwit-white;
   font-weight: $font-weight-bold;
-  font-family: $font-h2s;
   padding-bottom: .8em;
 }
 .font-h1 {
@@ -259,6 +258,7 @@ html,body{
 }
 
 .font-h2 {
+  font-family: $font-h2s;
   font-size: 30px;
   @include breakpoint(md) {
     font-size: 48px;
