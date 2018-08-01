@@ -28,11 +28,11 @@ $font-weight-xlight: 50;
 //use for body copy
 @font-face {
   font-family: "ProximaNova";
-  src: url('fonts/ProximaNova-Regular.otf');
-  src: url('fonts/proximanova-regular-webfont.eot');
-  src: url('fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/proximanova-regular-webfont.woff2') format('woff2'),
-       url('fonts/proximanova-regular-webfont.woff') format('woff');
+  src:("fonts/ProximaNova-Regular.otf");
+  src: url("fonts/proximanova-regular-webfont.eot");
+  src: url("fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/proximanova-regular-webfont.woff2") format("woff2"),
+       url("fonts/proximanova-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;}
 
