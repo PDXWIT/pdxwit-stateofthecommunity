@@ -63,7 +63,7 @@ $color-yellow: #E1ED67;
 $color-dark-green: #244512;
 $color-grey: #D0D0D0;
 $color-dark-grey-black: #191919; //dark grey black for font on white background
-
+$color-header-footer: #3e3c3c;
 
 // =====================
 // Mixins
@@ -107,38 +107,31 @@ $color-dark-grey-black: #191919; //dark grey black for font on white background
 // Navigation
 // =====================
 
-// .navbar {
-//   background-color: $color-pdxwit-white;
-//   overflow: hidden;
-//   padding-right: 15%;
-//   margin: 0;
-//
-//   .navbar-list {
-//       list-style: none;
-//       margin: 0;
-//       text-transform: uppercase;
-//       text-decoration: none;
-//       font-family: $font-h2s;
-//       display: inline-flex;
-//   }
-//
-//   .navbar-links {
-//       color:  $color-dark-grey-black;
-//       text-align: center;
-//       padding-right: 1em;
-//       font-size: 15px;
-//       @include breakpoint(md) {
-//         font-size: 20px;
-//       }
-//       @include breakpoint(lg) {
-//         font-size: 20px;
-//       }
-//   }
-//
-//   .navbar-links:hover {
-//     color: $color-pdxwit-lime;
-//   }
-// }
+.navbar {
+  .navbar-list {
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-h2s;
+    display: inline-flex;
+  }
+  .navbar-links {
+    color:  $color-pdxwit-white;
+    text-align: center;
+    padding-right: 1em;
+    font-size: 15px;
+    @include breakpoint(md) {
+      font-size: 20px;
+    }
+    @include breakpoint(lg) {
+      font-size: 20px;
+    }
+  }
+  .navbar-links:hover {
+    color: $color-pdxwit-lime;
+  }
+}
 
 
 .logo {
@@ -168,8 +161,8 @@ html,body{
   width: 100%;
 }
 .header-container, .footer-container {
-  padding-right: 15%;
-  padding-left: 15%;
+  background-color: $color-header-footer;
+  padding: 3% 15%;
   margin: 0 auto;
   display: block;
 }
@@ -440,12 +433,31 @@ h4 {
   font-style: italic;
 }
 
-.link:hover {
-  color: $color-pdxwit-lime;
+.link {
+  color: $color-pdxwit-white;
 }
-.link--dark:hover {
+
+.link:hover {
   color: $color-pdxwit-dark-grey;
 }
+
+.link-alt {
+  color: $color-pdxwit-lime;
+}
+
+.link-alt:hover {
+  color: $color-pdxwit-white;
+}
+
+.link--dark {
+  color: $color-dark-grey-black;
+}
+
+.link--dark:hover {
+  color: $color-pdxwit-lime;
+}
+
+
 
 .color-emphasis-red {
   color: $color-pdxwit-red;
