@@ -10,7 +10,7 @@
 $font-h2s: "Oswald", sans-serif; //use $font-weight-bold
 $font-h4s: "Oswald", sans-serif; //use $font-weight-regular
 $font-h3s: "Oswald", sans-serif;  //use $font-weight-light
-$font-ps: "ProximaNova-Regular", serif;
+$font-ps: "proximanova-regular", serif;
 $font-weight-bold: 500;
 $font-weight-semibold: 400;
 $font-weight-regular: 200;
@@ -27,8 +27,8 @@ $font-weight-xlight: 50;
 
 //use for body copy
 @font-face {
-  font-family: "ProximaNova";
-  src: url("fonts/ProximaNova/ProximaNova-Regular.otf");
+  font-family: "proximanova-regular";
+  src: url("fonts/ProximaNova/proximanova-regular.otf");
   src: url("fonts/ProximaNova/proximanova-regular-webfont.eot");
   src: url("fonts/ProximaNova/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),
        url("fonts/ProximaNova/proximanova-regular-webfont.woff2") format("woff2"),
