@@ -168,6 +168,12 @@ html,body{
 }
 
 .container-intro {
+  background-color:  $color-pdxwit-white;
+  margin: 0;
+  padding: 5% 15%;
+}
+
+.container-method {
   background-color:  $color-background-blue1;
   margin: 0;
   padding: 5% 15%;
@@ -235,12 +241,12 @@ html,body{
 
 .font-h1,
 .font-h2 {
-  color: $color-pdxwit-white;
   font-weight: $font-weight-bold;
   padding-bottom: .8em;
 }
 .font-h1 {
   font-family: $font-h1s;
+  color: $color-dark-grey-black;
   font-size: 41px;
   @include breakpoint(md) {
     font-size: 63px;
@@ -252,6 +258,7 @@ html,body{
 
 .font-h2 {
   font-family: $font-h2s;
+  color: $color-pdxwit-white;
   font-size: 30px;
   @include breakpoint(md) {
     font-size: 48px;
