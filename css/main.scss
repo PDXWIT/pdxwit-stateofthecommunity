@@ -159,6 +159,9 @@ html,body{
   margin: 0;
   padding: 5%;
   @include breakpoint (md) {
+    padding: 5%;
+  }
+  @include breakpoint (lg) {
     padding: 5% 15%;
   }
 }
@@ -226,11 +229,15 @@ html,body{
 .font-h1,
 .font-h2 {
   font-weight: $font-weight-bold;
-  padding-bottom: .8em;
+  padding-bottom: .4em;
+  @include breakpoint (md) {
+    padding-bottom: .8em;
+  }
 }
 .font-h1 {
   font-family: $font-h1s;
   color: $color-dark-grey-black;
+  margin: 0;
   font-size: 41px;
   @include breakpoint(md) {
     font-size: 63px;
@@ -290,14 +297,15 @@ h4 {
   display:block;
   justify-content: center;
   text-align: center;
-  padding: 2em 0;
   letter-spacing: .02em;
   color: $color-pdxwit-white;
   font-weight: $font-weight-regular;
   font-family: $font-h4s;
+  padding: 1em 0;
   font-size: 16px;
   @include breakpoint(md) {
     font-size: 28px;
+    padding: 1.5em 0;
   }
   @include breakpoint(lg) {
     font-size: 38px;
@@ -383,10 +391,12 @@ h4 {
   }
 }
 
-.font-words-alignL {
-  text-align: left;
+.font-words-alignl {
   padding-right: .5em;
   display:block;
+  @include breakpoint (md) {
+    padding-top: 1em;
+  }
 }
 
 .font-p {
@@ -684,14 +694,14 @@ h4 {
 }
 
 .carousel-control-next {
-  right: -4em;
+  right: -2em;
   @include breakpoint(md) {
     right: -8em;
   }
 }
 
 .carousel-control-prev {
-  left: -4em;
+  left: -2em;
   @include breakpoint(md) {
     left: -8em;
   }
