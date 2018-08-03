@@ -417,6 +417,16 @@ h4 {
   }
 }
 
+.font-p--small {
+  font-size: 12px;
+  @include breakpoint (md) {
+    font-size: 14px;
+  }
+  @include breakpoint (lg) {
+    font-size: 18px;
+  }
+}
+
 .font-p--dark {
   color: $color-dark-grey-black;
 }
