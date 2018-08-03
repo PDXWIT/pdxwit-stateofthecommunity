@@ -494,12 +494,12 @@ h4 {
   color: $color-dark-grey-black;
   font-weight: $font-weight-semibold;
   font-family: $font-h3s;
-  font-size: 9px;
+  font-size: 18px;
   @include breakpoint(md) {
-    font-size: 15px;
+    font-size: 25px;
   }
   @include breakpoint(lg) {
-    font-size: 19px;
+    font-size: 25px;
   }
 
  .icon-dropdown {
@@ -517,16 +517,18 @@ h4 {
   color: $color-dark-grey-black;
   font-weight: $font-weight-light;
   font-family: $font-h3s;
-  font-size: 10px;
+  font-size: 18px;
+  padding: .2em;
   @include breakpoint(md) {
-    font-size: 14px;
+    font-size: 20px;
   }
   @include breakpoint(lg) {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .icon-dropdown {
     background-color: $color-pdxwit-white;
+
   }
 }
 
@@ -538,7 +540,11 @@ h4 {
 .dropdown-menu {
   position: absolute;
   left: 45% !important;
-  padding-left: 1em;
+  padding: 0 1em;
+  margin:0 -1em;
+  @include breakpoint (md) {
+    margin: auto;
+  }
 }
 
  .icon-people {
