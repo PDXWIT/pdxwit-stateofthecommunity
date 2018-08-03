@@ -155,11 +155,6 @@ html,body{
     overflow-x: hidden;
 }
 
-.container {
-  margin:0px;
-  padding: 0px;
-  width: 100%;
-}
 .header-container, .footer-container {
   background-color: $color-header-footer;
   padding: 3% 15%;
@@ -167,16 +162,20 @@ html,body{
   display: block;
 }
 
-.container-intro {
-  background-color:  $color-pdxwit-white;
+.containers {
   margin: 0;
-  padding: 5% 15%;
+  padding: 5%;
+  @include breakpoint (md) {
+    padding: 5% 15%;
+  }
 }
 
-.container-method {
+.containers--intro {
+  background-color:  $color-pdxwit-white;
+}
+
+.containers--method {
   background-color:  $color-background-blue1;
-  margin: 0;
-  padding: 5% 15%;
 }
 
 .container-btn {
@@ -186,53 +185,37 @@ html,body{
   justify-content: center;
 }
 
-.container-section {
+.containers--section {
   background-color:  $color-background-blue2;
-  margin: 0;
-  padding: 5% 15%;
   display:block;
   justify-content: center;
   clear:both;
 }
 
-.container-section--2{
+.containers--section2{
   background-color:  $color-background-darkblue;
-}
-
-.container-quote{
-  background-color: $color-background-blue3;
-  margin: 0;
-  padding: 5% 15%;
   display:block;
   justify-content: center;
   clear:both;
-
 }
 
-.container-data {
-  margin-top: 5%;
-  margin: 0;
-  padding-bottom: 1em;
+.containers--quote{
+  background-color: $color-background-blue3;
   display:block;
-
+  justify-content: center;
+  clear:both;
 }
 
-.container-next-steps {
+.containers--nextsteps {
   background-color: $color-pdxwit-lime;
-  margin: 0;
-  padding: 5% 15%;
 }
 
-.container-about {
+.containers--about {
   background-color: $color-pdxwit-white;
-  margin: 0;
-  padding: 5% 15%;
 }
 
-.container-green {
+.containers--green {
   background-color: $color-pdxwit-lime;
-  margin: 0;
-  padding: 5% 15%;
 }
 
 // =====================
@@ -406,6 +389,7 @@ h4 {
 }
 
 .font-p {
+  margin: auto;
   padding-bottom: 1em;
   line-height: 1.5em;
   color: $color-pdxwit-white;
