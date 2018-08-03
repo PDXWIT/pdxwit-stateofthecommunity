@@ -136,11 +136,11 @@ $color-header-footer: #3e3c3c;
 
 .logo {
   height: 10em;
-  padding-top:5%;
+  margin: 0 auto;
+
 }
 
-.pa-logo {
-  height:10em;
+.logo--pa {
 }
 
 // =====================
@@ -155,19 +155,20 @@ html,body{
     overflow-x: hidden;
 }
 
-.header-container, .footer-container {
-  background-color: $color-header-footer;
-  padding: 3% 15%;
-  margin: 0 auto;
-  display: block;
-}
-
 .containers {
   margin: 0;
   padding: 5%;
   @include breakpoint (md) {
     padding: 5% 15%;
   }
+}
+.containers--header, .containers--footer {
+  background-color: $color-header-footer;
+  display: block;
+}
+
+.containers--footer {
+  text-align: center;
 }
 
 .containers--intro {
