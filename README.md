@@ -1,45 +1,37 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+#PDX Women in Tech State of the Community Survey Results#
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This repo contains the PDXWIT State of the Community Survey Results website.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Description
 
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+The State of the Community survey is in it's second year. The survey annually measures the specific challenges community faces in Portland's tech industry.
+Visit https://stateofthecommunity.pdxwit.org/
 
 ---
 
-## Create a file
+## Setup
 
-Next, you’ll add a new file to this repository.
+`git clone git@bitbucket.org:planetargon/2018-pdxwit-survey.git`
+`rbenv install`
+`gem install bundler`
+`bundle install`
+`xcode-select --install`
+`ruby -v`
+`2.5.0`
+`gem install bundler jekyll`
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+## Serving the site
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+`jekyll build --watch`
+Navigate to the `_site/index.html` document
 
----
+## Clone the repo in Heroku
 
-## Clone a repository
+`heroku git:clone -a pdxwit-survey-2018-staging`
+`cd pdxwit-survey-2018-staging`
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+## Deploy changes to Heroku
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+`git push heroku master`
+Navigate to https://pdxwit-survey-2018-staging.herokuapp.com/
+* Note: The heroku app is called staging but it's the production site. We were going to host production on Bluehost but decided heroku was good enough.
