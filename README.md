@@ -15,9 +15,7 @@ Visit https://stateofthecommunity.pdxwit.org/
 `rbenv install`  
 `gem install bundler`  
 `bundle install`  
-`xcode-select --install`  
-`ruby -v`  
-`2.5.0`  
+`ruby -v` 2.5.0    
 `gem install bundler jekyll`  
 
 ## Serving the site
@@ -34,4 +32,4 @@ Navigate to the `_site/index.html` document
 
 `git push heroku master`  
 Navigate to https://pdxwit-survey-2018-staging.herokuapp.com/  
-* Note: The heroku app is called staging but it's the production site. We were going to host production on Bluehost but decided Heroku was good enough.  
+* Note: The Geroku app is called staging but it's the production site. We were going to host production on Bluehost but decided Heroku was good enough.  
