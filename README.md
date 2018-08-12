@@ -25,8 +25,7 @@ Navigate to the `_site/index.html` document
 
 ## Clone the repo in Heroku
 
-`heroku git:clone -a pdxwit-survey-2018-staging`  
-`cd pdxwit-survey-2018-staging`  
+`heroku git:remote -a pdxwit-survey-2018-staging`  
 
 ## Deploy changes to Heroku
 
