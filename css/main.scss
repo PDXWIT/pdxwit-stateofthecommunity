@@ -146,6 +146,21 @@ $color-header-footer: #3e3c3c;
 // Containers
 // =====================
 
+#banner {
+  padding: 1%;
+  background-color: white;
+  text-align: center;
+  font-family: $font-h2s;
+  color: $color-pdxwit-black;
+  font-size: 15px;
+  @include breakpoint(md) {
+    font-size: 26px;
+  }
+  @include breakpoint(lg) {
+    font-size: 35px;
+  }
+}
+
 html,body{
     width: 100%;
     height: 100%;
