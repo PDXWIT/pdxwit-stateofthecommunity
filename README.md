@@ -12,11 +12,16 @@ Visit https://stateofthecommunity.pdxwit.org/
 ## Setup
 
 `git clone https://github.com/PDXWIT/pdxwit-stateofthecommunity.git`  
-`rbenv install`  
-`gem install bundler`  
+ You may need to install Homebrew if not already
+`brew install rbenv`  
+ Install the version of ruby to use (eg 2.5.0)
+`rbenv install 2.5.0`
+Check that the ruby version is correct
+`ruby -v` should say 2.5.0   
+Install the version of bundler that is required (eg 1.16.2)
+`gem install bundler -v 1.16.2`  
 `bundle install`  
-`ruby -v` 2.5.0    
-`gem install bundler jekyll`  
+
 
 ## Serving the site
 
@@ -30,5 +35,5 @@ Navigate to the `_site/index.html` document
 ## Deploy changes to Heroku
 
 `git push heroku master`  
-Navigate to https://pdxwit-survey-2018-staging.herokuapp.com/  
-* Note: The Geroku app is called staging but it's the production site. We were going to host production on Bluehost but decided Heroku was good enough.  
+Navigate to https://stateofthecommunity.pdxwit.org/  
+* Note: The heroku app is called staging but it's the production site. We were going to host production on Bluehost but decided Heroku was good enough.  
