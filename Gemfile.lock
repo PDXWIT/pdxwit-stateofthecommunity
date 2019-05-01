@@ -68,6 +68,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (= 1.16.2)
   jekyll (~> 3.8.3)
   jekyll-bootstrap (~> 4.0)
   jekyll-feed (~> 0.6)
