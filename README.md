@@ -11,7 +11,7 @@ Visit https://stateofthecommunity.pdxwit.org/
 
 ## Setup
 
-`git clone git@bitbucket.org:planetargon/2018-pdxwit-survey.git`  
+`git clone https://github.com/PDXWIT/pdxwit-stateofthecommunity.git`  
 `rbenv install`  
 `gem install bundler`  
 `bundle install`  
