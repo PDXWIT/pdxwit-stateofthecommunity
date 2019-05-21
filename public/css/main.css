@@ -217,10 +217,10 @@ h4.action-section {
     .quote {
       font-size: 55px; } }
 
-.font-uppercase {
+ul strong {
   text-transform: uppercase; }
 
-.font-percent-numbers {
+.percent-numbers {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   color: #FFF;
@@ -230,15 +230,15 @@ h4.action-section {
   text-align: center;
   font-size: 40px; }
   @media (min-width: 768px) {
-    .font-percent-numbers {
+    .percent-numbers {
       font-size: 70px;
       margin: 0 !important; } }
   @media (min-width: 992px) {
-    .font-percent-numbers {
+    .percent-numbers {
       font-size: 106px;
       margin: 0 !important; } }
 
-.font-percent-words {
+.percent-words {
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   color: #FFF;
@@ -248,11 +248,11 @@ h4.action-section {
   margin: 0 !important;
   font-size: 14px; }
   @media (min-width: 768px) {
-    .font-percent-words {
+    .percent-words {
       font-size: 30px;
       margin: 0 !important; } }
   @media (min-width: 992px) {
-    .font-percent-words {
+    .percent-words {
       font-size: 38px;
       margin: 0 !important; } }
 
@@ -602,7 +602,7 @@ p.italic {
   @media (min-width: 992px) {
     .bar-container {
       width: 702px; } }
-  .bar-container .font-h3 {
+  .bar-container p {
     padding-bottom: 0; }
 
 .bar {
