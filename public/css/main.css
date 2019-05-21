@@ -20,7 +20,7 @@
   font-family: "Oswald", sans-serif;
   display: inline-flex; }
 .navbar .navbar-links {
-  color: #191919;
+  color: #595959;
   text-align: center;
   padding-right: 1em;
   font-size: 15px; }
@@ -34,8 +34,16 @@
   color: #9ECC50; }
 
 .logo {
-  height: 10em;
+  height: 5em;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .logo {
+      height: 8em; } }
+  @media (min-width: 992px) {
+    .logo {
+      fheight: 10em; } }
+
+
 
 #banner {
   padding: 1%;
@@ -297,16 +305,16 @@ p.italic {
   font-style: italic; }
 
 .link {
-  color: #FFF; }
-
-.link:hover {
-  color: #63666A; }
-
-.link-alt {
   color: #2f7393; }
 
+.link:hover {
+  color: rgba(47,115,147,.6); }
+
+.link-alt {
+  color: #fff; }
+
 .link-alt:hover {
-  color: #e37263; }
+  color: rgba(255,255,255,.6); }
 
 .link--dark {
   color: #2f7393; }
@@ -449,30 +457,32 @@ p.italic {
     .icon-list__icon {
       font-size: 50px; } }
 
-.btn--share {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-  margin: auto;
-  color: #191919;
-  font-weight: 400;
+.btn {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  background-color: #9ECC50;
-  border: 0px; }
+  text-transform: uppercase;
+  text-decoration: none;
+  justify-content: center;
+  white-space:  inherit;
+  border-radius: 300px;
+  margin: auto;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #2a2828;
+  color: #fff; }
   @media (min-width: 768px) {
-    .btn--share {
+    .btn {
       font-size: 25px; } }
   @media (min-width: 992px) {
-    .btn--share {
+    .btn {
       font-size: 25px; } }
-  .btn--share .icon-dropdown {
+
+.icon-dropdown {
     background-color: #FFF;
-    font-family: "proximanova-regular", serif;
     font-weight: 200;
     margin: auto;
-    color: #191919; }
+ }
 
 .btn--learnmore {
   text-transform: uppercase;
