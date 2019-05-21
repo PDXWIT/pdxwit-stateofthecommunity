@@ -381,12 +381,13 @@ p.italic {
 
 .dropdown-menu {
   position: absolute;
-  left: 45% !important;
+  left: 25% !important;
   padding: 0 1em;
   margin: 0 -1em; }
   @media (min-width: 768px) {
     .dropdown-menu {
-      margin: auto; } }
+      margin: auto;
+      left: 0% !important; } }
 
 .icon-people {
   display: block;
@@ -460,6 +461,7 @@ p.italic {
 .btn {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
+  padding: 13px 26px;
   text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
@@ -473,7 +475,7 @@ p.italic {
   color: #fff; }
   @media (min-width: 768px) {
     .btn {
-      font-size: 25px; } }
+      font-size: 20px; } }
   @media (min-width: 992px) {
     .btn {
       font-size: 25px; } }
@@ -485,28 +487,9 @@ p.italic {
  }
 
 .btn--learnmore {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-  margin: auto;
   color: #191919;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  background-color: #FFF; }
-  @media (min-width: 768px) {
-    .btn--learnmore {
-      font-size: 25px; } }
-  @media (min-width: 992px) {
-    .btn--learnmore {
-      font-size: 25px; } }
-  .btn--learnmore .icon-dropdown {
-    background-color: #FFF;
-    font-family: "proximanova-regular", serif;
-    font-weight: 200;
-    margin: auto;
-    color: #191919; }
+  background-color: #FFF;
+  text-decoration: none; }
 
 .labelW {
   color: #9ECC50; }
