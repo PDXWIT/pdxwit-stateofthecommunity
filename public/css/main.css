@@ -492,10 +492,27 @@ p.italic {
   text-decoration: none; }
 
 .labelW {
-  color: #9ECC50; }
+  color: #CC6750;
+  background: repeating-linear-gradient(
+    45deg,
+    #CC6750,
+    #CC6750 10px,
+    #d68572,
+    #d68572 11px
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .labelM {
-  color: #2F7392; }
+  color: #2F7392;
+  background: repeating-linear-gradient(to right, #2F7392,#333333 15px);
+  -webkit-background-size: 5px 0.5px;
+  -moz-background-size: 5px 0.5px;
+  background-size: 5px 0.5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .carousel {
   padding: 1em 1em 5em 1em; }
@@ -637,21 +654,29 @@ p.italic {
       white-space: nowrap; } }
 
 #women {
-  background-color: #9ECC50;
-  color: #000;
+  color: white;
+    background: repeating-linear-gradient(
+      45deg,
+      #CC6750,
+      #CC6750 10px,
+      #d68572,
+      #d68572 11px
+    );
+  position: -webkit-sticky;
+  position: sticky;
   text-align: left;
   padding-left: .3em; }
 
 #men {
-  background-color: #2F7392;
-  position: -webkit-sticky;
-  position: sticky;
-  color: #FFF;
   text-align: right;
   padding-left: .3em; }
 
-#results {
+#results, #men {
   background-color: #2F7392;
+  background-image: repeating-linear-gradient(to right, #2F7392,#333333 15px);
+  -webkit-background-size: 5px 0.5px;
+  -moz-background-size: 5px 0.5px;
+  background-size: 5px 0.5px;
   position: -webkit-sticky;
   position: sticky;
   color: #FFF;
