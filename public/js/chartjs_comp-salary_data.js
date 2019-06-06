@@ -8,16 +8,18 @@ var ctxCompSalaryM = document.getElementById("comp-salaryM").getContext("2d");
 
 var compsalaryDataM = {
   labels: [
-    "Yes: 75%",
-    "No: 25%"
+    "Yes",
+    "No",
+    "Not Sure"
   ],
     datasets: [
       {
-        data: [75, 25],
-        label: ['Yes', 'No'],
+        data: [32, 25, 43],
+        label: ['Yes', 'No', 'Not Sure'],
         backgroundColor: [
-          '#63666A', //dark grey
-          '#2F7392', //blue
+          pattern.draw('diagonal-right-left', '#63666A'), //dark grey
+          pattern.draw('dot','#2F7392'), //blue
+          pattern.draw('dash', '#CC6750') //pdxwit red
         ]
 
       }
@@ -37,7 +39,7 @@ var compSalaryPieM = new Chart(ctxCompSalaryM, {
         display: true,
         position: 'top',
         labels: {
-          boxWidth: 8,
+          boxWidth: 20,
           fontSize: 16,
         },
       },
@@ -51,7 +53,6 @@ var compSalaryPieM = new Chart(ctxCompSalaryM, {
       animationEasing : "easeOutBounce",
       animateRotate : true,
       responsive: true,
-      rotation: (+2.14 * Math.PI) - (25/180 * Math.PI),
   }
 });
 
@@ -59,16 +60,18 @@ var ctxCompSalaryW = document.getElementById("comp-salaryW").getContext("2d");
 
 var compsalaryDataW = {
   labels: [
-    "Yes: 48%",
-    "No: 52%"
+    "Yes",
+    "No",
+    "Not Sure"
   ],
     datasets: [
       {
-        data: [48, 52],
-        label: ['Yes', 'No'],
+        data: [32, 26, 42],
+        label: ['Yes', 'No', 'Not Sure'],
         backgroundColor: [
-          '#63666A', //dark grey
-          '#2F7392', //blue
+          pattern.draw('diagonal-right-left', '#63666A'), //dark grey
+          pattern.draw('dot','#2F7392'), //blue
+          pattern.draw('dash', '#CC6750') //pdxwit red
         ]
 
       }
@@ -88,7 +91,7 @@ var compSalaryPieW = new Chart(ctxCompSalaryW, {
         display: true,
         position: 'top',
         labels: {
-          boxWidth: 8,
+          boxWidth: 20,
           fontSize: 16,
         },
       },
@@ -102,7 +105,6 @@ var compSalaryPieW = new Chart(ctxCompSalaryW, {
       animationEasing : "easeOutBounce",
       animateRotate : true,
       responsive: true,
-      rotation: (+2.68 * Math.PI) - (25/180 * Math.PI),
   }
 });
 

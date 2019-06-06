@@ -6,14 +6,14 @@ var ctxSalary = document.getElementById("salary").getContext("2d");
 
 var salaryData = {
   labels: [
-    "Yes: 35%",
-    "No: 65%"
+    "Yes",
+    "No"
   ],
   datasets: [
     {
       data: [35, 65],
       backgroundColor: [
-        pattern.draw('diagonal', '#63666A'), //dark grey
+        pattern.draw('diagonal-right-left', '#63666A'), //dark grey
         pattern.draw('dot','#2F7392'), //blue
       ]
     }]
@@ -31,7 +31,6 @@ var salaryDoughnut = new Chart(ctxSalary, {
         fontSize: 16,
       },
     },
-    tooltips: false,
     elements: {
       arc: {
         borderWidth: 3,
@@ -42,7 +41,6 @@ var salaryDoughnut = new Chart(ctxSalary, {
     animationEasing : "easeOutBounce",
     animateRotate : true,
     responsive: true,
-    rotation: (+1.9 * Math.PI) - (25/180 * Math.PI),
     maintainAspectRatio: true
   }
 });
