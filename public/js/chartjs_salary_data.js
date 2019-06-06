@@ -6,12 +6,12 @@ var ctxSalary = document.getElementById("salary").getContext("2d");
 
 var salaryData = {
   labels: [
-    "Yes: 13%",
-    "No: 87%"
+    "Yes: 35%",
+    "No: 65%"
   ],
   datasets: [
     {
-      data: [13, 87],
+      data: [35, 65],
       backgroundColor: [
         '#63666A', //dark grey
         '#2F7392', //blue
