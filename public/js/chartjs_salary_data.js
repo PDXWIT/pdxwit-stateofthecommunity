@@ -13,8 +13,8 @@ var salaryData = {
     {
       data: [35, 65],
       backgroundColor: [
-        '#63666A', //dark grey
-        '#2F7392', //blue
+        pattern.draw('diagonal', '#63666A'), //dark grey
+        pattern.draw('dot','#2F7392'), //blue
       ]
     }]
 };
@@ -27,10 +27,11 @@ var salaryDoughnut = new Chart(ctxSalary, {
       display: true,
       position: 'top',
       labels: {
-        boxWidth: 8,
+        boxWidth: 20,
         fontSize: 16,
       },
     },
+    tooltips: false,
     elements: {
       arc: {
         borderWidth: 3,
