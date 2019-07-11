@@ -204,18 +204,17 @@ h4.action-section {
   padding-top: .5em;
   text-align: left; }
 
-.quote {
+q {
   color: #FFF;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
-  padding-bottom: .8em;
   font-size: 18px; }
   @media (min-width: 768px) {
-    .quote {
-      font-size: 36px; } }
+    q {
+      font-size: 20px; } }
   @media (min-width: 992px) {
-    .quote {
-      font-size: 55px; } }
+    q {
+      font-size: 24px; } }
 
 ul strong {
   text-transform: uppercase; }
@@ -393,6 +392,7 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
+  margin: 1em 0;
 }
 
 .icon-people {
