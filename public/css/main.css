@@ -389,6 +389,12 @@ p.italic {
       margin: auto;
       left: 0% !important; } }
 
+img.graphic-charts {
+  max-width: -moz-available;
+  max-width: -webkit-fill-available;
+  max-width: fill-available;
+}
+
 .icon-people {
   display: block;
   object-fit: contain;
@@ -462,7 +468,6 @@ p.italic {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   padding: 13px 26px;
-  text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
   white-space:  inherit;
@@ -471,8 +476,9 @@ p.italic {
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 700;
-  background-color: #2a2828;
-  color: #fff; }
+  background-color: None;
+  border-color: #CC6750;
+  color: #CC6750; }
   @media (min-width: 768px) {
     .btn {
       font-size: 20px; } }
