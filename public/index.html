@@ -303,10 +303,19 @@
         </div>
         <div class="row justify-center-content">
           <div class="col-12">
-            <h4 class="padding-bottom-xs">Does your company have a transparent salary policy?</h4>
+            <h4 class="padding-bottom-xs">If you found out you were underpaid relative to your co-workers, would you ask for a raise?</h4>
             <div class="row justify-content-center">
-              <canvas class="chart salary col-12" id="salary" role="img" aria-label="Pie Chart Values In Percent. Yes: 65, No: 35"></canvas>
+              <div class="col-sm-6">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="images/ask-for-raise-396px.png">
+                  <source media="(min-width: 501px max-width: 967px)" srcset="images/ask-for-raise-792px.png">
+                  <source media="(min-width: 968px)" srcset="images/ask-for-raise-1583px.png">
+                  <img class="graphic-charts" src="images/ask-for-raise-1583px.png" alt="White: No, because I fear retaliation 7%, No, I would not ask for a raise 5%, Maybe I'd consider it 19%, Yes, I would like to but I am unsure of how to have that type of conversation 29%, Yes, Absolutely 41%. BIPOC: No, because I fear retaliation 19%, No, I would not ask for a raise 18%, Maybe I'd consider it 19%, Yes, I would like to but I am unsure of how to have that type of conversation 23%, Yes, Absolutely 21%. Cis Women: No, because I fear retaliation 8%, No, I would not ask for a raise 5%, Maybe I'd consider it 19%, Yes, I would like to but I am unsure of how to have that type of conversation 32%, Yes, Absolutely 36%. Trans and/or GNC: No, because I fear retaliation 21%, No, I would not ask for a raise 18%, Maybe I'd consider it 17%, Yes, I would like to but I am unsure of how to have that type of conversation 23%, Yes, Absolutely 21%. Cis Men: No, because I fear retaliation 8%, No, I would not ask for a raise 11%, Maybe I'd consider it 21%, Yes, I would like to but I am unsure of how to have that type of conversation 18%, Yes, Absolutely 41%.">
+                </picture>
+              </div>
             </div>
+
+
             <h4 class="justify-content-center">Do you feel that salaries are comparable for all genders at your company?*</h4>
             <div class="row justify-content-center">
                 <canvas class="chart col-sm-12 col-md-6 comp-salary" width=326 height=240 style='width:326px;height:240px' id="comp-salaryM" role="img" aria-label="Pie Chart Values In Percent. Men's Responses Yes: 32, No: 25, Not Sure: 43"></canvas>
