@@ -155,9 +155,6 @@ h2 {
 h2.about-pdxwit {
   color: #191919; }
 
-h2.action-section {
-  color: #000; }
-
 h3 {
   display: block;
   padding-bottom: 1em;
@@ -199,7 +196,6 @@ h4 {
       font-size: 38px; } }
 
 h4.action-section {
-  color: #000;
   padding-bottom: 1em;
   padding-top: .5em;
   text-align: left; }
@@ -456,13 +452,8 @@ img.graphic-charts {
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 0.2em;
   font-size: 22px; }
-  @media (min-width: 768px) {
-    .icon-list__icon {
-      font-size: 30px; } }
-  @media (min-width: 992px) {
-    .icon-list__icon {
-      font-size: 50px; } }
 
 .btn {
   font-family: "Oswald", sans-serif;
