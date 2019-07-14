@@ -119,8 +119,8 @@ html, body {
 .containers--about {
   background-color: #FFF; }
 
-.containers--green {
-  background-color: #9ECC50; }
+.containers--learn {
+  background-color: #2F7392; }
 
 h1, h2 {
   font-weight: 500;
@@ -152,9 +152,6 @@ h2 {
     h2 {
       font-size: 65px; } }
 
-h2.about-pdxwit {
-  color: #191919; }
-
 h3 {
   display: block;
   padding-bottom: 1em;
@@ -170,9 +167,6 @@ h3 {
   @media (min-width: 992px) {
     h3 {
       font-size: 35px; } }
-
-h3.about-pdxwit {
-  color: #191919; }
 
 h4 {
   margin: 0; }
@@ -293,7 +287,7 @@ p.small {
     p.small {
       font-size: 18px; } }
 
-p.dark, ul.dark {
+p.dark, ul.dark, h3.dark, h2.dark {
   color: #191919; }
 
 p.italic {
@@ -483,9 +477,10 @@ img.graphic-charts {
     margin: auto;
  }
 
-.btn--learnmore {
-  color: #191919;
-  background-color: #FFF;
+.btn--inverted {
+  background-color: #CC6750;
+  border-color: #CC6750;
+  color: #ffffff;
   text-decoration: none; }
 
 .labelW {
