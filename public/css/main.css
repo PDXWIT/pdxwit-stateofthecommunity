@@ -163,13 +163,13 @@ h3 {
   font-family: "Oswald", sans-serif;
   letter-spacing: .02em;
   line-height: 1.5;
-  font-size: 15px; }
+  font-size: 25px; }
   @media (min-width: 768px) {
     h3 {
-      font-size: 26px; } }
+      font-size: 36px; } }
   @media (min-width: 992px) {
     h3 {
-      font-size: 35px; } }
+      font-size: 45px; } }
 
 h4 {
   margin: 0; }
@@ -183,14 +183,14 @@ h4 {
   font-weight: 200;
   font-family: "Oswald", sans-serif;
   padding: 1em 0;
-  font-size: 16px; }
+  font-size: 20px; }
   @media (min-width: 768px) {
     h4 {
       font-size: 28px;
       padding: 1.5em 0; } }
   @media (min-width: 992px) {
     h4 {
-      font-size: 38px; } }
+      font-size: 32px; } }
 
 h4.action-section {
   padding-bottom: 1em;
@@ -201,13 +201,13 @@ q {
   color: #FFF;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
-  font-size: 18px; }
+  font-size: 20px; }
   @media (min-width: 768px) {
     q {
-      font-size: 20px; } }
+      font-size: 28px; } }
   @media (min-width: 992px) {
     q {
-      font-size: 24px; } }
+      font-size: 32px; } }
 
 ul strong {
   text-transform: uppercase; }
@@ -219,14 +219,14 @@ p, ul {
   color: #FFF;
   font-weight: 50;
   font-family: "proximanova-regular", serif;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 960px; }
   @media (min-width: 768px) {
     p, ul {
-      font-size: 18px; } }
+      font-size: 20px; } }
   @media (min-width: 992px) {
     p, ul {
-      font-size: 20px; }
+      font-size: 22px; }
   .center-text {  text-align: center;}}
 
 
@@ -299,7 +299,7 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
-  margin: 1em 0;
+  margin: 1em .5em;
 }
 
 img.dollar-sign {
