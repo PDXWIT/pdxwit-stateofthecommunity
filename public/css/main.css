@@ -259,57 +259,28 @@ p, ul {
   color: #FFF;
   font-weight: 50;
   font-family: "proximanova-regular", serif;
-  font-size: 14px;
+  font-size: 16px;
   max-width: 960px; }
   @media (min-width: 768px) {
     p, ul {
-      font-size: 20px; } }
+      font-size: 18px; } }
   @media (min-width: 992px) {
     p, ul {
-      font-size: 25px; } }
-
-p.chart-fields {
-  font-size: 16px;
-  padding-bottom: 0; }
-  @media (min-width: 768px) {
-    p.chart-fields {
-      font-size: 22px; } }
-  @media (min-width: 992px) {
-    p.chart-fields {
-      font-size: 28px; } }
-
-p.small {
-  font-size: 12px; }
-  @media (min-width: 768px) {
-    p.small {
-      font-size: 14px; } }
-  @media (min-width: 992px) {
-    p.small {
-      font-size: 18px; } }
+      font-size: 20px; } }
 
 p.dark, ul.dark, h3.dark, h2.dark {
   color: #191919; }
 
-p.italic {
-  font-style: italic; }
+a {
+  color: #9ecc50;
+  text-decoration: underline;}
 
-.link {
-  color: #2f7393; }
-
-.link:hover {
-  color: rgba(47,115,147,.6); }
-
-.link-alt {
-  color: #fff; }
-
-.link-alt:hover {
-  color: rgba(255,255,255,.6); }
-
-.link--dark {
-  color: #2f7393; }
-
-.link--dark:hover {
-  color: #e37263; }
+a:hover, a.dark:hover {
+  color: #C8C9C7;
+}
+a.dark {
+  color: #2f7393;
+  text-decoration: underline;}
 
 .color-emphasis-red {
   color: #E03A47;
