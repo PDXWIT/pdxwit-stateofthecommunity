@@ -157,7 +157,7 @@ h2 {
 
 h3 {
   display: block;
-  padding-bottom: 1em;
+  padding: 1em 0;
   color: #FFF;
   font-weight: 100;
   font-family: "Oswald", sans-serif;
@@ -226,7 +226,9 @@ p, ul {
       font-size: 18px; } }
   @media (min-width: 992px) {
     p, ul {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .center-text {  text-align: center;}}
+
 
 p.dark, ul.dark, h3.dark, h2.dark {
   color: #191919; }
@@ -299,6 +301,9 @@ img.graphic-charts {
   max-width: fill-available;
   margin: 1em 0;
 }
+
+img.dollar-sign {
+  margin: 0 50px;}
 
 .icon-list__item {
   position: relative; }
