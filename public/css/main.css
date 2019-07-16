@@ -212,8 +212,9 @@ p, ul {
       font-size: 20px; } }
   @media (min-width: 992px) {
     p, ul {
-      font-size: 22px; }
-  .center-text {  text-align: center;}}
+      font-size: 22px; }}
+
+p.center-text {  text-align: center;}
 
 
 p.dark, ul.dark, h3.dark, h2.dark {
