@@ -1,4 +1,4 @@
-#PDX Women in Tech State of the Community Survey Results#
+# PDX Women in Tech State of the Community Survey Results
 
 This repo contains the PDXWIT State of the Community Survey Results website.
 

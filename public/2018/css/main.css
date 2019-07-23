@@ -395,6 +395,18 @@ h4 {
     .dropdown-menu {
       margin: auto; } }
 
+.dropdown-navbar {
+  border: none;
+  position: absolute;
+  padding: 0 1em;
+  margin: 0 -1em; }
+  @media (min-width: 768px) {
+    .dropdown-menu {
+      margin: auto; } }
+.dropdown-navbar.show {
+  display: contents;
+}
+
 .icon-people {
   display: block;
   object-fit: contain;
