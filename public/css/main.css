@@ -282,6 +282,18 @@ a.dark {
       margin: auto;
       left: 0% !important; } }
 
+.dropdown-navbar {
+  border: none;
+  position: absolute;
+  padding: 0 1em;
+  margin: 0 -1em; }
+  @media (min-width: 768px) {
+    .dropdown-menu {
+      margin: auto; } }
+.dropdown-navbar.show {
+  display: contents;
+}
+
 img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
