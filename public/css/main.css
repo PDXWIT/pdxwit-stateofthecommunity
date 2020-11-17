@@ -25,26 +25,26 @@
   color: #595959;
   text-align: center;
   text-decoration: none;
-  padding-right: 1em;
-  font-size: 15px; }
+  padding-right: 1rem;
+  font-size: 1rem; }
   @media (min-width: 768px) {
     .navbar .navbar-links {
-      font-size: 20px; } }
+      font-size: 1.3rem; } }
   @media (min-width: 992px) {
     .navbar .navbar-links {
-      font-size: 20px; } }
+      font-size: 1.3rem; } }
 .navbar .navbar-links:hover {
   color: #C8C9C7; }
 
 .logo {
-  height: 5em;
+  height: 5rem;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .logo {
-      height: 8em; } }
+      height: 8rem; } }
   @media (min-width: 992px) {
     .logo {
-      height: 10em; } }
+      height: 10rem; } }
 
 html, body {
   font-size: 16px;
@@ -80,8 +80,8 @@ html, body {
   background-color: #394D5D; }
 
 .container-btn {
-  padding-top: .8em;
-  padding-bottom: .8em;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
   display: block;
   justify-content: center; }
 
@@ -114,49 +114,49 @@ html, body {
 
 h1, h2 {
   font-weight: 500;
-  padding-bottom: .4em; }
+  padding-bottom: .4rem; }
   @media (min-width: 768px) {
     h1, h2 {
-      padding-bottom: .8em; } }
+      padding-bottom: .8rem; } }
 
 h1 {
   font-family: "LeagueGothic-Regular", sans-serif;
   color: #191919;
   margin: 0;
-  font-size: 41px; }
+  font-size: 2.5rem; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 63px; } }
+      font-size: 4rem; } }
   @media (min-width: 992px) {
     h1 {
-      font-size: 85px; } }
+      font-size: 5rem; } }
 
 h2 {
   font-family: "Oswald", sans-serif;
   color: #FFF;
-  font-size: 30px; }
+  font-size: 1.875rem; }
   @media (min-width: 768px) {
     h2 {
-      font-size: 48px; } }
+      font-size: 3rem; } }
   @media (min-width: 992px) {
     h2 {
-      font-size: 65px; } }
+      font-size: 4rem; } }
 
 h3 {
   display: block;
-  padding: 1em 0;
+  padding: 1rem 0;
   color: #FFF;
   font-weight: 100;
   font-family: "Oswald", sans-serif;
-  letter-spacing: .02em;
+  letter-spacing: .02rem;
   line-height: 1.5;
-  font-size: 25px; }
+  font-size: 1.5625rem; }
   @media (min-width: 768px) {
     h3 {
-      font-size: 36px; } }
+      font-size: 2.25rem; } }
   @media (min-width: 992px) {
     h3 {
-      font-size: 45px; } }
+      font-size: 2.8125rem; } }
 
 h4 {
   margin: 0; }
@@ -165,36 +165,36 @@ h4 {
   display: block;
   justify-content: center;
   text-align: center;
-  letter-spacing: .02em;
+  letter-spacing: .02rem;
   color: #FFF;
   font-weight: 200;
   font-family: "Oswald", sans-serif;
-  padding: 1em 0;
-  font-size: 20px; }
+  padding: 1rem 0;
+  font-size: 1.25rem; }
   @media (min-width: 768px) {
     h4 {
-      font-size: 28px;
-      padding: 1.5em 0; } }
+      font-size: 1.75rem;
+      padding: 1.5rem 0; } }
   @media (min-width: 992px) {
     h4 {
-      font-size: 32px; } }
+      font-size: 	2rem; } }
 
 h4.action-section {
-  padding-bottom: 1em;
-  padding-top: .5em;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
   text-align: left; }
 
 q {
   color: #FFF;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
-  font-size: 20px; }
+  font-size: 1.3rem; }
   @media (min-width: 768px) {
     q {
-      font-size: 28px; } }
+      font-size: 1.8rem; } }
   @media (min-width: 992px) {
     q {
-      font-size: 32px; } }
+      font-size: 2rem; } }
 
 ul strong {
   text-transform: uppercase; }
@@ -206,14 +206,14 @@ p, ul {
   color: #FFF;
   font-weight: normal;
   font-family: "proximanova-regular", serif;
-  font-size: 18px;
+  font-size: 1rem;
   max-width: 960px; }
   @media (min-width: 768px) {
     p, ul {
-      font-size: 20px; } }
+      font-size: 1.3rem; } }
   @media (min-width: 992px) {
     p, ul {
-      font-size: 22px; }}
+      font-size: 1.2rem; }}
 
 p.center-text {  text-align: center;}
 
@@ -250,14 +250,14 @@ a.dark {
   color: #191919;
   font-weight: 100;
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  padding: .2em; }
+  font-size: 1.125rem;
+  padding: .2rem; }
   @media (min-width: 768px) {
     .icon {
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
   @media (min-width: 992px) {
     .icon {
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
   .icon .icon-dropdown {
     background-color: #FFF;
     font-family: "proximanova-regular", serif;
@@ -266,10 +266,10 @@ a.dark {
     color: #191919; }
   @media (min-width: 768px) {
     .icon {
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
   @media (min-width: 992px) {
     .icon {
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
   .icon .icon-dropdown {
     background-color: #FFF; }
 
@@ -277,8 +277,8 @@ a.dark {
   position: absolute;
   border: none;
   left: 25% !important;
-  padding: 0 1em;
-  margin: 0 -1em; }
+  padding: 0 1rem;
+  margin: 0 -1rem; }
   @media (min-width: 768px) {
     .dropdown-menu {
       margin: auto;
@@ -287,8 +287,8 @@ a.dark {
 .dropdown-navbar {
   border: none;
   position: absolute;
-  padding: 0 1em;
-  margin: 0 -1em; }
+  padding: 0 1rem;
+  margin: 0 -1rem; }
   @media (min-width: 768px) {
     .dropdown-menu {
       margin: auto; } }
@@ -300,14 +300,14 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
-  margin: 1em .5em;
+  margin: 1rem .5rem;
 }
 
 .icon-list__item {
   position: relative; }
   @media (min-width: 992px) {
     .icon-list__item {
-      line-height: 4em; } }
+      line-height: 4rem; } }
 
 .icon-list__text {
   padding: 0 0 0 30px; }
@@ -327,7 +327,7 @@ img.graphic-charts {
 
 .btn {
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 13px 26px;
   text-decoration: none;
   justify-content: center;
@@ -335,17 +335,16 @@ img.graphic-charts {
   border-radius: 300px;
   margin: auto;
   letter-spacing: 1px;
-  font-size: 20px;
   font-weight: 700;
   background-color: None;
   border-color: #CC6750;
   color: #CC6750; }
   @media (min-width: 768px) {
     .btn {
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
   @media (min-width: 992px) {
     .btn {
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
 
 .icon-dropdown {
     background-color: #FFF;
