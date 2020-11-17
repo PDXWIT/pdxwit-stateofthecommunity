@@ -275,6 +275,7 @@ a.dark {
 
 .dropdown-menu {
   position: absolute;
+  border: none;
   left: 25% !important;
   padding: 0 1em;
   margin: 0 -1em; }
