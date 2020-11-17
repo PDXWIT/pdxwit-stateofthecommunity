@@ -320,8 +320,8 @@ img.graphic-charts {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 0.2em;
-  font-size: 22px; }
+  font-size: 1.5rem;
+  margin: .5rem; }
 
 .btn {
   font-family: "Oswald", sans-serif;
