@@ -61,16 +61,20 @@
     <div class="row centerContent">
     <a href="http://www.pdxwit.org/" target="_blank"><img class="logo" alt="PDXWIT" src="images/PDXWIT-LOGO_MAIN-TP-72DPI.png"></a>
       <div class="navbar col-md">
-        <ul class="navbar-list ml-auto navbar-right">
+        <ul class="navbar-list ml-auto ">
           <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/" target="_blank">About PDXWIT</a></li>
           <li class="nav-item active"><a class="navbar-links" href="http://www.pdxwit.org/contact-us/" target="_blank" >Contact Us</a></li>
-          <div class="js-dropdown">
-            <div class="nav-item navbar-links">Past Years</div>
-              <ul class="nav-item dropdown-menu dropdown-navbar">
-                <li class="nav-item icon-dropdown"><a class="navbar-links" href="https://stateofthecommunity.pdxwit.org/2018">2018</a></li>
-                <li class="nav-item icon-dropdown"><a class="navbar-links" href="https://stateofthecommunity.pdxwit.org/2019">2019</a></li>
-                <li class="nav-item icon-dropdown"><a class="navbar-links" href="https://stateofthecommunity.pdxwit.org/">2020</a></li>
-              </ul>
+          <li class="nav-item active">
+              <div class="dropdown nav-item navbar-links">
+                  <a class="nav-item dropdown-toggle navbar-links" href="#" role="button" id="dropdownB" data-toggle="dropdown" aria-expanded="false" aia-haspopup="true">Past Years</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownB">
+                      <a class="dropdown-item nav-item navbar-links" href="https://stateofthecommunity.pdxwit.org/2018">2018</a>
+                      <a class="dropdown-item nav-item navbar-links" href="https://stateofthecommunity.pdxwit.org/2019">2019</a>
+                      <a class="dropdown-item nav-item navbar-links" href="https://stateofthecommunity.pdxwit.org">2020</a>
+                  </div>
+              </div>
+          </li>
+            </ul>
           </div>
         </ul>
       </div>
@@ -100,9 +104,9 @@
       </div>
       <div class="container-fluid container-btn">
         <div class="row justify-content-center">
-          <div class="btn col-md-3 col-sm-6 js-dropdown">
+          <div class="btn col-md-3 col-sm-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="shareOption">
             <div id="socialShare" class="icon--Share share-group"><a>Share</a><div>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="shareOption">
                   <li class="icon-dropdown">
         						<a  data-original-title="Email" rel="tooltip" href="mailto:?subject=PDXWIT State of the Community Results 2020&amp;body=Please read the PDX Women in Tech State of the Community survey results and share broadly. https://stateofthecommunity.pdxwit.org/" title="PDXWIT State of the Community Survey" class="icon dark btn-mail" data-placement="left" target="_blank">
         							<i class="fa fa-envelope"></i> Email
