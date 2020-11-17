@@ -301,9 +301,6 @@ img.graphic-charts {
   margin: 1em .5em;
 }
 
-img.dollar-sign {
-  margin: 0 50px;}
-
 .icon-list__item {
   position: relative; }
   @media (min-width: 992px) {
@@ -360,6 +357,7 @@ img.dollar-sign {
   color: #ffffff;
   text-decoration: none; }
 .centerContent {
+  text-align: center;
   justify-content: center;
   margin: 0 !important;
   padding: 0; }
