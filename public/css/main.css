@@ -18,6 +18,7 @@
   margin: 0;
   font-weight: 400;
   text-decoration: none;
+  padding: 0;
   font-family: "proximanova-regular", sans-serif;
   display: inline-flex; }
 
@@ -26,15 +27,15 @@
   text-align: center;
   text-decoration: none;
   padding-right: 1rem;
-  font-size: 1rem; }
+  font-size: .7rem; }
   @media (min-width: 768px) {
     .navbar .navbar-links {
-      font-size: 1.3rem; } }
+      font-size: 1rem; } }
   @media (min-width: 992px) {
     .navbar .navbar-links {
       font-size: 1.3rem; } }
 .navbar .navbar-links:hover {
-  color: #C8C9C7; }
+  color: #CC6750; }
 
 .logo {
   height: 5rem;
@@ -146,7 +147,7 @@ h3 {
   display: block;
   padding: 1rem 0;
   color: #FFF;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Oswald", sans-serif;
   letter-spacing: .02rem;
   line-height: 1.5;
@@ -196,9 +197,6 @@ q {
     q {
       font-size: 2rem; } }
 
-ul strong {
-  text-transform: uppercase; }
-
 p, ul {
   margin: auto;
   padding-bottom: 1em;
@@ -226,8 +224,9 @@ a {
   text-decoration: underline;}
 
 a:hover, a.dark:hover {
-  color: #C8C9C7;
+  color: #CC6750;
 }
+
 a.dark {
   color: #2f7393;
   text-decoration: underline;}
@@ -300,7 +299,7 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
-  margin: 1rem .5rem;
+  margin: 2rem .5rem;
 }
 
 .icon-list__item {
@@ -310,24 +309,34 @@ img.graphic-charts {
       line-height: 4rem; } }
 
 .icon-list__text {
-  padding: 0 0 0 30px; }
+  padding: 0 0 0 1.875rem; }
   @media (min-width: 768px) {
     .icon-list__text {
-      padding: 0 0 0 40px; } }
+      padding: 0 0 0 2.5rem; } }
   @media (min-width: 992px) {
     .icon-list__text {
-      padding: 0 0 0 60px; } }
+      padding: 0 0 0 3.75rem; } }
+
+li.icon-list__item {
+  margin: 1rem 0;
+}
 
 .icon-list__icon {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 1.5rem;
-  margin: .5rem; }
+  }
+  @media (min-width: 768px) {
+    .icon-list__icon {
+      font-size: 2rem; } }
+  @media (min-width: 992px) {
+    .icon-list__icon {
+      font-size: 2.5rem; } }
 
 .btn {
   font-family: "Oswald", sans-serif;
-  font-size: 1.125rem;
+  font-size: .75rem;
   padding: 13px 26px;
   text-decoration: none;
   justify-content: center;
@@ -357,10 +366,16 @@ img.graphic-charts {
   border-color: #CC6750;
   color: #ffffff;
   text-decoration: none; }
+
+.btn--inverted:hover {
+  color: #C8C9C7;
+}
+
 .centerContent {
   text-align: center;
   justify-content: center;
-  margin: 0 !important;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 0; }
 
 
