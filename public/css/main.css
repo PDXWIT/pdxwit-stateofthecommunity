@@ -312,6 +312,17 @@ img.graphic-charts {
   max-width: fill-available;
 }
 
+@media (max-width: 575px) {
+  #piggybank, #microphone {
+    display: none !important; }
+}
+
+@media (min-width: 1200px) {
+  #piggybank {
+    padding: 0 4rem;
+  }
+}
+
 .icon-list__item {
   position: relative; }
   @media (min-width: 992px) {
