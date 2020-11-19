@@ -113,6 +113,7 @@ html, body {
   background-color: #2F7392;
   display: block;
   justify-content: center;
+  padding: 7%;
   clear: both; }
 
 .containers--nextsteps {
@@ -126,7 +127,8 @@ html, body {
 
 h1, h2 {
   font-weight: 500;
-  padding-bottom: .4rem; }
+  padding-bottom: .4rem;
+  padding-top: 1rem; }
   @media (min-width: 768px) {
     h1, h2 {
       padding-bottom: .8rem; } }
@@ -150,9 +152,6 @@ h2 {
   @media (min-width: 768px) {
     h2 {
       font-size: 3rem; } }
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 3.5rem; } }
 
 h3 {
   display: block;
@@ -166,9 +165,6 @@ h3 {
   @media (min-width: 768px) {
     h3 {
       font-size: 2.25rem; } }
-  @media (min-width: 992px) {
-    h3 {
-      font-size: 2.8125rem; } }
 
 h4 {
   margin: 0; }
@@ -229,6 +225,10 @@ p.center-text {  text-align: center;}
 
 p.dark, ul.dark, h3.dark, h2.dark {
   color: #191919; }
+
+span.large-text {
+  font-size: 2rem;
+}
 
 a {
   color: #9ecc50;
@@ -310,7 +310,6 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
-  margin: 2rem .5rem;
 }
 
 .icon-list__item {
@@ -405,7 +404,7 @@ li.icon-list__item {
   padding: 30px; }
 
 .padding-lg {
-  padding: 40px; }
+  padding: 2.5rem; }
 
 .padding-xl {
   padding: 50px; }
@@ -429,7 +428,7 @@ li.icon-list__item {
   padding-top: 30px; }
 
 .padding-top-lg {
-  padding-top: 40px; }
+  padding-top: 2.5rem; }
 
 .padding-top-xl {
   padding-top: 50px; }
@@ -453,7 +452,7 @@ li.icon-list__item {
   padding-right: 30px; }
 
 .padding-right-lg {
-  padding-right: 40px; }
+  padding-right: 2.5rem; }
 
 .padding-right-xl {
   padding-right: 50px; }
@@ -477,7 +476,7 @@ li.icon-list__item {
   padding-bottom: 30px; }
 
 .padding-bottom-lg {
-  padding-bottom: 40px; }
+  padding-bottom: 2.5rem; }
 
 .padding-bottom-xl {
   padding-bottom: 50px; }
@@ -501,7 +500,7 @@ li.icon-list__item {
   padding-left: 30px; }
 
 .padding-left-lg {
-  padding-left: 40px; }
+  padding-left: 2.5rem; }
 
 .padding-left-xl {
   padding-left: 50px; }
@@ -525,7 +524,7 @@ li.icon-list__item {
   margin: 30px; }
 
 .margin-lg {
-  margin: 40px; }
+  margin: 2.5rem; }
 
 .margin-xl {
   margin: 50px; }
@@ -549,7 +548,7 @@ li.icon-list__item {
   margin-top: 30px; }
 
 .margin-top-lg {
-  margin-top: 40px; }
+  margin-top: 2.5rem; }
 
 .margin-top-xl {
   margin-top: 50px; }
@@ -573,7 +572,7 @@ li.icon-list__item {
   margin-right: 30px; }
 
 .margin-right-lg {
-  margin-right: 40px; }
+  margin-right: 2.5rem; }
 
 .margin-right-xl {
   margin-right: 50px; }
@@ -597,7 +596,7 @@ li.icon-list__item {
   margin-bottom: 30px; }
 
 .margin-bottom-lg {
-  margin-bottom: 40px; }
+  margin-bottom: 2.5rem; }
 
 .margin-bottom-xl {
   margin-bottom: 50px; }
@@ -621,7 +620,7 @@ li.icon-list__item {
   margin-left: 30px; }
 
 .margin-left-lg {
-  margin-left: 40px; }
+  margin-left: 2.5rem; }
 
 .margin-left-xl {
   margin-left: 50px; }
