@@ -310,6 +310,9 @@ img.graphic-charts {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
+  max-height: -moz-available;
+  max-height: -webkit-fill-available;
+  max-height: fill-available;
 }
 
 @media (max-width: 575px) {
@@ -321,6 +324,10 @@ img.graphic-charts {
   #piggybank {
     padding: 0 4rem;
   }
+}
+
+#c-level, #senior-n-cis, #senior-n-lgbt, #manager, #teamlead-manager {
+  max-width: 400px;
 }
 
 .icon-list__item {
